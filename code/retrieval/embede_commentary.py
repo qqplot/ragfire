@@ -89,7 +89,7 @@ def build_vector_db_for_new_structure(
     vectorstore = Chroma.from_documents(
         documents=docs,
         embedding=embeddings,
-        collection_name="qqplot_kosimcse",
+        collection_name=YOUR_COLLECTION_NAME,
         persist_directory=persist_dir
     )
 
