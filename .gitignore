@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+data/
+hub/
+model/
+vector_db/
+
 
 # C extensions
 *.so
