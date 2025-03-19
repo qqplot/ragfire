@@ -61,7 +61,7 @@ def build_vector_db_from_json(
     vectorstore = Chroma.from_documents(
         documents=docs,
         embedding=embeddings,
-        collection_name="law_bme",
+        collection_name=YOUR_COLLECTION_NAME,
         persist_directory=persist_dir
     )
 
