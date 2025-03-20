@@ -5,7 +5,7 @@ import json
 import pandas as pd
 
 model_path = "/home/shared/RAG/model/exaone"  
-model_path = "/home/shared/RAG/model/exaone_deep"  # EXAONE-Deep-32B
+# model_path = "/home/shared/RAG/model/exaone_deep"  # EXAONE-Deep-32B
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
