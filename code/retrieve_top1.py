@@ -3,7 +3,7 @@ from langchain_community.vectorstores import Chroma
 
 YOUR_COLLECTION_NAME = "law_bme"
 
-def test_search(db_dir, query):
+def retrieve_top1(db_dir, query):
     embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
     vectorstore = Chroma(
         collection_name=YOUR_COLLECTION_NAME, 
@@ -19,10 +19,10 @@ def test_search(db_dir, query):
         # Top-1 문서
         top_doc = results[0]
         
-        print("[ Top 1 ]")
-        print("문서 내용:", top_doc.page_content)
-        print("메타데이터:", top_doc.metadata)
-        print("--------")
+        # print("[ Top 1 ]")
+        # print("문서 내용:", top_doc.page_content)
+        # print("메타데이터:", top_doc.metadata)
+        # print("--------")
 
         top_chapter = top_doc.metadata.get("chapter", None)
         top_article = top_doc.metadata.get("article", None)
@@ -44,11 +44,9 @@ def test_search(db_dir, query):
             )
 
             print(f"\n>>> Top-1과 동일한 chapter('{top_chapter}')와 article('{top_article}')을 가진 모든 문서 <<<")
-            for idx, doc in enumerate(same_chapter_article_docs, start=1):
-                print(f"[ 문서 {idx} ]")
-                print("문서 내용:", doc.page_content)
-                print("메타데이터:", doc.metadata)
-                print("--------")
+
+            context_docs = same_chapter_article_docs
+
 
         # 2) chapter, article 중 하나라도 없다면, level1, level2 확인
         else:
@@ -65,15 +63,26 @@ def test_search(db_dir, query):
                 )
 
                 print(f"\n>>> Top-1과 동일한 level1('{top_level1}')와 level2('{top_level2}')를 가진 모든 문서 <<<")
-                for idx, doc in enumerate(same_level_docs, start=1):
-                    print(f"[ 문서 {idx} ]")
-                    print("문서 내용:", doc.page_content)
-                    print("메타데이터:", doc.metadata)
-                    print("--------")
+
+                context_docs = same_level_docs
+
             else:
                 print("메타데이터에 'chapter'/'article' 또는 'level1'/'level2' 정보가 충분하지 않습니다.")
+
+        context = ""
+        for idx, doc in enumerate(context_docs, start=1):
+            # print(f"[ 문서 {idx} ]")
+            # print("문서 내용:", doc.page_content)
+            # print("메타데이터:", doc.metadata)
+            # print("--------")
+            context = context + " " + doc.page_content
+        
+        return context
     else:
         print("검색 결과가 없습니다.")
+        return None
+    
+    
 
 
 if __name__ == "__main__":
