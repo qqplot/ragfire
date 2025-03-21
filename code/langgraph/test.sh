@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=exaone_rag
+#SBATCH --job-name=inference_rag
 #SBATCH --nodes=1                    
 #SBATCH --gres=gpu:1                  
 #SBATCH --mem=100GB                     
@@ -15,4 +15,4 @@ source ${HOME}/.bashrc
 source ${HOME}/anaconda3/bin/activate
 conda activate rag  
 
-srun python code/langgraph/run_rag_exaone.py 
+srun python code/langgraph/run_rag_inference.py 
