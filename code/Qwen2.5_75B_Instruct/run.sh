@@ -20,4 +20,4 @@ export USE_TF=0
 BSZ=4 # should be >=num_gpus 
 MODEL_PATH="/home/shared/RAG/hub/models--Qwen--Qwen2.5-72B-Instruct/snapshots/495f39366efef23836d0cfae4fbe635880d2be31"
 
-deepspeed --num_gpus 4 run_model_eval.py --model ${MODEL_PATH} --batch-size ${BSZ} --gen-len 200 --loops 1 --cpu-offload
+deepspeed --num_gpus 4 run_model.py --model ${MODEL_PATH} --batch-size ${BSZ} --gen-len 200 --loops 1 --cpu-offload

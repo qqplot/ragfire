@@ -16,24 +16,8 @@ from retrieve_top1 import retrieve_top1
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-
-# Load EXAONE
-model_path = "/home/shared/RAG/model/exaone"
-
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-
-quantization_config = BitsAndBytesConfig(  
-    # load_in_4bit=True, 
-    # bnb_4bit_compute_dtype=torch.float16 
-)
-
-model = AutoModelForCausalLM.from_pretrained(
-    model_path,
-    device_map="auto",
-    torch_dtype=torch.bfloat16, 
-    trust_remote_code=True,
-    quantization_config=quantization_config,
-).eval() 
+from model import load_model
+import argparse
 
 # GraphState 상태 정의
 class GraphState(TypedDict):
@@ -61,7 +45,7 @@ def retrieve_document(state: GraphState) -> GraphState:
 
 
 # 답변 생성 노드
-def llm_answer(state: GraphState) -> GraphState:
+def llm_answer(state: GraphState, model, tokenizer) -> GraphState:
     # 질문을 상태에서 가져옵니다.
     latest_question = state["question"]
 
@@ -95,15 +79,17 @@ def llm_answer(state: GraphState) -> GraphState:
 
 
 
-if __name__ == "__main__":
+def main(model_name: str):
+    # 모델과 토크나이저 로드
+    model, tokenizer = load_model(model_name)
 
     # 그래프 생성
     workflow = StateGraph(GraphState)
 
     # 노드 정의
     workflow.add_node("retrieve", retrieve_document)
-    workflow.add_node("llm_answer", llm_answer)
-
+    workflow.add_node("llm_answer", lambda state: llm_answer(state, model, tokenizer))
+    
     # 엣지 정의
     workflow.add_edge("retrieve", "llm_answer")  # 검색 -> 답변
     workflow.add_edge("llm_answer", END)  # 답변 -> 종료
@@ -137,3 +123,12 @@ if __name__ == "__main__":
     print(f'Question: {outputs["question"]}')
     print("===" * 20)
     print(f'Answer:\n{outputs["answer"]}')
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model_name", default = "exaone", type=str, help="Name of the model to load.")
+    
+    args = parser.parse_args()
+    model_name = args.model_name
+    
+    main(model_name)
