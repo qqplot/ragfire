@@ -1,0 +1,115 @@
+Loading checkpoint shards:   0%|          | 0/27 [00:00<?, ?it/s]Loading checkpoint shards:   4%|▎         | 1/27 [00:01<00:26,  1.01s/it]Loading checkpoint shards:   7%|▋         | 2/27 [00:02<00:27,  1.09s/it]Loading checkpoint shards:  11%|█         | 3/27 [00:03<00:25,  1.08s/it]Loading checkpoint shards:  15%|█▍        | 4/27 [00:04<00:24,  1.07s/it]Loading checkpoint shards:  19%|█▊        | 5/27 [00:05<00:23,  1.07s/it]Loading checkpoint shards:  22%|██▏       | 6/27 [00:06<00:22,  1.07s/it]Loading checkpoint shards:  26%|██▌       | 7/27 [00:07<00:21,  1.08s/it]Loading checkpoint shards:  30%|██▉       | 8/27 [00:08<00:20,  1.08s/it]Loading checkpoint shards:  33%|███▎      | 9/27 [00:09<00:18,  1.03s/it]Loading checkpoint shards:  37%|███▋      | 10/27 [00:10<00:15,  1.10it/s]Loading checkpoint shards:  41%|████      | 11/27 [00:10<00:13,  1.20it/s]Loading checkpoint shards:  44%|████▍     | 12/27 [00:11<00:11,  1.27it/s]Loading checkpoint shards:  48%|████▊     | 13/27 [00:12<00:10,  1.33it/s]Loading checkpoint shards:  52%|█████▏    | 14/27 [00:12<00:09,  1.38it/s]Loading checkpoint shards:  56%|█████▌    | 15/27 [00:13<00:08,  1.42it/s]Loading checkpoint shards:  59%|█████▉    | 16/27 [00:14<00:07,  1.45it/s]Loading checkpoint shards:  63%|██████▎   | 17/27 [00:14<00:06,  1.49it/s]Loading checkpoint shards:  67%|██████▋   | 18/27 [00:15<00:05,  1.51it/s]Loading checkpoint shards:  70%|███████   | 19/27 [00:16<00:05,  1.53it/s]Loading checkpoint shards:  74%|███████▍  | 20/27 [00:16<00:04,  1.54it/s]Loading checkpoint shards:  78%|███████▊  | 21/27 [00:17<00:03,  1.55it/s]Loading checkpoint shards:  81%|████████▏ | 22/27 [00:17<00:03,  1.57it/s]Loading checkpoint shards:  85%|████████▌ | 23/27 [00:18<00:02,  1.61it/s]Loading checkpoint shards:  89%|████████▉ | 24/27 [00:19<00:01,  1.61it/s]Loading checkpoint shards:  93%|█████████▎| 25/27 [00:19<00:01,  1.61it/s]Loading checkpoint shards:  96%|█████████▋| 26/27 [00:20<00:00,  1.61it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:20<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 27/27 [00:20<00:00,  1.30it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+/home/hyun/ragfire/code/langgraph/retrieve_top1.py:7: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
+/home/hyun/ragfire/code/langgraph/retrieve_top1.py:8: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-chroma package and should be used instead. To use it run `pip install -U :class:`~langchain-chroma` and import as `from :class:`~langchain_chroma import Chroma``.
+  vectorstore = Chroma(
+<IPython.core.display.Image object>
+
+>>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제39조(과태료)')을 가진 모든 문서 <<<
+
+==================================================
+🔄 Node: [1;36mretrieve[0m 🔄
+- - - - - - - - - - - - - - - - - - - - - - - - - 
+[1;32mquestion[0m:
+과태료의 부과
+[1;32mcontext[0m:
+ 7의4. 제19조의2제3항에 따른 시정명령을 따르지 아니한 자
+8. 제20조제1항제2호의 규정에 따른 위험물의 운반에 관한 세부기준을 위반한 자
+9. 제21조제3항의 규정을 위반하여 위험물의 운송에 관한 기준을 따르지 아니한 자
+② 제1항의 규정에 따른 과태료는 대통령령이 정하는 바에 따라 시ㆍ도지사, 소방본부장 또는 소방서장(이하 “부과권자”라 한다)이 부과ㆍ징수한다.
+③ 삭제 <2014. 12. 30.>
+④ 삭제 <2014. 12. 30.>
+⑤ 삭제 <2014. 12. 30.>
+⑥제4조 및 제5조제2항 각 호 외의 부분 후단의 규정에 따른 조례에는 200만원 이하의 과태료를 정할 수 있다. 이 경우 과태료는 부과권자가 부과ㆍ징수한다. <개정 2016. 1. 27.>
+⑦ 삭제 <2014. 12. 30.> [위험물안전관리법 / 제7장 벌칙 / 제39조(과태료)]
+제39조(과태료) ① 다음 각 호의 어느 하나에 해당하는 자에게는 500만원 이하의 과태료를 부과한다. <개정 2014. 12. 30., 2016. 1. 27., 2020. 10. 20., 2023. 1. 3., 2024. 1. 30.>
+1. 제5조제2항제1호의 규정에 따른 승인을 받지 아니한 자
+2. 제5조제3항제2호의 규정에 따른 위험물의 저장 또는 취급에 관한 세부기준을 위반한 자
+3. 제6조제2항의 규정에 따른 품명 등의 변경신고를 기간 이내에 하지 아니하거나 허위로 한 자
+4. 제10조제3항의 규정에 따른 지위승계신고를 기간 이내에 하지 아니하거나 허위로 한 자
+5. 제11조의 규정에 따른 제조소등의 폐지신고 또는 제15조제3항의 규정에 따른 안전관리자의 선임신고를 기간 이내에 하지 아니하거나 허위로 한 자
+5의2. 제11조의2제2항을 위반하여 사용 중지신고 또는 재개신고를 기간 이내에 하지 아니하거나 거짓으로 한 자
+6. 제16조제3항의 규정을 위반하여 등록사항의 변경신고를 기간 이내에 하지 아니하거나 허위로 한 자
+6의2. 제17조제3항을 위반하여 예방규정을 준수하지 아니한 자
+7. 제18조제1항의 규정을 위반하여 점검결과를 기록ㆍ보존하지 아니한 자
+7의2. 제18조제2항을 위반하여 기간 이내에 점검결과를 제출하지 아니한 자
+7의3. 제19조의2제1항을 위반하여 흡연을 한 자
+7의4. 제19조의2제3항에 따른 시정명령을 따르지 아니한 자
+8. 제20조제1항제2호의 규정에 따른 위험물의 운반에 관한 세부기준을 위반한 자
+==================================================
+# 검색된 문서를 상태에서 가져옵니다.
+context=  7의4. 제19조의2제3항에 따른 시정명령을 따르지 아니한 자
+8. 제20조제1항제2호의 규정에 따른 위험물의 운반에 관한 세부기준을 위반한 자
+9. 제21조제3항의 규정을 위반하여 위험물의 운송에 관한 기준을 따르지 아니한 자
+② 제1항의 규정에 따른 과태료는 대통령령이 정하는 바에 따라 시ㆍ도지사, 소방본부장 또는 소방서장(이하 “부과권자”라 한다)이 부과ㆍ징수한다.
+③ 삭제 <2014. 12. 30.>
+④ 삭제 <2014. 12. 30.>
+⑤ 삭제 <2014. 12. 30.>
+⑥제4조 및 제5조제2항 각 호 외의 부분 후단의 규정에 따른 조례에는 200만원 이하의 과태료를 정할 수 있다. 이 경우 과태료는 부과권자가 부과ㆍ징수한다. <개정 2016. 1. 27.>
+⑦ 삭제 <2014. 12. 30.> [위험물안전관리법 / 제7장 벌칙 / 제39조(과태료)]
+제39조(과태료) ① 다음 각 호의 어느 하나에 해당하는 자에게는 500만원 이하의 과태료를 부과한다. <개정 2014. 12. 30., 2016. 1. 27., 2020. 10. 20., 2023. 1. 3., 2024. 1. 30.>
+1. 제5조제2항제1호의 규정에 따른 승인을 받지 아니한 자
+2. 제5조제3항제2호의 규정에 따른 위험물의 저장 또는 취급에 관한 세부기준을 위반한 자
+3. 제6조제2항의 규정에 따른 품명 등의 변경신고를 기간 이내에 하지 아니하거나 허위로 한 자
+4. 제10조제3항의 규정에 따른 지위승계신고를 기간 이내에 하지 아니하거나 허위로 한 자
+5. 제11조의 규정에 따른 제조소등의 폐지신고 또는 제15조제3항의 규정에 따른 안전관리자의 선임신고를 기간 이내에 하지 아니하거나 허위로 한 자
+5의2. 제11조의2제2항을 위반하여 사용 중지신고 또는 재개신고를 기간 이내에 하지 아니하거나 거짓으로 한 자
+6. 제16조제3항의 규정을 위반하여 등록사항의 변경신고를 기간 이내에 하지 아니하거나 허위로 한 자
+6의2. 제17조제3항을 위반하여 예방규정을 준수하지 아니한 자
+7. 제18조제1항의 규정을 위반하여 점검결과를 기록ㆍ보존하지 아니한 자
+7의2. 제18조제2항을 위반하여 기간 이내에 점검결과를 제출하지 아니한 자
+7의3. 제19조의2제1항을 위반하여 흡연을 한 자
+7의4. 제19조의2제3항에 따른 시정명령을 따르지 아니한 자
+8. 제20조제1항제2호의 규정에 따른 위험물의 운반에 관한 세부기준을 위반한 자
+Traceback (most recent call last):
+  File "/home/hyun/ragfire/code/langgraph/run_rag_exaone.py", line 122, in <module>
+    invoke_graph(app, inputs, config)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langchain_teddynote/messages.py", line 409, in invoke_graph
+    for namespace, chunk in graph.stream(
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/pregel/__init__.py", line 2323, in stream
+    for _ in runner.tick(
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/pregel/runner.py", line 232, in tick
+    _panic_or_proceed(
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/pregel/runner.py", line 458, in _panic_or_proceed
+    raise exc
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/pregel/executor.py", line 83, in done
+    task.result()
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/pregel/retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/utils/runnable.py", line 600, in invoke
+    input = step.invoke(input, config, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/langgraph/utils/runnable.py", line 365, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+  File "/home/hyun/ragfire/code/langgraph/run_rag_exaone.py", line 78, in llm_answer
+    outputs = model.generate(**inputs, max_new_tokens=500)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/transformers/generation/utils.py", line 2223, in generate
+    result = self._sample(
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/transformers/generation/utils.py", line 3211, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/hyun/.cache/huggingface/modules/transformers_modules/exaone/modeling_exaone.py", line 1079, in forward
+    lm_logits = self.lm_head(hidden_states)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/hyun/anaconda3/envs/rag/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 152.00 MiB. GPU 0 has a total capacity of 23.69 GiB of which 151.69 MiB is free. Including non-PyTorch memory, this process has 23.54 GiB memory in use. Of the allocated memory 23.20 GiB is allocated by PyTorch, and 25.78 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+srun: error: laal1: task 0: Exited with exit code 1

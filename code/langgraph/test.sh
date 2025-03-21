@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=exaone
+#SBATCH --job-name=exaone_rag
 #SBATCH --nodes=1                    
 #SBATCH --gres=gpu:1                  
 #SBATCH --mem=100GB                     
@@ -13,6 +13,6 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 source ${HOME}/.bashrc
 source ${HOME}/anaconda3/bin/activate
-conda activate reason  
+conda activate rag  
 
-srun python exaone.py 
+srun python code/langgraph/run_rag_exaone.py 
