@@ -31,11 +31,9 @@ import torch
 
 from accelerate import init_empty_weights
 from transformers import (AutoConfig, AutoTokenizer, AutoModelForCausalLM, )
-from transformers.integrations import HfDeepSpeedConfig
 
 from packaging import version
 
-assert version.parse(deepspeed.__version__) >= version.parse("0.10.3"), "ZeRO-Inference with weight quantization and kv cache offloading is available only in DeepSpeed 0.10.3+, please upgrade DeepSpeed"
 
 
 
