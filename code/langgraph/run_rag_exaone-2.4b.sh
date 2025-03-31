@@ -19,4 +19,4 @@ export TORCH_DISTRIBUTED_DEBUG=DETAIL
 source ${HOME}/.bashrc
 source ${HOME}/anaconda3/bin/activate
 conda activate rag  
-python run_rag_inference_exaone-2.4b.py --model_name exaone-2.4b --input_length $INPUT_LENGTH
+python run_rag_inference_exaone-2.4b.py --model_name exaone-2.4b --input_length $INPUT_LENGTH --collection $COLLECTION

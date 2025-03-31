@@ -3,6 +3,7 @@ import gc
 import multiprocessing as mp
 import os
 import torch
+
 # import deepspeed
 # from deepspeed.accelerator import get_accelerator
 # import deepspeed.comm as dist
@@ -21,10 +22,8 @@ from transformers import (AutoConfig, AutoTokenizer, AutoModelForCausalLM,
 # assert version.parse(deepspeed.__version__) >= version.parse("0.10.3"), "ZeRO-Inference with weight quantization and kv cache offloading is available only in DeepSpeed 0.10.3+, please upgrade DeepSpeed"
 
 def load_model(model_name: str):
-    if model_name == "exaone":
+    if model_name == "exaone" or "exaone-2.4b":
         model_path = f"/home/shared/RAG/model/{model_name}"
-
-        tokenizer = AutoTokenizer.from_pretrained(model_path)
 
         # quantization_config = BitsAndBytesConfig(
         #     load_in_4bit=True, 
@@ -38,20 +37,10 @@ def load_model(model_name: str):
             trust_remote_code=True,
             # quantization_config=quantization_config,
         ).eval()
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
 
     elif model_name == "qwen":
         model_path="/home/shared/RAG/hub/models--Qwen--Qwen2.5-72B-Instruct/snapshots/495f39366efef23836d0cfae4fbe635880d2be31"
         pass
-    
-    elif model_name == "exaone-2.4b":
-        model_path = f"/home/shared/RAG/model/{model_name}"
-
-        model = AutoModelForCausalLM.from_pretrained(
-            model_path,
-            device_map="auto",
-            torch_dtype=torch.bfloat16, 
-            trust_remote_code=True
-        ).eval()
-        tokenizer = AutoTokenizer.from_pretrained(model_path)
         
     return model, tokenizer
