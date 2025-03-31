@@ -28,14 +28,8 @@ import gc
 import multiprocessing as mp
 import os
 import torch
-
-# from accelerate import init_empty_weights
-from transformers import (AutoConfig, AutoTokenizer, AutoModelForCausalLM, )
-
-# from packaging import version
-
-
-
+from transformers import AutoConfig, AutoTokenizer, AutoModelForCausalLM
+from tqdm import tqdm
 
 ######
 import argparse
@@ -65,7 +59,7 @@ def retrieve_document(state: GraphState) -> GraphState:
     return {**state, "context": retrieved_docs}
 
 # 답변 생성 노드
-def llm_answer(state: GraphState, model, tokenizer) -> GraphState:
+def llm_answer(state: GraphState, model, tokenizer, input_length) -> GraphState:
 
     # print(f"***** model.config.max_position_embeddings: {model.config.max_position_embeddings}")
     # 질문을 상태에서 가져옵니다.
@@ -75,8 +69,8 @@ def llm_answer(state: GraphState, model, tokenizer) -> GraphState:
     context = state["context"]
     # chat_history = messages_to_history(state["messages"])
 
-    print("# 검색된 문서를 상태에서 가져옵니다.")
-    print(f"context= {context}")
+    # print("# 검색된 문서를 상태에서 가져옵니다.")
+    # print(f"context= {context}")
 
     input_text = "\n".join([
         # f"대화 기록: {chat_history}",
@@ -84,11 +78,18 @@ def llm_answer(state: GraphState, model, tokenizer) -> GraphState:
         f"질문: {latest_question}",
         "답변:"
     ])
-    inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=2048).to("cuda")
+
+    messages = [
+    {"role": "system", 
+    "content": "You are EXAONE model from LG AI Research, a helpful assistant."},
+    {"role": "user", "content": input_text}
+    ]
+    inputs = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt', tokenize=True, truncation=True, max_length=input_length).to("cuda")
+    # inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=2048).to("cuda")
     # inputs = tokenizer(input_text, return_tensors="pt")
 
     with torch.no_grad():
-        outputs = model.generate(**inputs, max_new_tokens=500)
+        outputs = model.generate(inputs, eos_token_id=tokenizer.eos_token_id, max_new_tokens=500)
 
     generated_answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
     answer_start_index = generated_answer.find("답변:") + len("답변:")
@@ -102,21 +103,20 @@ def llm_answer(state: GraphState, model, tokenizer) -> GraphState:
 
 
 
-def main(model_name: str):
+def main(args):
+    if args.model_name == "exaone-2.4b" or "exaone" :
+        model, tokenizer = load_model(args.model_name)
 
-    if model_name == "exaone" :
-        model, tokenizer = load_model(model_name)
-    # 모델과 토크나이저 로드
-    if model_name == "qwen":
-    # model, tokenizer = load_model(model_name)
-        model, tokenizer = get_ds_model()
+    # elif model_name == "qwen":
+    # # model, tokenizer = load_model(model_name)
+    #     model, tokenizer = get_ds_model()
 
     # 그래프 생성
     workflow = StateGraph(GraphState)
 
     # 노드 정의
     workflow.add_node("retrieve", retrieve_document)
-    workflow.add_node("llm_answer", lambda state: llm_answer(state, model, tokenizer))
+    workflow.add_node("llm_answer", lambda state: llm_answer(state, model, tokenizer, args.input_length))
     
     # 엣지 정의
     workflow.add_edge("retrieve", "llm_answer")  # 검색 -> 답변
@@ -132,7 +132,7 @@ def main(model_name: str):
     app = workflow.compile(checkpointer=memory)
 
     # 그래프 시각화
-    visualize_graph(app)
+    # visualize_graph(app)
 
     # config 설정(재귀 최대 횟수, thread_id)
     config = RunnableConfig(recursion_limit=20, configurable={"thread_id": random_uuid()})
@@ -146,11 +146,7 @@ def main(model_name: str):
     def format_choices(choices):
         return "\n".join([f"{i+1}. {choice}" for i, choice in enumerate(choices)])
 
-    for i, item in enumerate(data):
-
-        # if i > 3:
-        #     break
-
+    for i, item in tqdm(enumerate(data), total=len(data), desc='inference FEtest.json with RAG'):
         question = item["question"]
         choices = format_choices(item["choices"])
         actual_answer = item["answer"]
@@ -175,45 +171,42 @@ def main(model_name: str):
     
 
         # 그래프 실행
-        invoke_graph(app, inputs, config)
+        # invoke_graph(app, inputs, config)
 
         # 그래프를 스트리밍 출력
         # stream_graph(app, inputs, config)
 
-        outputs = app.get_state(config).values
+        # outputs = app.get_state(config).values
+        outputs = app.invoke(inputs, config=config)
 
-        print(f'Question: {outputs["question"]}')
-        print("===" * 20)
-        print(f'Answer:\n{outputs["answer"]}')
-        print(f'Context:\n{outputs["context"]}')
+        # print(f'Question: {outputs["question"]}')
+        # print("===" * 20)
+        # print(f'Answer:\n{outputs["answer"]}')
+        # print(f'Context:\n{outputs["context"]}')
         
         # generated_answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
         
         results.append({
             "question_choices": question,
             "actual_answer": actual_answer,
-            "generated_answer": outputs["answer"]
+            "generated_answer": outputs["answer"],
+            "context": outputs["context"]
         })
 
         del inputs, outputs
         gc.collect()
         torch.cuda.empty_cache()
-
         
     df = pd.DataFrame(results)
-    df.to_csv(f"results_fe_{model_name}.csv", index=False, encoding="utf-8-sig")
-
-
+    df.to_csv(f"results_fe_rag_{args.model_name}_{args.input_length}.csv", index=False, encoding="utf-8-sig")
 
     ##########################
 
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", default = "exaone", type=str, help="Name of the model to load.")
-    
+    parser.add_argument("--model_name", default = "exaone-2.4b", type=str, help="Name of the model to load")
+    parser.add_argument("--input_length", default = 2048, type=int, help="Model input length")
+
     args = parser.parse_args()
-    model_name = args.model_name
     
-    main(model_name)
+    main(args)
