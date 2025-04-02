@@ -1,0 +1,615 @@
+INPUT_LENGTH = 2048
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.02it/s]
+inference FEtest.json without RAG:   0%|          | 0/543 [00:00<?, ?it/s]inference FEtest.json without RAG:   0%|          | 1/543 [00:05<49:25,  5.47s/it]inference FEtest.json without RAG:   0%|          | 2/543 [00:06<28:16,  3.13s/it]inference FEtest.json without RAG:   1%|          | 3/543 [00:17<59:10,  6.58s/it]inference FEtest.json without RAG:   1%|          | 4/543 [00:21<49:44,  5.54s/it]inference FEtest.json without RAG:   1%|          | 5/543 [00:27<51:54,  5.79s/it]inference FEtest.json without RAG:   1%|          | 6/543 [00:33<51:09,  5.72s/it]inference FEtest.json without RAG:   1%|▏         | 7/543 [00:44<1:05:40,  7.35s/it]inference FEtest.json without RAG:   1%|▏         | 8/543 [00:46<52:49,  5.92s/it]  inference FEtest.json without RAG:   2%|▏         | 9/543 [00:50<45:44,  5.14s/it]inference FEtest.json without RAG:   2%|▏         | 10/543 [00:55<45:04,  5.07s/it]inference FEtest.json without RAG:   2%|▏         | 11/543 [01:01<48:44,  5.50s/it]inference FEtest.json without RAG:   2%|▏         | 12/543 [01:06<47:22,  5.35s/it]inference FEtest.json without RAG:   2%|▏         | 13/543 [01:14<54:10,  6.13s/it]inference FEtest.json without RAG:   3%|▎         | 14/543 [01:20<51:48,  5.88s/it]inference FEtest.json without RAG:   3%|▎         | 15/543 [01:28<57:31,  6.54s/it]inference FEtest.json without RAG:   3%|▎         | 16/543 [01:39<1:09:02,  7.86s/it]inference FEtest.json without RAG:   3%|▎         | 17/543 [01:46<1:08:09,  7.78s/it]inference FEtest.json without RAG:   3%|▎         | 18/543 [01:52<1:03:38,  7.27s/it]inference FEtest.json without RAG:   3%|▎         | 19/543 [01:57<57:13,  6.55s/it]  inference FEtest.json without RAG:   4%|▎         | 20/543 [02:04<56:56,  6.53s/it]inference FEtest.json without RAG:   4%|▍         | 21/543 [02:09<53:28,  6.15s/it]inference FEtest.json without RAG:   4%|▍         | 22/543 [02:18<1:00:13,  6.94s/it]inference FEtest.json without RAG:   4%|▍         | 23/543 [02:25<1:00:04,  6.93s/it]inference FEtest.json without RAG:   4%|▍         | 24/543 [02:29<54:49,  6.34s/it]  inference FEtest.json without RAG:   5%|▍         | 25/543 [02:34<49:51,  5.78s/it]inference FEtest.json without RAG:   5%|▍         | 26/543 [02:40<49:38,  5.76s/it]inference FEtest.json without RAG:   5%|▍         | 27/543 [02:47<53:31,  6.22s/it]inference FEtest.json without RAG:   5%|▌         | 28/543 [02:53<52:26,  6.11s/it]inference FEtest.json without RAG:   5%|▌         | 29/543 [02:57<48:13,  5.63s/it]inference FEtest.json without RAG:   6%|▌         | 30/543 [03:02<46:40,  5.46s/it]inference FEtest.json without RAG:   6%|▌         | 31/543 [03:10<52:57,  6.21s/it]inference FEtest.json without RAG:   6%|▌         | 32/543 [03:14<46:46,  5.49s/it]inference FEtest.json without RAG:   6%|▌         | 33/543 [03:22<53:43,  6.32s/it]inference FEtest.json without RAG:   6%|▋         | 34/543 [03:28<52:52,  6.23s/it]inference FEtest.json without RAG:   6%|▋         | 35/543 [03:35<54:29,  6.44s/it]inference FEtest.json without RAG:   7%|▋         | 36/543 [03:43<58:33,  6.93s/it]inference FEtest.json without RAG:   7%|▋         | 37/543 [03:49<56:04,  6.65s/it]inference FEtest.json without RAG:   7%|▋         | 38/543 [03:52<45:42,  5.43s/it]inference FEtest.json without RAG:   7%|▋         | 39/543 [03:55<40:07,  4.78s/it]inference FEtest.json without RAG:   7%|▋         | 40/543 [04:01<41:54,  5.00s/it]inference FEtest.json without RAG:   8%|▊         | 41/543 [04:05<40:12,  4.81s/it]inference FEtest.json without RAG:   8%|▊         | 42/543 [04:11<43:11,  5.17s/it]inference FEtest.json without RAG:   8%|▊         | 43/543 [04:14<37:41,  4.52s/it]inference FEtest.json without RAG:   8%|▊         | 44/543 [04:17<34:09,  4.11s/it]inference FEtest.json without RAG:   8%|▊         | 45/543 [04:21<34:02,  4.10s/it]inference FEtest.json without RAG:   8%|▊         | 46/543 [04:27<37:13,  4.49s/it]inference FEtest.json without RAG:   9%|▊         | 47/543 [04:33<40:16,  4.87s/it]inference FEtest.json without RAG:   9%|▉         | 48/543 [04:38<41:04,  4.98s/it]inference FEtest.json without RAG:   9%|▉         | 49/543 [04:44<44:10,  5.37s/it]inference FEtest.json without RAG:   9%|▉         | 50/543 [04:52<50:21,  6.13s/it]inference FEtest.json without RAG:   9%|▉         | 51/543 [04:55<43:39,  5.32s/it]inference FEtest.json without RAG:  10%|▉         | 52/543 [05:02<46:51,  5.73s/it]inference FEtest.json without RAG:  10%|▉         | 53/543 [05:07<44:57,  5.51s/it]inference FEtest.json without RAG:  10%|▉         | 54/543 [05:11<41:59,  5.15s/it]inference FEtest.json without RAG:  10%|█         | 55/543 [05:13<33:50,  4.16s/it]inference FEtest.json without RAG:  10%|█         | 56/543 [05:16<29:32,  3.64s/it]inference FEtest.json without RAG:  10%|█         | 57/543 [05:21<34:31,  4.26s/it]inference FEtest.json without RAG:  11%|█         | 58/543 [05:23<29:13,  3.61s/it]inference FEtest.json without RAG:  11%|█         | 59/543 [05:28<32:25,  4.02s/it]inference FEtest.json without RAG:  11%|█         | 60/543 [05:33<34:51,  4.33s/it]inference FEtest.json without RAG:  11%|█         | 61/543 [05:38<36:13,  4.51s/it]inference FEtest.json without RAG:  11%|█▏        | 62/543 [05:42<35:01,  4.37s/it]inference FEtest.json without RAG:  12%|█▏        | 63/543 [05:47<35:46,  4.47s/it]inference FEtest.json without RAG:  12%|█▏        | 64/543 [05:54<41:49,  5.24s/it]inference FEtest.json without RAG:  12%|█▏        | 65/543 [05:59<40:52,  5.13s/it]inference FEtest.json without RAG:  12%|█▏        | 66/543 [06:04<40:41,  5.12s/it]inference FEtest.json without RAG:  12%|█▏        | 67/543 [06:05<30:32,  3.85s/it]inference FEtest.json without RAG:  13%|█▎        | 68/543 [06:13<39:16,  4.96s/it]inference FEtest.json without RAG:  13%|█▎        | 69/543 [06:18<39:10,  4.96s/it]inference FEtest.json without RAG:  13%|█▎        | 70/543 [06:19<31:19,  3.97s/it]inference FEtest.json without RAG:  13%|█▎        | 71/543 [06:23<30:25,  3.87s/it]inference FEtest.json without RAG:  13%|█▎        | 72/543 [06:27<30:23,  3.87s/it]inference FEtest.json without RAG:  13%|█▎        | 73/543 [06:32<32:39,  4.17s/it]inference FEtest.json without RAG:  14%|█▎        | 74/543 [06:37<35:31,  4.54s/it]inference FEtest.json without RAG:  14%|█▍        | 75/543 [06:42<35:54,  4.60s/it]inference FEtest.json without RAG:  14%|█▍        | 76/543 [06:47<37:08,  4.77s/it]inference FEtest.json without RAG:  14%|█▍        | 77/543 [06:52<38:19,  4.93s/it]inference FEtest.json without RAG:  14%|█▍        | 78/543 [06:56<34:31,  4.45s/it]inference FEtest.json without RAG:  15%|█▍        | 79/543 [07:01<36:26,  4.71s/it]inference FEtest.json without RAG:  15%|█▍        | 80/543 [07:09<43:48,  5.68s/it]inference FEtest.json without RAG:  15%|█▍        | 81/543 [07:16<46:25,  6.03s/it]inference FEtest.json without RAG:  15%|█▌        | 82/543 [07:20<42:35,  5.54s/it]inference FEtest.json without RAG:  15%|█▌        | 83/543 [07:23<35:32,  4.64s/it]inference FEtest.json without RAG:  15%|█▌        | 84/543 [07:28<38:14,  5.00s/it]inference FEtest.json without RAG:  16%|█▌        | 85/543 [07:34<40:04,  5.25s/it]inference FEtest.json without RAG:  16%|█▌        | 86/543 [07:44<49:23,  6.48s/it]inference FEtest.json without RAG:  16%|█▌        | 87/543 [07:49<45:49,  6.03s/it]inference FEtest.json without RAG:  16%|█▌        | 88/543 [07:57<51:44,  6.82s/it]inference FEtest.json without RAG:  16%|█▋        | 89/543 [08:05<53:57,  7.13s/it]inference FEtest.json without RAG:  17%|█▋        | 90/543 [08:13<56:03,  7.42s/it]inference FEtest.json without RAG:  17%|█▋        | 91/543 [08:20<53:37,  7.12s/it]inference FEtest.json without RAG:  17%|█▋        | 92/543 [08:25<50:35,  6.73s/it]inference FEtest.json without RAG:  17%|█▋        | 93/543 [08:31<48:19,  6.44s/it]inference FEtest.json without RAG:  17%|█▋        | 94/543 [08:36<43:40,  5.84s/it]inference FEtest.json without RAG:  17%|█▋        | 95/543 [08:43<46:36,  6.24s/it]inference FEtest.json without RAG:  18%|█▊        | 96/543 [08:50<47:47,  6.41s/it]inference FEtest.json without RAG:  18%|█▊        | 97/543 [08:57<48:40,  6.55s/it]inference FEtest.json without RAG:  18%|█▊        | 98/543 [09:01<43:34,  5.88s/it]inference FEtest.json without RAG:  18%|█▊        | 99/543 [09:07<43:27,  5.87s/it]inference FEtest.json without RAG:  18%|█▊        | 100/543 [09:10<36:57,  5.01s/it]inference FEtest.json without RAG:  19%|█▊        | 101/543 [09:17<42:44,  5.80s/it]inference FEtest.json without RAG:  19%|█▉        | 102/543 [09:28<52:55,  7.20s/it]inference FEtest.json without RAG:  19%|█▉        | 103/543 [09:32<46:08,  6.29s/it]inference FEtest.json without RAG:  19%|█▉        | 104/543 [09:41<52:13,  7.14s/it]inference FEtest.json without RAG:  19%|█▉        | 105/543 [09:48<51:17,  7.03s/it]inference FEtest.json without RAG:  20%|█▉        | 106/543 [09:54<48:13,  6.62s/it]inference FEtest.json without RAG:  20%|█▉        | 107/543 [10:04<56:24,  7.76s/it]inference FEtest.json without RAG:  20%|█▉        | 108/543 [10:12<56:09,  7.75s/it]inference FEtest.json without RAG:  20%|██        | 109/543 [10:19<54:28,  7.53s/it]inference FEtest.json without RAG:  20%|██        | 110/543 [10:25<52:09,  7.23s/it]inference FEtest.json without RAG:  20%|██        | 111/543 [10:32<51:07,  7.10s/it]inference FEtest.json without RAG:  21%|██        | 112/543 [10:35<41:35,  5.79s/it]inference FEtest.json without RAG:  21%|██        | 113/543 [10:40<40:43,  5.68s/it]inference FEtest.json without RAG:  21%|██        | 114/543 [10:44<37:15,  5.21s/it]inference FEtest.json without RAG:  21%|██        | 115/543 [10:52<41:52,  5.87s/it]inference FEtest.json without RAG:  21%|██▏       | 116/543 [10:59<45:26,  6.39s/it]inference FEtest.json without RAG:  22%|██▏       | 117/543 [11:06<45:09,  6.36s/it]inference FEtest.json without RAG:  22%|██▏       | 118/543 [11:15<50:37,  7.15s/it]inference FEtest.json without RAG:  22%|██▏       | 119/543 [11:22<50:42,  7.18s/it]inference FEtest.json without RAG:  22%|██▏       | 120/543 [11:27<46:14,  6.56s/it]inference FEtest.json without RAG:  22%|██▏       | 121/543 [11:36<50:21,  7.16s/it]inference FEtest.json without RAG:  22%|██▏       | 122/543 [11:44<53:30,  7.62s/it]inference FEtest.json without RAG:  23%|██▎       | 123/543 [11:49<46:51,  6.69s/it]inference FEtest.json without RAG:  23%|██▎       | 124/543 [11:51<37:02,  5.31s/it]inference FEtest.json without RAG:  23%|██▎       | 125/543 [11:55<34:19,  4.93s/it]inference FEtest.json without RAG:  23%|██▎       | 126/543 [12:00<35:44,  5.14s/it]inference FEtest.json without RAG:  23%|██▎       | 127/543 [12:02<28:17,  4.08s/it]inference FEtest.json without RAG:  24%|██▎       | 128/543 [12:07<30:33,  4.42s/it]inference FEtest.json without RAG:  24%|██▍       | 129/543 [12:10<27:24,  3.97s/it]inference FEtest.json without RAG:  24%|██▍       | 130/543 [12:15<28:59,  4.21s/it]inference FEtest.json without RAG:  24%|██▍       | 131/543 [12:22<34:34,  5.04s/it]inference FEtest.json without RAG:  24%|██▍       | 132/543 [12:26<32:50,  4.80s/it]inference FEtest.json without RAG:  24%|██▍       | 133/543 [12:32<34:40,  5.08s/it]inference FEtest.json without RAG:  25%|██▍       | 134/543 [12:35<30:47,  4.52s/it]inference FEtest.json without RAG:  25%|██▍       | 135/543 [12:41<32:47,  4.82s/it]inference FEtest.json without RAG:  25%|██▌       | 136/543 [12:44<28:51,  4.25s/it]inference FEtest.json without RAG:  25%|██▌       | 137/543 [12:50<33:00,  4.88s/it]inference FEtest.json without RAG:  25%|██▌       | 138/543 [12:59<40:40,  6.03s/it]inference FEtest.json without RAG:  26%|██▌       | 139/543 [13:06<43:44,  6.50s/it]inference FEtest.json without RAG:  26%|██▌       | 140/543 [13:12<42:55,  6.39s/it]inference FEtest.json without RAG:  26%|██▌       | 141/543 [13:22<48:53,  7.30s/it]inference FEtest.json without RAG:  26%|██▌       | 142/543 [13:27<45:31,  6.81s/it]inference FEtest.json without RAG:  26%|██▋       | 143/543 [13:37<49:55,  7.49s/it]inference FEtest.json without RAG:  27%|██▋       | 144/543 [13:40<41:52,  6.30s/it]inference FEtest.json without RAG:  27%|██▋       | 145/543 [13:47<43:42,  6.59s/it]inference FEtest.json without RAG:  27%|██▋       | 146/543 [13:54<44:42,  6.76s/it]inference FEtest.json without RAG:  27%|██▋       | 147/543 [13:58<37:27,  5.68s/it]inference FEtest.json without RAG:  27%|██▋       | 148/543 [14:01<33:22,  5.07s/it]inference FEtest.json without RAG:  27%|██▋       | 149/543 [14:07<34:28,  5.25s/it]inference FEtest.json without RAG:  28%|██▊       | 150/543 [14:14<37:05,  5.66s/it]inference FEtest.json without RAG:  28%|██▊       | 151/543 [14:18<34:33,  5.29s/it]inference FEtest.json without RAG:  28%|██▊       | 152/543 [14:22<32:12,  4.94s/it]inference FEtest.json without RAG:  28%|██▊       | 153/543 [14:27<32:26,  4.99s/it]inference FEtest.json without RAG:  28%|██▊       | 154/543 [14:31<29:13,  4.51s/it]inference FEtest.json without RAG:  29%|██▊       | 155/543 [14:34<27:43,  4.29s/it]inference FEtest.json without RAG:  29%|██▊       | 156/543 [14:39<28:53,  4.48s/it]inference FEtest.json without RAG:  29%|██▉       | 157/543 [14:44<29:06,  4.52s/it]inference FEtest.json without RAG:  29%|██▉       | 158/543 [14:52<36:01,  5.61s/it]inference FEtest.json without RAG:  29%|██▉       | 159/543 [14:55<30:17,  4.73s/it]inference FEtest.json without RAG:  29%|██▉       | 160/543 [15:00<31:10,  4.88s/it]inference FEtest.json without RAG:  30%|██▉       | 161/543 [15:02<26:27,  4.16s/it]inference FEtest.json without RAG:  30%|██▉       | 162/543 [15:05<22:51,  3.60s/it]inference FEtest.json without RAG:  30%|███       | 163/543 [15:09<23:53,  3.77s/it]inference FEtest.json without RAG:  30%|███       | 164/543 [15:15<27:55,  4.42s/it]inference FEtest.json without RAG:  30%|███       | 165/543 [15:21<31:40,  5.03s/it]inference FEtest.json without RAG:  31%|███       | 166/543 [15:27<32:19,  5.15s/it]inference FEtest.json without RAG:  31%|███       | 167/543 [15:34<36:38,  5.85s/it]inference FEtest.json without RAG:  31%|███       | 168/543 [15:38<33:26,  5.35s/it]inference FEtest.json without RAG:  31%|███       | 169/543 [15:46<37:19,  5.99s/it]inference FEtest.json without RAG:  31%|███▏      | 170/543 [15:52<36:33,  5.88s/it]inference FEtest.json without RAG:  31%|███▏      | 171/543 [15:58<37:21,  6.03s/it]inference FEtest.json without RAG:  32%|███▏      | 172/543 [16:04<37:01,  5.99s/it]inference FEtest.json without RAG:  32%|███▏      | 173/543 [16:09<35:07,  5.70s/it]inference FEtest.json without RAG:  32%|███▏      | 174/543 [16:11<28:09,  4.58s/it]inference FEtest.json without RAG:  32%|███▏      | 175/543 [16:13<24:11,  3.94s/it]inference FEtest.json without RAG:  32%|███▏      | 176/543 [16:17<23:08,  3.78s/it]inference FEtest.json without RAG:  33%|███▎      | 177/543 [16:23<27:24,  4.49s/it]inference FEtest.json without RAG:  33%|███▎      | 178/543 [16:26<25:30,  4.19s/it]inference FEtest.json without RAG:  33%|███▎      | 179/543 [16:28<20:55,  3.45s/it]inference FEtest.json without RAG:  33%|███▎      | 180/543 [16:31<19:07,  3.16s/it]inference FEtest.json without RAG:  33%|███▎      | 181/543 [16:35<20:48,  3.45s/it]inference FEtest.json without RAG:  34%|███▎      | 182/543 [16:39<22:08,  3.68s/it]inference FEtest.json without RAG:  34%|███▎      | 183/543 [16:43<23:42,  3.95s/it]inference FEtest.json without RAG:  34%|███▍      | 184/543 [16:48<24:16,  4.06s/it]inference FEtest.json without RAG:  34%|███▍      | 185/543 [16:53<25:52,  4.34s/it]inference FEtest.json without RAG:  34%|███▍      | 186/543 [16:56<23:59,  4.03s/it]inference FEtest.json without RAG:  34%|███▍      | 187/543 [17:01<26:11,  4.42s/it]inference FEtest.json without RAG:  35%|███▍      | 188/543 [17:06<26:47,  4.53s/it]inference FEtest.json without RAG:  35%|███▍      | 189/543 [17:10<26:09,  4.43s/it]inference FEtest.json without RAG:  35%|███▍      | 190/543 [17:16<28:08,  4.78s/it]inference FEtest.json without RAG:  35%|███▌      | 191/543 [17:20<27:35,  4.70s/it]inference FEtest.json without RAG:  35%|███▌      | 192/543 [17:25<27:22,  4.68s/it]inference FEtest.json without RAG:  36%|███▌      | 193/543 [17:30<27:10,  4.66s/it]inference FEtest.json without RAG:  36%|███▌      | 194/543 [17:35<28:43,  4.94s/it]inference FEtest.json without RAG:  36%|███▌      | 195/543 [17:38<25:11,  4.34s/it]inference FEtest.json without RAG:  36%|███▌      | 196/543 [17:47<32:59,  5.71s/it]inference FEtest.json without RAG:  36%|███▋      | 197/543 [17:57<39:22,  6.83s/it]inference FEtest.json without RAG:  36%|███▋      | 198/543 [18:01<34:46,  6.05s/it]inference FEtest.json without RAG:  37%|███▋      | 199/543 [18:08<35:54,  6.26s/it]inference FEtest.json without RAG:  37%|███▋      | 200/543 [18:16<40:16,  7.04s/it]inference FEtest.json without RAG:  37%|███▋      | 201/543 [18:22<37:56,  6.66s/it]inference FEtest.json without RAG:  37%|███▋      | 202/543 [18:25<31:59,  5.63s/it]inference FEtest.json without RAG:  37%|███▋      | 203/543 [18:34<36:57,  6.52s/it]inference FEtest.json without RAG:  38%|███▊      | 204/543 [18:40<36:20,  6.43s/it]inference FEtest.json without RAG:  38%|███▊      | 205/543 [18:47<36:02,  6.40s/it]inference FEtest.json without RAG:  38%|███▊      | 206/543 [18:51<32:27,  5.78s/it]inference FEtest.json without RAG:  38%|███▊      | 207/543 [18:56<31:49,  5.68s/it]inference FEtest.json without RAG:  38%|███▊      | 208/543 [19:04<34:59,  6.27s/it]inference FEtest.json without RAG:  38%|███▊      | 209/543 [19:07<30:05,  5.40s/it]inference FEtest.json without RAG:  39%|███▊      | 210/543 [19:16<35:16,  6.35s/it]inference FEtest.json without RAG:  39%|███▉      | 211/543 [19:19<30:27,  5.51s/it]inference FEtest.json without RAG:  39%|███▉      | 212/543 [19:26<32:07,  5.82s/it]inference FEtest.json without RAG:  39%|███▉      | 213/543 [19:33<34:24,  6.26s/it]inference FEtest.json without RAG:  39%|███▉      | 214/543 [19:41<36:54,  6.73s/it]inference FEtest.json without RAG:  40%|███▉      | 215/543 [19:44<31:01,  5.68s/it]inference FEtest.json without RAG:  40%|███▉      | 216/543 [19:51<32:04,  5.89s/it]inference FEtest.json without RAG:  40%|███▉      | 217/543 [19:55<29:39,  5.46s/it]inference FEtest.json without RAG:  40%|████      | 218/543 [20:00<28:41,  5.30s/it]inference FEtest.json without RAG:  40%|████      | 219/543 [20:06<28:46,  5.33s/it]inference FEtest.json without RAG:  41%|████      | 220/543 [20:09<24:55,  4.63s/it]inference FEtest.json without RAG:  41%|████      | 221/543 [20:14<26:04,  4.86s/it]inference FEtest.json without RAG:  41%|████      | 222/543 [20:20<27:33,  5.15s/it]inference FEtest.json without RAG:  41%|████      | 223/543 [20:23<24:38,  4.62s/it]inference FEtest.json without RAG:  41%|████▏     | 224/543 [20:29<26:27,  4.98s/it]inference FEtest.json without RAG:  41%|████▏     | 225/543 [20:30<20:42,  3.91s/it]inference FEtest.json without RAG:  42%|████▏     | 226/543 [20:37<25:40,  4.86s/it]inference FEtest.json without RAG:  42%|████▏     | 227/543 [20:42<25:35,  4.86s/it]inference FEtest.json without RAG:  42%|████▏     | 228/543 [20:46<23:13,  4.42s/it]inference FEtest.json without RAG:  42%|████▏     | 229/543 [20:53<26:56,  5.15s/it]inference FEtest.json without RAG:  42%|████▏     | 230/543 [21:00<31:03,  5.95s/it]inference FEtest.json without RAG:  43%|████▎     | 231/543 [21:07<32:17,  6.21s/it]inference FEtest.json without RAG:  43%|████▎     | 232/543 [21:15<35:19,  6.82s/it]inference FEtest.json without RAG:  43%|████▎     | 233/543 [21:24<38:20,  7.42s/it]inference FEtest.json without RAG:  43%|████▎     | 234/543 [21:33<39:34,  7.69s/it]inference FEtest.json without RAG:  43%|████▎     | 235/543 [21:42<41:38,  8.11s/it]inference FEtest.json without RAG:  43%|████▎     | 236/543 [21:44<32:17,  6.31s/it]inference FEtest.json without RAG:  44%|████▎     | 237/543 [21:47<27:31,  5.40s/it]inference FEtest.json without RAG:  44%|████▍     | 238/543 [21:49<22:28,  4.42s/it]inference FEtest.json without RAG:  44%|████▍     | 239/543 [21:52<20:26,  4.04s/it]inference FEtest.json without RAG:  44%|████▍     | 240/543 [21:58<22:16,  4.41s/it]inference FEtest.json without RAG:  44%|████▍     | 241/543 [22:02<22:08,  4.40s/it]inference FEtest.json without RAG:  45%|████▍     | 242/543 [22:08<25:00,  4.98s/it]inference FEtest.json without RAG:  45%|████▍     | 243/543 [22:12<22:36,  4.52s/it]inference FEtest.json without RAG:  45%|████▍     | 244/543 [22:16<21:37,  4.34s/it]inference FEtest.json without RAG:  45%|████▌     | 245/543 [22:21<23:15,  4.68s/it]inference FEtest.json without RAG:  45%|████▌     | 246/543 [22:29<27:31,  5.56s/it]inference FEtest.json without RAG:  45%|████▌     | 247/543 [22:35<28:35,  5.80s/it]inference FEtest.json without RAG:  46%|████▌     | 248/543 [22:40<26:37,  5.41s/it]inference FEtest.json without RAG:  46%|████▌     | 249/543 [22:44<24:31,  5.00s/it]inference FEtest.json without RAG:  46%|████▌     | 250/543 [22:48<23:02,  4.72s/it]inference FEtest.json without RAG:  46%|████▌     | 251/543 [22:51<20:43,  4.26s/it]inference FEtest.json without RAG:  46%|████▋     | 252/543 [22:54<19:19,  3.98s/it]inference FEtest.json without RAG:  47%|████▋     | 253/543 [23:03<26:12,  5.42s/it]inference FEtest.json without RAG:  47%|████▋     | 254/543 [23:09<27:17,  5.67s/it]inference FEtest.json without RAG:  47%|████▋     | 255/543 [23:15<27:11,  5.66s/it]inference FEtest.json without RAG:  47%|████▋     | 256/543 [23:19<25:19,  5.29s/it]inference FEtest.json without RAG:  47%|████▋     | 257/543 [23:28<29:44,  6.24s/it]inference FEtest.json without RAG:  48%|████▊     | 258/543 [23:33<28:14,  5.95s/it]inference FEtest.json without RAG:  48%|████▊     | 259/543 [23:37<25:30,  5.39s/it]inference FEtest.json without RAG:  48%|████▊     | 260/543 [23:47<31:35,  6.70s/it]inference FEtest.json without RAG:  48%|████▊     | 261/543 [23:52<28:34,  6.08s/it]inference FEtest.json without RAG:  48%|████▊     | 262/543 [24:02<34:28,  7.36s/it]inference FEtest.json without RAG:  48%|████▊     | 263/543 [24:09<34:18,  7.35s/it]inference FEtest.json without RAG:  49%|████▊     | 264/543 [24:18<36:11,  7.78s/it]inference FEtest.json without RAG:  49%|████▉     | 265/543 [24:25<34:46,  7.50s/it]inference FEtest.json without RAG:  49%|████▉     | 266/543 [24:35<38:32,  8.35s/it]inference FEtest.json without RAG:  49%|████▉     | 267/543 [24:41<34:48,  7.57s/it]inference FEtest.json without RAG:  49%|████▉     | 268/543 [24:50<36:31,  7.97s/it]inference FEtest.json without RAG:  50%|████▉     | 269/543 [25:00<39:37,  8.68s/it]inference FEtest.json without RAG:  50%|████▉     | 270/543 [25:08<38:13,  8.40s/it]inference FEtest.json without RAG:  50%|████▉     | 271/543 [25:13<33:46,  7.45s/it]inference FEtest.json without RAG:  50%|█████     | 272/543 [25:18<29:48,  6.60s/it]inference FEtest.json without RAG:  50%|█████     | 273/543 [25:21<24:38,  5.47s/it]inference FEtest.json without RAG:  50%|█████     | 274/543 [25:28<27:39,  6.17s/it]inference FEtest.json without RAG:  51%|█████     | 275/543 [25:33<25:26,  5.69s/it]inference FEtest.json without RAG:  51%|█████     | 276/543 [25:43<31:14,  7.02s/it]inference FEtest.json without RAG:  51%|█████     | 277/543 [25:50<30:23,  6.85s/it]inference FEtest.json without RAG:  51%|█████     | 278/543 [25:52<24:36,  5.57s/it]inference FEtest.json without RAG:  51%|█████▏    | 279/543 [26:00<26:55,  6.12s/it]inference FEtest.json without RAG:  52%|█████▏    | 280/543 [26:03<23:30,  5.36s/it]inference FEtest.json without RAG:  52%|█████▏    | 281/543 [26:13<29:52,  6.84s/it]inference FEtest.json without RAG:  52%|█████▏    | 282/543 [26:19<27:36,  6.35s/it]inference FEtest.json without RAG:  52%|█████▏    | 283/543 [26:22<23:54,  5.52s/it]inference FEtest.json without RAG:  52%|█████▏    | 284/543 [26:30<26:41,  6.18s/it]inference FEtest.json without RAG:  52%|█████▏    | 285/543 [26:33<22:43,  5.29s/it]inference FEtest.json without RAG:  53%|█████▎    | 286/543 [26:43<29:01,  6.78s/it]inference FEtest.json without RAG:  53%|█████▎    | 287/543 [26:48<25:50,  6.06s/it]inference FEtest.json without RAG:  53%|█████▎    | 288/543 [26:54<26:31,  6.24s/it]inference FEtest.json without RAG:  53%|█████▎    | 289/543 [26:57<21:52,  5.17s/it]inference FEtest.json without RAG:  53%|█████▎    | 290/543 [27:02<20:58,  4.97s/it]inference FEtest.json without RAG:  54%|█████▎    | 291/543 [27:09<24:02,  5.72s/it]inference FEtest.json without RAG:  54%|█████▍    | 292/543 [27:13<21:47,  5.21s/it]inference FEtest.json without RAG:  54%|█████▍    | 293/543 [27:16<19:05,  4.58s/it]inference FEtest.json without RAG:  54%|█████▍    | 294/543 [27:21<19:13,  4.63s/it]inference FEtest.json without RAG:  54%|█████▍    | 295/543 [27:26<19:57,  4.83s/it]inference FEtest.json without RAG:  55%|█████▍    | 296/543 [27:33<22:14,  5.40s/it]inference FEtest.json without RAG:  55%|█████▍    | 297/543 [27:38<21:40,  5.28s/it]inference FEtest.json without RAG:  55%|█████▍    | 298/543 [27:43<20:58,  5.14s/it]inference FEtest.json without RAG:  55%|█████▌    | 299/543 [27:44<16:06,  3.96s/it]inference FEtest.json without RAG:  55%|█████▌    | 300/543 [27:49<16:50,  4.16s/it]inference FEtest.json without RAG:  55%|█████▌    | 301/543 [27:54<17:39,  4.38s/it]inference FEtest.json without RAG:  56%|█████▌    | 302/543 [27:57<16:44,  4.17s/it]inference FEtest.json without RAG:  56%|█████▌    | 303/543 [28:01<16:45,  4.19s/it]inference FEtest.json without RAG:  56%|█████▌    | 304/543 [28:06<17:26,  4.38s/it]inference FEtest.json without RAG:  56%|█████▌    | 305/543 [28:10<17:05,  4.31s/it]inference FEtest.json without RAG:  56%|█████▋    | 306/543 [28:15<16:57,  4.29s/it]inference FEtest.json without RAG:  57%|█████▋    | 307/543 [28:21<19:23,  4.93s/it]inference FEtest.json without RAG:  57%|█████▋    | 308/543 [28:25<17:44,  4.53s/it]inference FEtest.json without RAG:  57%|█████▋    | 309/543 [28:29<17:38,  4.53s/it]inference FEtest.json without RAG:  57%|█████▋    | 310/543 [28:34<17:56,  4.62s/it]inference FEtest.json without RAG:  57%|█████▋    | 311/543 [28:41<20:34,  5.32s/it]inference FEtest.json without RAG:  57%|█████▋    | 312/543 [28:46<20:16,  5.27s/it]inference FEtest.json without RAG:  58%|█████▊    | 313/543 [28:52<20:22,  5.32s/it]inference FEtest.json without RAG:  58%|█████▊    | 314/543 [28:55<18:34,  4.87s/it]inference FEtest.json without RAG:  58%|█████▊    | 315/543 [28:59<17:26,  4.59s/it]inference FEtest.json without RAG:  58%|█████▊    | 316/543 [29:03<16:22,  4.33s/it]inference FEtest.json without RAG:  58%|█████▊    | 317/543 [29:07<16:06,  4.28s/it]inference FEtest.json without RAG:  59%|█████▊    | 318/543 [29:17<21:40,  5.78s/it]inference FEtest.json without RAG:  59%|█████▊    | 319/543 [29:27<26:41,  7.15s/it]inference FEtest.json without RAG:  59%|█████▉    | 320/543 [29:31<23:33,  6.34s/it]inference FEtest.json without RAG:  59%|█████▉    | 321/543 [29:38<23:21,  6.31s/it]inference FEtest.json without RAG:  59%|█████▉    | 322/543 [29:42<21:43,  5.90s/it]inference FEtest.json without RAG:  59%|█████▉    | 323/543 [29:53<26:47,  7.31s/it]inference FEtest.json without RAG:  60%|█████▉    | 324/543 [30:02<28:46,  7.88s/it]inference FEtest.json without RAG:  60%|█████▉    | 325/543 [30:13<31:14,  8.60s/it]inference FEtest.json without RAG:  60%|██████    | 326/543 [30:21<30:59,  8.57s/it]inference FEtest.json without RAG:  60%|██████    | 327/543 [30:27<28:12,  7.83s/it]inference FEtest.json without RAG:  60%|██████    | 328/543 [30:34<26:45,  7.47s/it]inference FEtest.json without RAG:  61%|██████    | 329/543 [30:43<27:59,  7.85s/it]inference FEtest.json without RAG:  61%|██████    | 330/543 [30:49<26:43,  7.53s/it]inference FEtest.json without RAG:  61%|██████    | 331/543 [31:00<29:30,  8.35s/it]inference FEtest.json without RAG:  61%|██████    | 332/543 [31:03<24:25,  6.95s/it]inference FEtest.json without RAG:  61%|██████▏   | 333/543 [31:05<19:10,  5.48s/it]inference FEtest.json without RAG:  62%|██████▏   | 334/543 [31:14<22:18,  6.40s/it]inference FEtest.json without RAG:  62%|██████▏   | 335/543 [31:22<23:27,  6.77s/it]inference FEtest.json without RAG:  62%|██████▏   | 336/543 [31:32<26:59,  7.82s/it]inference FEtest.json without RAG:  62%|██████▏   | 337/543 [31:35<22:00,  6.41s/it]inference FEtest.json without RAG:  62%|██████▏   | 338/543 [31:41<21:48,  6.38s/it]inference FEtest.json without RAG:  62%|██████▏   | 339/543 [31:46<20:18,  5.98s/it]inference FEtest.json without RAG:  63%|██████▎   | 340/543 [31:51<19:18,  5.71s/it]inference FEtest.json without RAG:  63%|██████▎   | 341/543 [31:58<19:57,  5.93s/it]inference FEtest.json without RAG:  63%|██████▎   | 342/543 [32:08<24:06,  7.20s/it]inference FEtest.json without RAG:  63%|██████▎   | 343/543 [32:10<18:48,  5.64s/it]inference FEtest.json without RAG:  63%|██████▎   | 344/543 [32:12<15:19,  4.62s/it]inference FEtest.json without RAG:  64%|██████▎   | 345/543 [32:19<17:37,  5.34s/it]inference FEtest.json without RAG:  64%|██████▎   | 346/543 [32:23<15:41,  4.78s/it]inference FEtest.json without RAG:  64%|██████▍   | 347/543 [32:28<15:53,  4.87s/it]inference FEtest.json without RAG:  64%|██████▍   | 348/543 [32:33<16:14,  5.00s/it]inference FEtest.json without RAG:  64%|██████▍   | 349/543 [32:42<20:00,  6.19s/it]inference FEtest.json without RAG:  64%|██████▍   | 350/543 [32:45<16:36,  5.16s/it]inference FEtest.json without RAG:  65%|██████▍   | 351/543 [32:50<16:37,  5.19s/it]inference FEtest.json without RAG:  65%|██████▍   | 352/543 [33:00<20:42,  6.50s/it]inference FEtest.json without RAG:  65%|██████▌   | 353/543 [33:07<21:30,  6.79s/it]inference FEtest.json without RAG:  65%|██████▌   | 354/543 [33:12<19:55,  6.32s/it]inference FEtest.json without RAG:  65%|██████▌   | 355/543 [33:15<16:21,  5.22s/it]inference FEtest.json without RAG:  66%|██████▌   | 356/543 [33:19<14:51,  4.77s/it]inference FEtest.json without RAG:  66%|██████▌   | 357/543 [33:23<14:21,  4.63s/it]inference FEtest.json without RAG:  66%|██████▌   | 358/543 [33:33<19:36,  6.36s/it]inference FEtest.json without RAG:  66%|██████▌   | 359/543 [33:38<18:14,  5.95s/it]inference FEtest.json without RAG:  66%|██████▋   | 360/543 [33:42<16:16,  5.34s/it]inference FEtest.json without RAG:  66%|██████▋   | 361/543 [33:44<13:12,  4.36s/it]inference FEtest.json without RAG:  67%|██████▋   | 362/543 [33:54<18:01,  5.97s/it]inference FEtest.json without RAG:  67%|██████▋   | 363/543 [33:59<17:17,  5.77s/it]inference FEtest.json without RAG:  67%|██████▋   | 364/543 [34:02<14:45,  4.95s/it]inference FEtest.json without RAG:  67%|██████▋   | 365/543 [34:07<13:57,  4.71s/it]inference FEtest.json without RAG:  67%|██████▋   | 366/543 [34:17<18:44,  6.36s/it]inference FEtest.json without RAG:  68%|██████▊   | 367/543 [34:23<18:31,  6.32s/it]inference FEtest.json without RAG:  68%|██████▊   | 368/543 [34:29<18:36,  6.38s/it]inference FEtest.json without RAG:  68%|██████▊   | 369/543 [34:37<19:08,  6.60s/it]inference FEtest.json without RAG:  68%|██████▊   | 370/543 [34:38<14:35,  5.06s/it]inference FEtest.json without RAG:  68%|██████▊   | 371/543 [34:43<14:41,  5.13s/it]inference FEtest.json without RAG:  69%|██████▊   | 372/543 [34:47<13:41,  4.80s/it]inference FEtest.json without RAG:  69%|██████▊   | 373/543 [34:51<12:34,  4.44s/it]inference FEtest.json without RAG:  69%|██████▉   | 374/543 [34:56<12:46,  4.54s/it]inference FEtest.json without RAG:  69%|██████▉   | 375/543 [35:01<13:18,  4.75s/it]inference FEtest.json without RAG:  69%|██████▉   | 376/543 [35:08<14:49,  5.33s/it]inference FEtest.json without RAG:  69%|██████▉   | 377/543 [35:18<18:50,  6.81s/it]inference FEtest.json without RAG:  70%|██████▉   | 378/543 [35:28<21:37,  7.87s/it]inference FEtest.json without RAG:  70%|██████▉   | 379/543 [35:35<20:33,  7.52s/it]inference FEtest.json without RAG:  70%|██████▉   | 380/543 [35:39<17:30,  6.44s/it]inference FEtest.json without RAG:  70%|███████   | 381/543 [35:47<18:31,  6.86s/it]inference FEtest.json without RAG:  70%|███████   | 382/543 [35:53<17:30,  6.53s/it]inference FEtest.json without RAG:  71%|███████   | 383/543 [35:58<16:40,  6.26s/it]inference FEtest.json without RAG:  71%|███████   | 384/543 [36:03<15:40,  5.91s/it]inference FEtest.json without RAG:  71%|███████   | 385/543 [36:14<19:06,  7.25s/it]inference FEtest.json without RAG:  71%|███████   | 386/543 [36:20<18:37,  7.12s/it]inference FEtest.json without RAG:  71%|███████▏  | 387/543 [36:31<21:02,  8.09s/it]inference FEtest.json without RAG:  71%|███████▏  | 388/543 [36:35<17:50,  6.91s/it]inference FEtest.json without RAG:  72%|███████▏  | 389/543 [36:38<15:07,  5.89s/it]inference FEtest.json without RAG:  72%|███████▏  | 390/543 [36:47<17:19,  6.79s/it]inference FEtest.json without RAG:  72%|███████▏  | 391/543 [36:58<19:51,  7.84s/it]inference FEtest.json without RAG:  72%|███████▏  | 392/543 [37:06<19:47,  7.87s/it]inference FEtest.json without RAG:  72%|███████▏  | 393/543 [37:12<18:46,  7.51s/it]inference FEtest.json without RAG:  73%|███████▎  | 394/543 [37:14<14:06,  5.68s/it]inference FEtest.json without RAG:  73%|███████▎  | 395/543 [37:20<14:48,  6.01s/it]inference FEtest.json without RAG:  73%|███████▎  | 396/543 [37:25<13:24,  5.48s/it]inference FEtest.json without RAG:  73%|███████▎  | 397/543 [37:34<15:54,  6.54s/it]inference FEtest.json without RAG:  73%|███████▎  | 398/543 [37:38<14:07,  5.85s/it]inference FEtest.json without RAG:  73%|███████▎  | 399/543 [37:41<11:54,  4.96s/it]inference FEtest.json without RAG:  74%|███████▎  | 400/543 [37:45<10:55,  4.59s/it]inference FEtest.json without RAG:  74%|███████▍  | 401/543 [37:47<09:07,  3.86s/it]inference FEtest.json without RAG:  74%|███████▍  | 402/543 [37:52<10:18,  4.38s/it]inference FEtest.json without RAG:  74%|███████▍  | 403/543 [37:56<09:25,  4.04s/it]inference FEtest.json without RAG:  74%|███████▍  | 404/543 [37:58<08:08,  3.51s/it]inference FEtest.json without RAG:  75%|███████▍  | 405/543 [38:02<08:35,  3.74s/it]inference FEtest.json without RAG:  75%|███████▍  | 406/543 [38:08<10:08,  4.44s/it]inference FEtest.json without RAG:  75%|███████▍  | 407/543 [38:17<13:14,  5.85s/it]inference FEtest.json without RAG:  75%|███████▌  | 408/543 [38:25<14:43,  6.55s/it]inference FEtest.json without RAG:  75%|███████▌  | 409/543 [38:29<12:17,  5.51s/it]inference FEtest.json without RAG:  76%|███████▌  | 410/543 [38:37<14:16,  6.44s/it]inference FEtest.json without RAG:  76%|███████▌  | 411/543 [38:43<13:56,  6.34s/it]inference FEtest.json without RAG:  76%|███████▌  | 412/543 [38:52<15:06,  6.92s/it]inference FEtest.json without RAG:  76%|███████▌  | 413/543 [38:57<13:48,  6.37s/it]inference FEtest.json without RAG:  76%|███████▌  | 414/543 [39:01<12:33,  5.84s/it]inference FEtest.json without RAG:  76%|███████▋  | 415/543 [39:11<15:01,  7.04s/it]inference FEtest.json without RAG:  77%|███████▋  | 416/543 [39:15<12:51,  6.08s/it]inference FEtest.json without RAG:  77%|███████▋  | 417/543 [39:22<13:33,  6.45s/it]inference FEtest.json without RAG:  77%|███████▋  | 418/543 [39:28<12:55,  6.21s/it]inference FEtest.json without RAG:  77%|███████▋  | 419/543 [39:34<12:52,  6.23s/it]inference FEtest.json without RAG:  77%|███████▋  | 420/543 [39:42<14:04,  6.86s/it]inference FEtest.json without RAG:  78%|███████▊  | 421/543 [39:47<12:48,  6.30s/it]inference FEtest.json without RAG:  78%|███████▊  | 422/543 [39:53<12:21,  6.13s/it]inference FEtest.json without RAG:  78%|███████▊  | 423/543 [39:59<12:02,  6.02s/it]inference FEtest.json without RAG:  78%|███████▊  | 424/543 [40:03<10:42,  5.40s/it]inference FEtest.json without RAG:  78%|███████▊  | 425/543 [40:08<10:35,  5.39s/it]inference FEtest.json without RAG:  78%|███████▊  | 426/543 [40:15<11:15,  5.77s/it]inference FEtest.json without RAG:  79%|███████▊  | 427/543 [40:25<13:46,  7.12s/it]inference FEtest.json without RAG:  79%|███████▉  | 428/543 [40:30<12:33,  6.55s/it]inference FEtest.json without RAG:  79%|███████▉  | 429/543 [40:41<14:34,  7.67s/it]inference FEtest.json without RAG:  79%|███████▉  | 430/543 [40:46<12:54,  6.86s/it]inference FEtest.json without RAG:  79%|███████▉  | 431/543 [40:54<13:53,  7.44s/it]inference FEtest.json without RAG:  80%|███████▉  | 432/543 [40:58<11:41,  6.32s/it]inference FEtest.json without RAG:  80%|███████▉  | 433/543 [41:08<13:46,  7.52s/it]inference FEtest.json without RAG:  80%|███████▉  | 434/543 [41:13<12:03,  6.64s/it]inference FEtest.json without RAG:  80%|████████  | 435/543 [41:23<13:55,  7.74s/it]inference FEtest.json without RAG:  80%|████████  | 436/543 [41:29<12:40,  7.11s/it]inference FEtest.json without RAG:  80%|████████  | 437/543 [41:39<14:16,  8.08s/it]inference FEtest.json without RAG:  81%|████████  | 438/543 [41:41<10:45,  6.15s/it]inference FEtest.json without RAG:  81%|████████  | 439/543 [41:46<10:12,  5.89s/it]inference FEtest.json without RAG:  81%|████████  | 440/543 [41:57<12:22,  7.21s/it]inference FEtest.json without RAG:  81%|████████  | 441/543 [42:04<12:08,  7.14s/it]inference FEtest.json without RAG:  81%|████████▏ | 442/543 [42:08<10:54,  6.48s/it]inference FEtest.json without RAG:  82%|████████▏ | 443/543 [42:13<09:43,  5.83s/it]inference FEtest.json without RAG:  82%|████████▏ | 444/543 [42:23<11:49,  7.17s/it]inference FEtest.json without RAG:  82%|████████▏ | 445/543 [42:30<11:33,  7.08s/it]inference FEtest.json without RAG:  82%|████████▏ | 446/543 [42:37<11:16,  6.97s/it]inference FEtest.json without RAG:  82%|████████▏ | 447/543 [42:46<12:20,  7.72s/it]inference FEtest.json without RAG:  83%|████████▎ | 448/543 [42:50<10:35,  6.68s/it]inference FEtest.json without RAG:  83%|████████▎ | 449/543 [42:54<09:09,  5.84s/it]inference FEtest.json without RAG:  83%|████████▎ | 450/543 [42:58<08:01,  5.18s/it]inference FEtest.json without RAG:  83%|████████▎ | 451/543 [43:00<06:34,  4.28s/it]inference FEtest.json without RAG:  83%|████████▎ | 452/543 [43:09<08:31,  5.62s/it]inference FEtest.json without RAG:  83%|████████▎ | 453/543 [43:13<07:50,  5.22s/it]inference FEtest.json without RAG:  84%|████████▎ | 454/543 [43:19<07:55,  5.34s/it]inference FEtest.json without RAG:  84%|████████▍ | 455/543 [43:26<08:49,  6.02s/it]inference FEtest.json without RAG:  84%|████████▍ | 456/543 [43:30<07:39,  5.28s/it]inference FEtest.json without RAG:  84%|████████▍ | 457/543 [43:34<07:00,  4.89s/it]inference FEtest.json without RAG:  84%|████████▍ | 458/543 [43:35<05:28,  3.87s/it]inference FEtest.json without RAG:  85%|████████▍ | 459/543 [43:46<08:07,  5.80s/it]inference FEtest.json without RAG:  85%|████████▍ | 460/543 [43:51<07:40,  5.55s/it]inference FEtest.json without RAG:  85%|████████▍ | 461/543 [43:55<07:06,  5.21s/it]inference FEtest.json without RAG:  85%|████████▌ | 462/543 [43:59<06:38,  4.93s/it]inference FEtest.json without RAG:  85%|████████▌ | 463/543 [44:05<06:43,  5.05s/it]inference FEtest.json without RAG:  85%|████████▌ | 464/543 [44:13<07:53,  6.00s/it]inference FEtest.json without RAG:  86%|████████▌ | 465/543 [44:20<08:10,  6.28s/it]inference FEtest.json without RAG:  86%|████████▌ | 466/543 [44:25<07:28,  5.82s/it]inference FEtest.json without RAG:  86%|████████▌ | 467/543 [44:31<07:26,  5.88s/it]inference FEtest.json without RAG:  86%|████████▌ | 468/543 [44:36<06:59,  5.59s/it]inference FEtest.json without RAG:  86%|████████▋ | 469/543 [44:40<06:29,  5.27s/it]inference FEtest.json without RAG:  87%|████████▋ | 470/543 [44:49<07:41,  6.32s/it]inference FEtest.json without RAG:  87%|████████▋ | 471/543 [44:56<07:51,  6.55s/it]inference FEtest.json without RAG:  87%|████████▋ | 472/543 [45:02<07:39,  6.47s/it]inference FEtest.json without RAG:  87%|████████▋ | 473/543 [45:06<06:40,  5.73s/it]inference FEtest.json without RAG:  87%|████████▋ | 474/543 [45:16<08:08,  7.08s/it]inference FEtest.json without RAG:  87%|████████▋ | 475/543 [45:26<08:48,  7.78s/it]inference FEtest.json without RAG:  88%|████████▊ | 476/543 [45:33<08:21,  7.48s/it]inference FEtest.json without RAG:  88%|████████▊ | 477/543 [45:36<06:56,  6.31s/it]inference FEtest.json without RAG:  88%|████████▊ | 478/543 [45:41<06:18,  5.82s/it]inference FEtest.json without RAG:  88%|████████▊ | 479/543 [45:49<06:57,  6.52s/it]inference FEtest.json without RAG:  88%|████████▊ | 480/543 [45:54<06:22,  6.07s/it]inference FEtest.json without RAG:  89%|████████▊ | 481/543 [45:57<05:22,  5.20s/it]inference FEtest.json without RAG:  89%|████████▉ | 482/543 [46:02<05:12,  5.13s/it]inference FEtest.json without RAG:  89%|████████▉ | 483/543 [46:06<04:51,  4.86s/it]inference FEtest.json without RAG:  89%|████████▉ | 484/543 [46:12<04:58,  5.07s/it]inference FEtest.json without RAG:  89%|████████▉ | 485/543 [46:16<04:32,  4.70s/it]inference FEtest.json without RAG:  90%|████████▉ | 486/543 [46:26<06:03,  6.37s/it]inference FEtest.json without RAG:  90%|████████▉ | 487/543 [46:33<05:58,  6.40s/it]inference FEtest.json without RAG:  90%|████████▉ | 488/543 [46:38<05:40,  6.19s/it]inference FEtest.json without RAG:  90%|█████████ | 489/543 [46:43<05:15,  5.84s/it]inference FEtest.json without RAG:  90%|█████████ | 490/543 [46:49<05:09,  5.84s/it]inference FEtest.json without RAG:  90%|█████████ | 491/543 [46:57<05:36,  6.46s/it]inference FEtest.json without RAG:  91%|█████████ | 492/543 [47:02<04:59,  5.88s/it]inference FEtest.json without RAG:  91%|█████████ | 493/543 [47:10<05:25,  6.51s/it]inference FEtest.json without RAG:  91%|█████████ | 494/543 [47:14<04:47,  5.87s/it]inference FEtest.json without RAG:  91%|█████████ | 495/543 [47:24<05:45,  7.19s/it]inference FEtest.json without RAG:  91%|█████████▏| 496/543 [47:30<05:18,  6.78s/it]inference FEtest.json without RAG:  92%|█████████▏| 497/543 [47:35<04:45,  6.21s/it]inference FEtest.json without RAG:  92%|█████████▏| 498/543 [47:40<04:24,  5.88s/it]inference FEtest.json without RAG:  92%|█████████▏| 499/543 [47:50<05:10,  7.06s/it]inference FEtest.json without RAG:  92%|█████████▏| 500/543 [47:54<04:27,  6.21s/it]inference FEtest.json without RAG:  92%|█████████▏| 501/543 [48:04<05:12,  7.44s/it]inference FEtest.json without RAG:  92%|█████████▏| 502/543 [48:09<04:27,  6.52s/it]inference FEtest.json without RAG:  93%|█████████▎| 503/543 [48:13<03:55,  5.89s/it]inference FEtest.json without RAG:  93%|█████████▎| 504/543 [48:17<03:22,  5.19s/it]inference FEtest.json without RAG:  93%|█████████▎| 505/543 [48:23<03:26,  5.43s/it]inference FEtest.json without RAG:  93%|█████████▎| 506/543 [48:25<02:46,  4.51s/it]inference FEtest.json without RAG:  93%|█████████▎| 507/543 [48:31<03:02,  5.08s/it]inference FEtest.json without RAG:  94%|█████████▎| 508/543 [48:39<03:24,  5.84s/it]inference FEtest.json without RAG:  94%|█████████▎| 509/543 [48:45<03:17,  5.81s/it]inference FEtest.json without RAG:  94%|█████████▍| 510/543 [48:51<03:15,  5.93s/it]inference FEtest.json without RAG:  94%|█████████▍| 511/543 [48:55<02:55,  5.48s/it]inference FEtest.json without RAG:  94%|█████████▍| 512/543 [49:01<02:51,  5.54s/it]inference FEtest.json without RAG:  94%|█████████▍| 513/543 [49:05<02:31,  5.06s/it]inference FEtest.json without RAG:  95%|█████████▍| 514/543 [49:11<02:30,  5.19s/it]inference FEtest.json without RAG:  95%|█████████▍| 515/543 [49:14<02:10,  4.64s/it]inference FEtest.json without RAG:  95%|█████████▌| 516/543 [49:19<02:05,  4.66s/it]inference FEtest.json without RAG:  95%|█████████▌| 517/543 [49:26<02:25,  5.61s/it]inference FEtest.json without RAG:  95%|█████████▌| 518/543 [49:28<01:53,  4.52s/it]inference FEtest.json without RAG:  96%|█████████▌| 519/543 [49:37<02:17,  5.74s/it]inference FEtest.json without RAG:  96%|█████████▌| 520/543 [49:41<01:59,  5.18s/it]inference FEtest.json without RAG:  96%|█████████▌| 521/543 [49:48<02:05,  5.69s/it]inference FEtest.json without RAG:  96%|█████████▌| 522/543 [49:49<01:33,  4.45s/it]inference FEtest.json without RAG:  96%|█████████▋| 523/543 [49:55<01:36,  4.82s/it]inference FEtest.json without RAG:  97%|█████████▋| 524/543 [50:04<01:58,  6.21s/it]inference FEtest.json without RAG:  97%|█████████▋| 525/543 [50:09<01:44,  5.83s/it]inference FEtest.json without RAG:  97%|█████████▋| 526/543 [50:14<01:30,  5.33s/it]inference FEtest.json without RAG:  97%|█████████▋| 527/543 [50:22<01:40,  6.28s/it]inference FEtest.json without RAG:  97%|█████████▋| 528/543 [50:32<01:52,  7.48s/it]inference FEtest.json without RAG:  97%|█████████▋| 529/543 [50:38<01:35,  6.81s/it]inference FEtest.json without RAG:  98%|█████████▊| 530/543 [50:44<01:28,  6.79s/it]inference FEtest.json without RAG:  98%|█████████▊| 531/543 [50:49<01:13,  6.15s/it]inference FEtest.json without RAG:  98%|█████████▊| 532/543 [50:53<01:01,  5.64s/it]inference FEtest.json without RAG:  98%|█████████▊| 533/543 [50:58<00:53,  5.34s/it]inference FEtest.json without RAG:  98%|█████████▊| 534/543 [51:04<00:49,  5.50s/it]inference FEtest.json without RAG:  99%|█████████▊| 535/543 [51:09<00:42,  5.30s/it]inference FEtest.json without RAG:  99%|█████████▊| 536/543 [51:19<00:47,  6.79s/it]inference FEtest.json without RAG:  99%|█████████▉| 537/543 [51:25<00:38,  6.42s/it]inference FEtest.json without RAG:  99%|█████████▉| 538/543 [51:28<00:28,  5.63s/it]inference FEtest.json without RAG:  99%|█████████▉| 539/543 [51:34<00:22,  5.50s/it]inference FEtest.json without RAG:  99%|█████████▉| 540/543 [51:38<00:15,  5.25s/it]inference FEtest.json without RAG: 100%|█████████▉| 541/543 [51:44<00:10,  5.30s/it]inference FEtest.json without RAG: 100%|█████████▉| 542/543 [51:46<00:04,  4.39s/it]inference FEtest.json without RAG: 100%|██████████| 543/543 [51:50<00:00,  4.16s/it]inference FEtest.json without RAG: 100%|██████████| 543/543 [51:50<00:00,  5.73s/it]
+Processed: 불활성 가스에 해당하는 것은? (Time: 5.46 sec)
+Processed: 이산화탄소소화약제의 임계온도로 옳은 것은? (Time: 1.50 sec)
+Processed: 분말소화약제 중 A급, B급, C급 화재에 모두 사용할 수 있는 것은? (Time: 10.67 sec)
+Processed: 방화구획의 설치기준 중 스프링클러 기타 이와 유사한 자동식 소화설비를 설치한 10층 이하의 층은 몇 ㎡ 이내마다 구획하여야 하는가? (Time: 3.94 sec)
+Processed: 탄화칼슘 화재 시 물을 주수하였을 때 발생하는 가스로 옳은 것은? (Time: 6.23 sec)
+Processed: 이산화탄소의 질식 및 냉각 효과에 대한 설명 중 틀린 것은? (Time: 5.57 sec)
+Processed: 증기비중의 정의로 옳은 것은? (단, 분자·분모의 단위는 모두 g/mol이다.) (Time: 10.72 sec)
+Processed: 화재의 분류방법 중 유류화재를 나타낸 것은? (Time: 2.86 sec)
+Processed: 공기와 접촉되었을 때 위험도(H)가 가장 큰 것은? (Time: 3.41 sec)
+Processed: 제2류 위험물에 해당하지 않는 것은? (Time: 4.92 sec)
+Processed: 주요구조부가 내화구조로 된 건축물에서 거실 각 부분으로부터 하나의 직통계단에 이르는 보행거리는 피난자의 안전상 몇 m 이하이어야 하는가? (Time: 6.46 sec)
+Processed: 분말소화약제 분말입도의 소화성능에 관한 설명으로 옳은 것은? (Time: 5.02 sec)
+Processed: 마그네슘 화재에 주수하였을 때 물과의 반응으로 발생되는 가스는? (Time: 7.93 sec)
+Processed: 물질의 취급 또는 위험성에 대한 설명 중 틀린 것은? (Time: 5.28 sec)
+Processed: 화재에 관련된 국제적인 규정을 제정하는 단체는? (Time: 8.07 sec)
+Processed: 위험물안전관리법령상 위험물의 지정수량이 틀린 것은? (Time: 10.93 sec)
+Processed: 연면적이 1,000m² 이상인 목조건축물은 그 외벽 및 처마 밑의 연소할 우려가 있는 부분을 방화구조로 하여야 하는데, 연소 우려가 있는 부분의 기준으로 옳은 것은? (Time: 7.57 sec)
+Processed: 물의 기화열이 539.6cal/g인 것은 어떤 의미인가? (Time: 6.11 sec)
+Processed: 인화점이 40℃ 이하인 위험물을 저장·취급하는 장소에 설치하는 전기설비 중, 용기의 내부에 기체를 압입하여 압력을 유지하도록 함으로써 폭발성 가스가 침입하는 것을 방지하는 방폭 구조는? (Time: 4.87 sec)
+Processed: 화재하중에 대한 설명 중 틀린 것은? (Time: 6.48 sec)
+Processed: 아파트로 층수가 20층인 특정소방대상물에서 스프링클러설비를 하여야 하는 층수는? (단, 아파트는 신축인 경우) (Time: 5.25 sec)
+Processed: 1급 소방안전관리대상물이 아닌 것은? (Time: 8.77 sec)
+Processed: 다음 중 중급기술자의 학력ㆍ경력자에 대한 기준으로 옳은 것은? (2022년 12월 30일 개정 기준) (Time: 6.92 sec)
+Processed: 소방특별조사 결과에 따른 조치명령으로 손실을 입은 자는 누구와 손실보상을 협의하여야 하는가? (Time: 4.95 sec)
+Processed: 소방기본법령상 특수가연물의 저장 및 취급 기준 중, 발전용으로 저장하는 석탄ㆍ목탄류의 쌓는 부분 바닥면적은 (살수설비 또는 대형수동식소화기 설치 시) 몇 ㎡ 이하인가? (Time: 4.46 sec)
+Processed: 소방기본법상 명령권자가 소방본부장, 소방서장 또는 소방대장에게 있는 사항으로 옳은 것은? (Time: 5.72 sec)
+Processed: 경유 2,000ℓ, 중유 4,000ℓ, 등유 2,000ℓ를 저장하는 경우 위험물 지정수량의 배수는? (Time: 7.30 sec)
+Processed: 소방용수시설 중 소화전과 급수탑의 설치기준으로 틀린 것은? (Time: 5.84 sec)
+Processed: 특정소방대상물의 관계인이 소방안전관리자를 해임한 경우, 해임한 날부터 재선임 신고를 해야 하는 기간으로 옳은 것은? (Time: 4.51 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방안전관리자 업무가 아닌 것은? (Time: 5.06 sec)
+Processed: 문화재보호법의 규정에 의한 유형문화재 및 지정문화재의 경우, 제조소 등과의 수평거리가 몇 m 이상이어야 하는가? (Time: 7.95 sec)
+Processed: 소방시설 등에 대한 자체 점검을 하지 아니하거나 관리업자 등으로 하여금 정기적으로 점검하게 하지 아니한 자에 대한 벌칙 기준으로 옳은 것은? (Time: 3.82 sec)
+Processed: 소방본부 종합상황실 실장이 소방청의 종합상황실에 보고하여야 하는 화재 기준에 해당하지 않는 것은? (Time: 8.26 sec)
+Processed: 소방시설공사업법령상 상주공사감리 대상 기준(㉠, ㉡, ㉢)으로 옳은 것은? (Time: 6.02 sec)
+Processed: 소방특별조사위원회의 위원에 해당하지 않는 사람은? (Time: 6.91 sec)
+Processed: 제3류 위험물 중 금수성 물품에 적응성이 있는 소화약제는? (Time: 8.08 sec)
+Processed: 화재가 발생할 경우 인명 또는 재산 피해가 클 것으로 예상될 때 소방대상물의 개수·이전·제거, 사용금지 등의 조치를 명할 수 있는 자는? (Time: 5.99 sec)
+Processed: 소방본부장 또는 소방서장은 소방상 필요한 훈련 및 교육을 실시하고자 할 때 화재예방강화지구 안의 관계인에게 며칠 전까지 통보해야 하는가? (Time: 2.59 sec)
+Processed: 소방기본법상 화재 예방을 위하여 불을 사용할 때 지켜야 할 사항과 보일러, 난로 등 설비의 위치·구조·관리에 관한 사항은 무엇으로 정하는가? (Time: 3.25 sec)
+Processed: 위험물운송자 자격을 취득하지 아니한 자가 위험물 이송탱크저장소를 운전한 경우의 벌칙으로 옳은 것은? (Time: 5.52 sec)
+Processed: 경계전로의 누설전류를 자동적으로 검출하여 이를 누전경보기의 수신부에 보내는 장치는? (Time: 4.36 sec)
+Processed: 누전경보기의 5~10회로용 집합형 수신기 내부결선도 구성 요소가 아닌 것은? (Time: 6.03 sec)
+Processed: 비상콘센트설비 화재안전기준에서 정한 "저압"의 정의로 옳은 것은? (Time: 3.00 sec)
+Processed: 비상방송설비의 음향장치는 정격전압의 몇 % 전압에서도 음향을 발할 수 있어야 하는가? (Time: 3.14 sec)
+Processed: 자가발전설비 등을 비상콘센트설비의 비상전원으로 설치하여야 하는 특정소방대상물로 옳은 것은? (Time: 4.08 sec)
+Processed: 불꽃감지기의 설치기준으로 틀린 것은? (Time: 5.41 sec)
+Processed: 무선통신보조설비의 무선기기 접속단자 중 지상에 설치되는 접속단자는 보행거리 몇 m 이내마다 설치하여야 하는가? (Time: 5.75 sec)
+Processed: 정온식 감지선형 감지기에 대한 설명으로 옳은 것은? (Time: 5.23 sec)
+Processed: 축전지의 자기방전을 보충함과 동시에 상용 부하 공급은 충전기가 담당하고, 일시적인 대전류는 축전지가 부담하도록 하는 충전방식은? (Time: 6.27 sec)
+Processed: 단독경보형 감지기(연동식) 무선 기능에 대한 설명으로 옳은 것은? (Time: 7.91 sec)
+Processed: 정온식감지기 설치 시 공칭작동온도는 최고주위온도보다 최소 몇 ℃ 이상 높게 하여야 하는가? (Time: 3.44 sec)
+Processed: 무선통신보조설비의 누설동축케이블 설치기준으로 틀린 것은? (Time: 6.66 sec)
+Processed: 소화활동 시 안내방송에 사용되는 증폭기의 종류로 옳은 것은? (Time: 4.99 sec)
+Processed: 계단통로유도등은 각 층의 경사로 참 또는 계단참마다 설치하되, 한 층에 경사로 참 또는 계단참이 2곳 이상인 경우 몇 개마다 1개 이상을 설치하여야 하는가? (Time: 4.32 sec)
+Processed: 자동화재탐지설비의 수신기에서 각 회로별 종단에 설치되는 감지기로 접속되는 배선의 전압은, 감지기 정격전압의 몇 % 이상이 되어야 하는가? (Time: 1.85 sec)
+Processed: 비상벨설비 또는 자동식 사이렌설비는 그 설비에 대한 감시상태를 1시간 지속한 후 유효하게 10분 이상 경보를 발할 수 있는 축전지 설비(수신기에 내장 가능)를 설치하여야 한다. 여기서 감시상태 시간은? (Time: 2.42 sec)
+Processed: 자동화재속보설비의 설치기준으로 틀린 것은? (Time: 5.71 sec)
+Processed: 휴대용비상조명등은 바닥으로부터 어느 높이에 설치하여야 하는가? (Time: 2.10 sec)
+Processed: 자동화재탐지설비의 화재안전기준에서 사용하는 용어가 아닌 것은? (Time: 4.96 sec)
+Processed: 비상경보설비를 설치하여야 할 특정소방대상물로 옳은 것은? (지하구, 불연재료 창고, 위험물 저장처리시설 중 가스시설 제외) (Time: 5.05 sec)
+Processed: 소화원리에 대한 설명으로 틀린 것은? (Time: 4.93 sec)
+Processed: 위험물의 유별에 따른 분류가 잘못된 것은? (Time: 4.04 sec)
+Processed: 고층 건축물 내 연기거동 중 굴뚝효과에 영향을 미치는 요소가 아닌 것은? (Time: 4.71 sec)
+Processed: 제연설비의 화재안전기준상 예상제연구역에 공기가 유입되는 순간의 풍속은 몇 m/s 이하가 되도록 하여야 하는가? (Time: 7.03 sec)
+Processed: 화재의 정의로 옳은 것은? (Time: 4.88 sec)
+Processed: 물에 황산을 넣어 묽은 황산을 만들 때 발생되는 열은? (Time: 5.09 sec)
+Processed: 이산화탄소 소화약제의 임계온도는 약 몇 ℃인가? (Time: 0.89 sec)
+Processed: 상온ㆍ상압의 공기 중에서 탄화수소류의 가연물을 소화하기 위한 이산화탄소 소화약제 농도는 약 몇 %인가? (단, 탄화수소류는 산소농도가 10%일 때 소화된다고 가정) (Time: 7.55 sec)
+Processed: 과산화수소 위험물의 특성이 아닌 것은? (Time: 4.95 sec)
+Processed: 건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙상 스프링클러를 설치한 10층 이하의 층은 바닥면적 몇 m² 이내마다 방화구획을 구획하여야 하는가? (Time: 1.68 sec)
+Processed: 다음 중 분진 폭발의 위험성이 가장 낮은 것은? (Time: 3.62 sec)
+Processed: 백열전구가 발열하는 원인이 되는 열은? (Time: 3.88 sec)
+Processed: 동식물유류에서 "요오드값이 크다"라는 의미를 옳게 설명한 것은? (Time: 4.86 sec)
+Processed: 단백포 소화약제의 특징이 아닌 것은? (Time: 5.42 sec)
+Processed: 이산화탄소 소화약제의 주된 소화효과는? (Time: 4.74 sec)
+Processed: 전기불꽃, 아크 등이 발생하는 부분을 기름 속에 넣어 폭발을 방지하는 방폭구조는? (Time: 5.16 sec)
+Processed: 자연발화를 방지하는 방법이 아닌 것은? (Time: 5.31 sec)
+Processed: 소화약제의 형식승인 및 제품검사의 기술기준상 강화액 소화약제의 응고점은 몇 ℃ 이하이어야 하는가? (Time: 3.33 sec)
+Processed: 상온에서 무색의 기체로서 암모니아와 유사한 냄새를 가지는 물질은? (Time: 5.31 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 건축허가 등을 할 때 미리 소방본부장 또는 소방서장의 동의를 받아야 하는 건축물 등의 범위가 아닌 것은? (Time: 7.93 sec)
+Processed: 소방기본법령상 일반음식점에서 음식조리를 위해 불을 사용하는 설비를 설치하는 경우 지켜야 하는 사항으로 틀린 것은? (Time: 6.85 sec)
+Processed: 소방시설공사업법령상 소방시설업의 감독을 위하여 필요할 때 소방시설업자나 관계인에게 보고나 자료 제출을 명할 수 있는 사람이 아닌 것은? (Time: 4.41 sec)
+Processed: 화재가 발생할 우려가 높거나 화재가 발생하는 경우 피해가 클 것으로 예상되는 지역을 화재예방강화지구로 지정할 수 있는 자는? (Time: 2.52 sec)
+Processed: 소방시설공사업법령상 소방시설업에 대한 행정처분기준에서 1차 행정처분 시 등록취소에 해당하는 경우는? (Time: 5.85 sec)
+Processed: 소방시설공사업법령상 소방시설업자가 소방시설공사 등을 맡긴 특정소방대상물의 관계인에게 지체 없이 그 사실을 알려야 하는 경우가 아닌 것은? (Time: 5.83 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령에 따른 2급 소방안전관리대상물의 소방안전관리자 선임 기준으로 틀린 것은? (2023년 1월 3일 개정) (Time: 9.36 sec)
+Processed: 소방시설공사업법령상 소방시설공사가 설계도서 또는 화재안전기준에 적합하지 않을 때 가장 먼저 알려야 하는 대상은 누구인가? (Time: 4.97 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물의 수용인원 산정방법으로 옳은 것은? (Time: 8.68 sec)
+Processed: 위험물안전관리법령상 제조소등이 아닌 장소에서 지정수량 이상의 위험물을 취급하는 것에 대한 설명으로 틀린 것은? (Time: 7.84 sec)
+Processed: 소방시설공사업법령상 소방시설업 등록의 결격사유에 해당하지 않는 법인은? (Time: 8.11 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물의 소방시설 설치 면제기준 중 연결살수설비를 설치하지 않아도 되는 경우는? (Time: 6.41 sec)
+Processed: 소방시설공사업법령상 소방공사감리업을 등록한 자가 수행해야 할 업무가 아닌 것은? (Time: 5.82 sec)
+Processed: 소방기본법령상 소방업무의 응원에 관한 설명 중 틀린 것은? (Time: 5.77 sec)
+Processed: 소방기본법령상 이웃하는 시ㆍ도지사와 소방업무에 관하여 체결할 수 있는 상호응원협정 사항이 아닌 것은? (Time: 4.42 sec)
+Processed: 위험물안전관리법령상 옥내주유취급소에서 당해 사무소 등의 출입구 및 피난구와 그 통로ㆍ계단ㆍ출입구에 설치해야 하는 피난설비는? (Time: 7.19 sec)
+Processed: 위험물안전관리법령상 위험물 및 지정수량에 대한 기준 ( ) 안에 알맞은 것은?
+
+( 예: ㉠: ○○ , ㉡: ○○ ) (Time: 6.81 sec)
+Processed: 위험물안전관리법령상 제조소등의 관계인이 위험물안전관리자를 선임할 때 지켜야 할 기준 중 틀린 것은? (Time: 6.86 sec)
+Processed: 소방기본법령상 한국소방안전원의 업무가 아닌 것은? (Time: 4.31 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방시설의 종류에 대한 설명으로 옳은 것은? (Time: 5.87 sec)
+Processed: 비상콘센트설비의 성능인증 및 제품검사의 기술기준에 따라, 정격전압 150V 이하인 경우 절연된 충전부와 외함 간의 절연내력은 60Hz 교류전압 1000V를 가하여 몇 분간 견디어야 하는가? (Time: 2.98 sec)
+Processed: 누전경보기의 형식승인 및 제품검사의 기술기준에 따라 비호환성형 수신부는 신호입력회로에 공칭작동전류치의 42%에 해당하는 변류기의 설계출력전압을 가하는 경우 몇 초 이내에 작동하지 않아야 하는가? (Time: 7.66 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 감지기의 시설기준으로 옳은 것은? (Time: 10.46 sec)
+Processed: 누전경보기의 화재안전기준(NFSC 205)에 따라 경계전로의 누설전류를 자동 검출하여 이를 수신부로 보내는 것은? (Time: 4.17 sec)
+Processed: 비상방송설비의 화재안전기준(NFSC 202)에 따라 전원회로의 배선으로 사용할 수 없는 것은? (Time: 9.11 sec)
+Processed: 층수가 5층 이상이면서 연면적 3000m²를 초과하는 특정소방대상물의 2층에서 발화한 때, 비상방송설비 화재안전기준상 경보해야 할 층은? (Time: 6.77 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 감지기회로 도통시험을 위한 종단저항 설치기준으로 틀린 것은? (Time: 5.67 sec)
+Processed: 경종의 우수품질인증 기술기준에 따른 기능시험 내용 중 괄호 안에 들어갈 알맞은 것은?
+
+“정격전압의 ( ⓐ )% 전압 이하에서 작동하지 아니하고, ( ⓑ )% 전압에서 음향을 발해야 한다.” (Time: 10.42 sec)
+Processed: 「유통산업발전법」 제2조 제3호에 따른 대규모점포(지하상가, 지하역사 제외) 및 영화상영관에는 보행거리 몇 m 이내마다 휴대용비상조명등 3개 이상을 설치해야 하는가? (비상조명등 화재안전기준) (Time: 7.71 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 전화기기실, 통신기기실 등 훈소화재 우려가 있는 장소에 적응성이 없는 감지기는? (Time: 7.02 sec)
+Processed: 자동화재속보설비의 속보기 성능인증 및 제품검사의 기술기준 중 다음 ( ) 안에 들어갈 내용으로 옳은 것은?
+
+“( ⓐ )초 이내에 송수신 장애를 표시하고, ( ⓑ )회 이상 반복 시험 시에도 정상 작동하여야 한다.” (Time: 6.52 sec)
+Processed: 비상콘센트설비의 화재안전기준(NFSC 504)에서 전원회로(비상콘센트에 전력을 공급하는 회로)의 설치기준으로 틀린 것은? (Time: 6.80 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505)에 따라 분배기ㆍ분파기 및 혼합기 등의 임피던스는 몇 Ω의 것으로 하여야 하는가? (Time: 2.73 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 광전식분리형감지기의 설치기준으로 틀린 것은? (Time: 5.43 sec)
+Processed: 유도등의 형식승인 및 제품검사의 기술기준에 따라 교류입력측과 외함 사이, 교류입력측과 충전부 사이, 절연된 충전부와 외함 사이의 각 절연저항은 DC 500V 절연저항계로 측정 시 몇 ㏁ 이상이어야 하는가? (Time: 4.11 sec)
+Processed: 비상경보설비의 축전지에 관한 성능인증 및 제품검사의 기술기준에서 축전지설비 외함 두께가 강판인 경우 최소 몇 mm 이상이어야 하는가? (Time: 7.41 sec)
+Processed: 유도등 및 유도표지의 화재안전기준(NFSC 303)에 따라 객석 내 통로 길이가 85m인 경우 객석유도등을 몇 개 설치하여야 하는가? (Time: 7.59 sec)
+Processed: 비상경보설비 및 단독경보형감지기의 화재안전기준(NFSC 201)에 따른 용어 정의로 틀린 것은? (Time: 6.30 sec)
+Processed: 다음 무선통신보조설비의 구성도에서 ⓐ에 해당하는 것은? (Time: 8.98 sec)
+Processed: 축전지의 자기방전을 보충함과 동시에 상용부하에 대한 전력공급은 충전기가 담당하되, 일시적인 대전류는 축전지가 부담하게 하는 충전방식은? (Time: 7.24 sec)
+Processed: 다음 중 피난자의 집중으로 패닉현상이 일어날 우려가 가장 큰 형태는? (Time: 5.12 sec)
+Processed: 연기감지기가 작동할 정도이고 가시거리가 20~30m일 때 해당하는 감광계수는 얼마인가? (Time: 8.56 sec)
+Processed: 소화에 필요한 CO₂의 이론소화농도가 공기 중에서 37Vol%일 때 한계산소농도는 약 몇 Vol%인가? (Time: 8.71 sec)
+Processed: 건물화재 시 패닉(panic) 발생 원인과 직접적인 관계가 없는 것은? (Time: 4.52 sec)
+Processed: 소화기구(자동확산소화기는 제외)는 거주자 등이 손쉽게 사용할 수 있는 장소에 바닥으로부터 높이 몇 m 이하의 곳에 비치하여야 하는가? (Time: 2.06 sec)
+Processed: 물리적 폭발에 해당하는 것은? (Time: 4.04 sec)
+Processed: 소화약제로 사용되는 이산화탄소에 대한 설명으로 옳은 것은? (Time: 5.65 sec)
+Processed: Halon 1211의 화학식으로 옳은 것은? (Time: 1.60 sec)
+Processed: 건축물 화재에서 플래시오버(flash over) 현상이 일어나는 시기는? (Time: 5.21 sec)
+Processed: 인화칼슘(CaC₂)과 물이 반응할 때 발생하는 가스는? (Time: 2.93 sec)
+Processed: 위험물안전관리법령상 자기반응성물질의 품명에 해당하지 않는 것은? (Time: 4.77 sec)
+Processed: 마그네슘 화재에 주수했을 때 물과의 반응으로 발생하는 가스는? (Time: 6.96 sec)
+Processed: 제2종 분말소화약제의 주성분으로 옳은 것은? (Time: 4.23 sec)
+Processed: 물과 반응하여 가연성 가스를 발생시킴으로써 화재 위험성이 높아지는 물질은? (Time: 5.73 sec)
+Processed: 다음 중 물리적 소화방법이 아닌 것은? (Time: 3.21 sec)
+Processed: 착화온도가 가장 낮은 물질은? (Time: 5.53 sec)
+Processed: 화재의 분류방법 중 유류화재를 나타내는 것은? (Time: 2.93 sec)
+Processed: 소화약제로 사용되는 물에 대한 설명 중 틀린 것은? (Time: 6.33 sec)
+Processed: 공기 중 연소범위를 기준으로 위험도(H)가 가장 큰 것은? (Time: 8.70 sec)
+Processed: 조연성 가스로만 나열된 것은? (Time: 7.59 sec)
+Processed: 다음 위험물안전관리법령의 자체소방대 기준에 대한 설명으로 틀린 것은? (Time: 6.15 sec)
+Processed: 위험물안전관리법령상 제조소등에 설치하여야 할 자동화재탐지설비의 설치기준 중 ( ) 안에 알맞은 것은? (광전식 분리형 감지기 설치는 제외한다.) (Time: 9.41 sec)
+Processed: 소방시설공사업법령상 전문 소방시설공사업의 등록기준 및 영업범위에 대한 설명 중 틀린 것은? (Time: 5.68 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물의 규모ㆍ용도ㆍ수용인원 등을 고려하여 갖추어야 할 소방시설의 종류에 대한 기준 중 다음 ( ) 안에 알맞은 것은? (Time: 9.07 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 천재지변 등으로 소방특별조사를 받기 곤란한 경우 조사의 연기를 신청하고자 할 때, 소방특별조사 시작 며칠 전까지 연기신청서 및 증빙서류를 제출해야 하는가? (Time: 3.51 sec)
+Processed: 위험물안전관리법령상 정기점검의 대상인 제조소등의 기준 중 틀린 것은? (Time: 7.28 sec)
+Processed: 위험물안전관리법령상 제4류 위험물 중 경유의 지정수량은 몇 리터인가? (Time: 7.14 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 1급 소방안전관리대상물의 소방안전관리자 선임 대상 기준 중 ( ) 안에 알맞은 것은? (Time: 3.15 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 용어의 정의 중 ( ) 안에 알맞은 것은?
+
+“(     )으로 정하는 구조 또는 설비라 함은 화재 예방과 안전을 위한 각종 구조, 설비 등을 뜻한다.” (Time: 3.65 sec)
+Processed: 소방기본법 제1장 총칙에서 정하는 목적 내용과 가장 거리가 먼 것은? (Time: 5.67 sec)
+Processed: 소방본부 종합상황실의 실장이 서면ㆍ팩스 또는 컴퓨터통신 등으로 소방청 종합상황실에 보고하여야 하는 화재 기준에 해당하지 않는 것은? (Time: 6.63 sec)
+Processed: 관리업자가 소방시설등 점검 후 점검기록표를 거짓으로 작성하거나 해당 특정소방대상물에 부착하지 아니한 경우의 벌칙 기준은? (Time: 4.41 sec)
+Processed: 분말형태의 소화약제를 사용하는 소화기의 내용연수로 옳은 것은? (소방용품 성능확인을 받아 사용기한 연장 제외) (Time: 4.14 sec)
+Processed: 소방시설공사업자가 소속 소방기술자를 소방시설공사 현장에 배치하지 않은 경우 과태료 기준은? (Time: 5.10 sec)
+Processed: 소방기본법령상 위험물 또는 물건의 보관기간은 소방본부(서)의 게시판에 공고하며, 그 기간 종료일 다음 날부터 며칠로 하는가? (Time: 3.38 sec)
+Processed: 소방활동장비와 설비의 구입 및 설치 시 국고보조 대상이 아닌 것은? (Time: 3.77 sec)
+Processed: 특정소방대상물의 관계인은 소방안전관리자를 기준일로부터 30일 이내에 선임해야 한다. 다음 중 기준일이 아닌 것은? (Time: 4.93 sec)
+Processed: 위험물안전관리법령상 정전기 발생 우려가 있는 설비에 설치할 수 있는 정전기 제거설비 방법이 아닌 것은? (Time: 4.63 sec)
+Processed: 소방기본법령상 특수가연물의 수량 기준으로 옳은 것은? (Time: 8.16 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방특별조사를 하려면 관계인에게 조사대상ㆍ기간ㆍ사유 등을 원칙적으로 며칠 전에 서면으로 알려야 하는가? (긴급하거나 사전통지로 조사가 곤란한 경우 제외) (Time: 2.67 sec)
+Processed: 감지기의 형식승인 및 제품검사의 기술기준에 따라 단독경보형감지기를 스위치 조작으로 화재경보를 정지한 경우, 화재경보 정지 후 몇 분 이내에 자동으로 정지기능이 해제되어 정상상태로 복귀되어야 하는가? (Time: 5.24 sec)
+Processed: 비상콘센트설비의 화재안전기준(NFSC 504)에 따라 하나의 전용회로에 설치할 수 있는 비상콘센트는 최대 몇 개 이하로 해야 하는가? (Time: 2.46 sec)
+Processed: 자동화재속보설비의 속보기 성능인증 및 제품검사의 기술기준에 따라, 속보기는 작동신호를 수신하거나 수동으로 동작시키는 경우 20초 이내에 소방관서로 자동 신호를 보내며, 몇 회 이상 속보할 수 있어야 하는가? (Time: 2.30 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 감지기 설치 제외 장소가 아닌 것은? (Time: 4.17 sec)
+Processed: 비상콘센트설비를 설치한 현장 사례 중, 화재안전기준(NFSC 504)에 적합하지 않은 것은? (Time: 5.93 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에 따라 부착높이가 4m 미만인 장소에 제2종 연기감지기를 설치하는 경우, 1개의 감지기가 담당하는 기준 바닥면적은 얼마인가? (Time: 6.44 sec)
+Processed: 다음 그림은 자동화재탐지설비 배선도이다. 추가로 구획된 공간에 가, 나, 다, 라 위치로 감지기를 증설하려 할 때, 화재안전기준에 적합하게 설치한 것은 어느 위치인가? (Time: 5.42 sec)
+Processed: 비상방송설비의 화재안전기준(NFSC 202)에 따라 비상방송설비 음향장치의 설치기준 중 다음 ( ) 안에 들어갈 내용으로 옳은 것은?
+
+“축전지설비는  ( ㉠ ) 분 이상 정상 동작하도록 할 수 있는 용량 이상으로 하되, ( ㉡ ) 명 이하가 사용하는 특정소방대상물에 한하여 설치할 수 있다.” (Time: 7.48 sec)
+Processed: 유도등의 형식승인 및 제품검사의 기술기준에서 “유도등에서 표시면(標示面) 외에 조명용으로 사용하는 면”을 나타내는 용어는 무엇인가? (Time: 4.19 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에 따라 부착높이가 20m 이상인 곳에 설치되는 광전식 분리형 아날로그 감지기의 공칭감지농도 하한값은 감광율 몇 %/m 미만이어야 하는가? (Time: 7.48 sec)
+Processed: 비상조명등의 우수품질인증 기술기준에서 인출선으로 사용하는 경우, 전선의 굵기는 최소 몇 mm² 이상이어야 하는가? (Time: 5.62 sec)
+Processed: 누전경보기의 형식승인 및 제품검사의 기술기준에 따른 과누전시험에서 변류기의 1차측에 ( ㉠ )mA 이상의 전류를  ( ㉡ )분간 흘려도 정상적으로 작동해야 한다. 다음 중 ( ㉠ ), ( ㉡ )에 알맞은 것은? (Time: 6.37 sec)
+Processed: 비상방송설비의 화재안전기준(NFSC 202) 중 음향장치 설치기준으로 틀린 것은? (Time: 5.89 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505)에서 감시제어반 등에 설치된 무선중계기의 입력ㆍ출력 포트에 연결되어, 송수신 신호를 원활히 방사ㆍ수신하기 위해 옥외에 설치하는 장치를 무엇이라 하는가? (Time: 5.02 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505)에 따라 무선통신보조설비의 누설동축케이블 또는 동축케이블 임피던스는 몇 Ω으로 하여야 하는가? (Time: 1.97 sec)
+Processed: 비상경보설비 및 단독경보형감지기의 화재안전기준(NFSC 201) 중 단독경보형감지기에 관한 내용이다. 다음 ( ) 안에 들어갈 것으로 옳은 것은?
+
+“단독경보형감지기는 유효하게 화재경보를 발할 수 있도록 배터리 또는 축전지 등을 포함하여 (  )분 이상 화재경보를 발할 수 있는 용량을 가져야 한다.” (Time: 2.46 sec)
+Processed: 소방시설용 비상전원수전설비의 화재안전기준(NFSC 602)에서 ‘소방부하에 전원을 공급하는 전기회로’를 일컫는 용어는? (Time: 3.41 sec)
+Processed: 누전경보기의 형식승인 및 제품검사의 기술기준에 따라, 누전경보기 변류기는 직류 500V 절연저항계로 1차권선과 2차권선 간을 측정할 때 절연저항이 몇 MΩ 이상이어야 하는가? (Time: 6.15 sec)
+Processed: 소방시설용 비상전원수전설비의 화재안전기준(NFSC 602)에 따라, 소방시설용 비상전원 수전설비의 인입구배선은 '옥내소화전설비의 화재안전기준(NFSC 102)' 별표 1에 따른 어떤 배선으로 하여야 하는가? (Time: 3.49 sec)
+Processed: 유도등 및 유도표지의 화재안전기준(NFSC 303)에 따라, 계단을 제외한 각 층의 복도 및 통로에서 유도표지를 설치해야 하는 위치 기준으로, 각 부분에서 유도표지까지의 보행거리는 몇 m 이하가 되어야 하는가? (Time: 1.71 sec)
+Processed: 제3종 분말소화약제의 주성분은? (Time: 2.49 sec)
+Processed: 화재발생 시 피난기구로 직접 활용할 수 없는 것은? (Time: 4.11 sec)
+Processed: 소화약제 중 HFC-125의 화학식으로 옳은 것은? (Time: 4.22 sec)
+Processed: 위험물안전관리법령상 제6류 위험물을 수납하는 운반용기의 외부에 주의사항을 표시하여야 할 경우, 어떤 내용을 표시해야 하는가? (Time: 4.59 sec)
+Processed: 열전도도(Thermal Conductivity)를 표시하는 단위로 옳은 것은? (Time: 4.30 sec)
+Processed: 알킬알루미늄 화재에 적합한 소화약제는? (Time: 4.99 sec)
+Processed: 가연물질의 종류에 따라 화재를 분류하였을 때, 섬유류 화재가 속하는 것은? (Time: 3.33 sec)
+Processed: 다음 연소생성물 중 인체에 독성이 가장 높은 것은? (Time: 5.31 sec)
+Processed: 내화건축물과 비교할 때, 목조건축물 화재의 일반적인 특징을 옳게 나타낸 것은? (Time: 4.79 sec)
+Processed: 정전기에 의한 발화과정으로 옳은 것은? (Time: 4.21 sec)
+Processed: 물리적 소화방법이 아닌 것은? (Time: 5.60 sec)
+Processed: 이산화탄소 소화기의 일반적인 성질에서 단점이 아닌 것은? (Time: 4.52 sec)
+Processed: 위험물안전관리법령상 위험물에 대한 설명으로 옳은 것은? (Time: 4.62 sec)
+Processed: 탄화칼슘(CaC₂)이 물과 반응할 때 발생하는 기체는? (Time: 4.62 sec)
+Processed: 다음 중 증기 비중이 가장 큰 것은? (Time: 5.58 sec)
+Processed: 분자 내부에 나이트로기를 가진 TNT, 나이트로셀룰로스 등 제5류 위험물은 어떤 연소형태인가? (Time: 2.96 sec)
+Processed: IG-541 소화약제가 15℃에서 내용적 50ℓ 용기에 155kgf/cm²로 충전되어 있을 때, 온도가 30℃로 상승한다면 압력은 약 몇 kgf/cm²가 되겠는가? (용기 팽창은 없음) (Time: 8.88 sec)
+Processed: 프로판 50vol%, 부탄 40vol%, 프로필렌 10vol%로 된 혼합가스의 폭발하한계는 약 몇 vol%인가?
+(프로판 폭발하한 2.2vol%, 부탄 1.9vol%, 프로필렌 2.4vol%) (Time: 9.44 sec)
+Processed: 조연성 가스에 해당하는 것은? (Time: 4.23 sec)
+Processed: 소방시설공사업법령에 따른 완공검사를 위한 현장확인 대상 특정소방대상물의 범위로서 기준이 틀린 것은? (Time: 6.77 sec)
+Processed: 소방기본법령에 따른 특수가연물 기준에서 ( ) 안에 알맞은 것은?
+
+“가연성고체류 중 합성수지류의 저장수량은 ( ㉠ )kg 이상, 석탄 및 목탄류는 ( ㉡ )kg 이상” (Time: 8.86 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 스프링클러설비 설치대상인 특정소방대상물에 대하여, 아래 소방시설을 화재안전기준에 적합하게 설치하면 스프링클러설비 설치를 면제받을 수 있다(문제 오류로 실제 정답처리는 1, 2, 4번이 모두 맞다고 처리되었으나 가답안은 2번). 어느 소화설비인가? (Time: 5.75 sec)
+Processed: 소방기본법령상 출동한 소방대원에게 폭행ㆍ협박을 하여 화재진압ㆍ인명구조 또는 구급활동을 방해한 자에 대한 벌칙 기준은? (Time: 3.24 sec)
+Processed: 위험물안전관리법령상 제조소 또는 일반취급소에서 취급하는 제4류 위험물 최대수량의 합이 지정수량의 48만 배 이상인 사업소의 자체소방대는 화학소방자동차 몇 대 이상, 인원 몇 명 이상이어야 하는가? (Time: 8.60 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상, 화재안전기준 적용이 곤란한 특정소방대상물로 인정되어 소방시설을 설치하지 않아도 되는 대상에 포함되지 않는 것은? (Time: 6.22 sec)
+Processed: 소방기본법에서 말하는 '소방대상물의 관계인'에 해당하지 않는 자는? (Time: 6.32 sec)
+Processed: 위험물안전관리법령상 위험물별 성질로서 틀린 것은? (Time: 4.33 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 시ㆍ도지사가 소방시설등 자체점검을 하지 않은 관리업자에게 영업정지를 명할 수 있으나, 국민에게 심한 불편을 초래할 경우 영업정지 대신 과징금을 부과한다. 이때 과징금 기준은? (Time: 5.46 sec)
+Processed: 소방기본법령상 소방대장은 화재ㆍ재난ㆍ재해 등 위급상황 현장에서 소방활동구역을 정하고, 대통령령으로 정하는 자 외에는 출입을 제한할 수 있다. 다음 중 소방활동구역에 출입할 수 없는 사람은? (Time: 7.63 sec)
+Processed: 위험물안전관리법령상 취급하는 위험물 최대수량이 지정수량의 10배 이하인 경우 공지 너비 기준은? (문제 오류로 실제 시험에서는 모두 정답 처리되었으나 가답안은 '3m 이상') (Time: 3.39 sec)
+Processed: 소방기본법령상 특수가연물의 저장 및 취급 기준 중 (석탄ㆍ목탄류 발전용 제외) 틀린 것은? (Time: 8.57 sec)
+Processed: 소화설비를 구성하는 '제품 또는 기기'에 해당하지 않는 것은? (Time: 3.52 sec)
+Processed: 소방시설공사업법령상 하자보수를 해야 하는 소방시설 중, 보증기간이 3년이 아닌 것은? (Time: 6.57 sec)
+Processed: 위험물안전관리법령상 소화난이도등급 Ⅰ의 옥내탱크저장소에서 유황만을 저장ㆍ취급하는 경우 설치해야 하는 소화설비는? (Time: 7.26 sec)
+Processed: 화재안전기준(NFSC)이 개정되어 기준이 강화된 경우, 기존 특정소방대상물 소방시설에도 강화된 기준을 적용해야 하는 소방시설은 무엇인가? (단, 건축물 신축ㆍ개축ㆍ재축ㆍ이전ㆍ대수선인 경우 포함) (Time: 7.84 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 종합정밀점검 대상에 해당하는 특정소방대상물로 맞게 ( )에 들어갈 것은?
+
+“연면적 (   )m² 이상인 특정소방대상물(아파트 제외)로서 스프링클러설비가 설치된 것” (Time: 3.22 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 건축허가 등 동의대상물의 범위가 아닌 것은? (Time: 6.37 sec)
+Processed: 소방기본법령상 화재의 예방상 위험하다고 인정되는 행위를 하는 자에게 행위의 금지 또는 제한 명령을 할 수 있는 사람은? (Time: 4.46 sec)
+Processed: 소방시설용 비상전원수전설비의 화재안전기준(NFSC 602)에 따라, 일반전기사업자로부터 특별고압 또는 고압으로 수전하는 비상전원수전설비의 종류에 속하지 않는 것은? (Time: 4.91 sec)
+Processed: 비상콘센트설비의 성능인증 및 제품검사의 기술기준 중 표시등의 구조 및 기능에 대한 설명으로 틀린 것은? (Time: 5.40 sec)
+Processed: 비상방송설비의 화재안전기준(NFSC 202)에 따라 부속회로의 전로와 대지 사이, 배선 상호 간의 절연저항은 경계구역마다 직류 250V 절연저항계를 사용하여 몇 MΩ 이상이어야 하는가? (Time: 3.00 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에 따라, 고온으로 인해 연기감지기 설치가 어려운 건조실ㆍ살균실 등 장소에 사용할 열감지기가 아닌 것은? (Time: 5.39 sec)
+Processed: 자동화재속보설비의 속보기 성능인증 및 제품검사의 기술기준에서, 데이터 및 코드전송방식 신고 프로토콜 정의서 관련 ( ) 안에 알맞은 것은?
+
+“신호값 누적 최대 ( ㉠ )초의 범위로 단계적으로 설정 가능하고, 고장ㆍ장애 신호를 포함한 최소 ( ㉡ )단계 이상 구분 가능하도록 작성해야 한다.” (Time: 5.83 sec)
+Processed: 유도등 및 유도표지의 화재안전기준(NFSC 303)에 따른 객석유도등 설치기준에서 ( ) 안에 알맞은 것은?
+
+“( ㉠ ) 내 ( ㉡ ) 또는 ( ㉢ ) 등에 설치하되, 관람석 길이가 10m를 넘을 경우 5m 이내 간격으로 설치한다.” (Time: 3.38 sec)
+Processed: 누전경보기의 형식승인 및 제품검사의 기술기준에 따라 외함은 불연성 또는 난연성 재질로 만들어야 하며, 외함 두께는 몇 mm 이상이어야 하는가? (벽 매립 제외) (Time: 5.81 sec)
+Processed: 비상콘센트설비의 화재안전기준(NFSC 504)에 따라, 전원부와 외함 사이를 500V 절연저항계로 측정할 때 절연저항은 몇 MΩ 이상이어야 하는가? (Time: 1.41 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에 따라, 부착높이 20m 이상인 곳에 설치할 수 있는 감지기의 종류로 옳은 것은? (Time: 7.09 sec)
+Processed: 비상경보설비 및 단독경보형감지기의 화재안전기준(NFSC 201)에서 비상벨설비에 대한 설명 중 옳은 것은? (Time: 4.86 sec)
+Processed: 비상방송설비의 화재안전기준(NFSC 202)에 따라, 기동장치 화재신고를 수신한 후 필요한 음량으로 화재 및 피난 방송이 자동으로 개시될 때까지 걸리는 소요시간은 몇 초 이하이어야 하는가? (Time: 3.41 sec)
+Processed: 누전경보기의 형식승인 및 제품검사의 기술기준에 따라 감도조정장치를 갖는 누전경보기의 최대 감도조정 범위(최대치)는 몇 A이어야 하는가? (Time: 6.83 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 배선 시설기준 중 틀린 것은? (Time: 7.83 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505) 용어 정의로 옳은 것은? (Time: 6.81 sec)
+Processed: 비상조명등의 화재안전기준(NFSC 304)에 따라, 비상조명등이 설치된 장소의 바닥 조도는 최소 몇 lx 이상이 되어야 하는가? (Time: 8.23 sec)
+Processed: 화재안전기준(NFSC)에서 정한 비상전원 혹은 건전지 유효사용시간 중 가장 긴 것은? (Time: 8.83 sec)
+Processed: 비상경보설비 및 단독경보형감지기의 화재안전기준(NFSC 201)에서 단독경보형감지기 시설기준에 관한 ( ) 안에 알맞은 것은?
+
+“단독경보형감지기는 천장 또는 반자의 중앙부에 설치하되, 각 부분으로부터 하나의 감지기까지의 수평거리는 ( ㉠ )m 이하가 되도록 하고, 복도ㆍ통로 등에는 ( ㉡ )m 이내 간격으로 설치한다.” (Time: 8.30 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505)에 따라 누설동축케이블 및 안테나는 고압 전로에서 1.5m 이상 이격해야 하지만, 이 요건을 만족하지 않아도 되는 경우는? (Time: 9.11 sec)
+Processed: 유도등 및 유도표지의 화재안전기준(NFSC 303)에 따라, 계단 이외 층마다 복도ㆍ통로 각 부분에서 유도표지까지의 보행거리가 몇 m 이하가 되어야 하며, 구부러진 모퉁이 벽에 설치해야 하는가? (Time: 2.10 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에서 발신기의 시설기준에 관한 ( ) 안에 알맞은 것은?
+
+“발신기는 바닥으로부터 ( ㉠ )m 이상 ( ㉡ )m 이하 높이에 설치하고, 해당 특정소방대상물의 각 부분으로부터 하나의 발신기까지의 수평거리는 25m 이하가 되도록 한다.” (Time: 3.26 sec)
+Processed: 건축법령상 내력벽, 기둥, 바닥, 보, 지붕틀 및 주계단을 무엇이라 하는가? (Time: 2.14 sec)
+Processed: 이산화탄소의 물성으로 옳은 것은? (Time: 3.13 sec)
+Processed: 소화약제로 사용하는 물의 증발잠열로 기대할 수 있는 소화효과는? (Time: 5.29 sec)
+Processed: 블레비(BLEVE) 현상과 관계가 없는 것은? (Time: 4.37 sec)
+Processed: 할로겐화합물 소화약제에 관한 설명으로 옳지 않은 것은? (Time: 6.35 sec)
+Processed: 스테판-볼츠만의 법칙에 의해 복사열과 절대온도(T)와의 관계를 옳게 설명한 것은? (Time: 3.44 sec)
+Processed: 분자식이 CF2BrCl인 할로겐화합물 소화약제는? (Time: 3.91 sec)
+Processed: 대두유가 침적된 기름 걸레를 쓰레기통에 장시간 방치한 결과 자연발화로 화재가 발생한 경우, 그 이유로 옳은 것은? (Time: 5.48 sec)
+Processed: 물에 저장하는 것이 안전한 물질은? (Time: 7.61 sec)
+Processed: 다음 각 물질과 물이 반응했을 때 발생하는 가스의 연결이 틀린 것은? (Time: 6.35 sec)
+Processed: 건축물 화재 시 피난자 집중으로 인해 패닉(panic) 현상이 일어날 수 있는 피난방향은? (Time: 4.52 sec)
+Processed: 위험물별 저장방법에 대한 설명으로 틀린 것은? (Time: 4.05 sec)
+Processed: 전기화재의 원인으로 거리가 먼 것은? (Time: 4.05 sec)
+Processed: 인화점이 낮은 순서대로 올바르게 나열된 것은? (Time: 3.19 sec)
+Processed: 가연성 가스이면서 독성 가스인 것은? (Time: 3.34 sec)
+Processed: 1기압 상태에서 100℃ 물 1g이 모두 기체로 변하는데 필요한 열량은 몇 cal인가? (Time: 8.77 sec)
+Processed: 다음 물질 중 연소범위를 통해 산출한 위험도 값이 가장 높은 것은? (Time: 6.23 sec)
+Processed: 일반적으로 공기 중 산소농도를 몇 vol% 이하로 낮추면 연소속도가 현저히 줄어들어 질식소화가 가능한가? (Time: 5.66 sec)
+Processed: 가연물질의 구비조건으로 옳지 않은 것은? (Time: 4.42 sec)
+Processed: 논리식 (X+Y)·(X+Y')를 간단히 하면? (Time: 8.44 sec)
+Processed: 어떤 측정계기의 지시값을 M, 참값을 T라 할 때, 보정률(%)은? (Time: 5.26 sec)
+Processed: 그림과 같이 반지름 r(m)인 원주상의 임의 2점 a, b에 전류 I(A)가 흐를 때, 원의 중심에서의 자계 세기는 몇 A/m인가? (π상수는 π로 표기) (Time: 4.09 sec)
+Processed: 다음 회로에서 a, b 사이의 합성저항(Ω)은? (단, R1=3Ω, R2=9Ω) (Time: 9.76 sec)
+Processed: 2차 제어시스템에서 무제동으로 무한 진동이 일어나는 감쇠율(δ)은? (Time: 4.63 sec)
+Processed: 블록선도의 전달함수 C(s)/R(s)는? (Time: 10.35 sec)
+Processed: 3상 유도전동기의 특성에서 토크, 2차 입력, 동기속도의 관계로 옳은 것은? (Time: 7.33 sec)
+Processed: v(t)=150sinωt(V) 전압을 가했더니 i(t)=12sin(ωt-30°)(A)가 흐르는 회로의 소비전력(유효전력)은 약 몇 W인가? (Time: 8.78 sec)
+Processed: 평행 두 도선 사이의 거리를 r에서 2r로 늘리면, 두 도선 간 작용력 F1이 F2로 어떻게 변화하는가? (Time: 6.86 sec)
+Processed: 200V 교류전압에서 30A 전류가 흐르는 부하가 4.8kW 유효전력을 소비한다면, 이 부하의 리액턴스(X)는 몇 Ω인가? (Time: 10.32 sec)
+Processed: 정전용량 0.02㎌ 두 개와 0.01㎌ 한 개를 모두 병렬 접속 후 24V를 인가했을 때, 이 병렬회로의 합성 정전용량(㎌)과 0.01㎌ 커패시터 축적 전하량(C)은? (Time: 5.74 sec)
+Processed: 다음 다이오드 회로에서 출력전압 Vo는? (단, 다이오드 전압강하 무시) (Time: 8.91 sec)
+Processed: 데브난(Thevenin)의 정리를 이용해 그림 (a)를 (b)의 등가회로로 만들고자 할 때, Vth(V)와 Rth(Ω)는? (Time: 10.32 sec)
+Processed: LC 직렬회로에 직류전압 E(V)를 t=0에 인가했을 때 흐르는 전류 i(t)는? (Time: 7.76 sec)
+Processed: 다음 소자 중 온도 보상용으로 사용되는 것은? (Time: 5.22 sec)
+Processed: 변위를 압력으로 변환하는 장치로 옳은 것은? (Time: 4.62 sec)
+Processed: 저항 R1(Ω), R2(Ω), 인덕턴스 L(H)의 직렬회로 시정수(s)는? (Time: 2.85 sec)
+Processed: 자기 인덕턴스가 각각 4mH, 9mH인 두 코일이 이상적 결합(결합계수=1)일 경우, 상호 인덕턴스(M)는 몇 mH인가? (Time: 7.80 sec)
+Processed: 분류기를 사용하여 내부저항 RA인 전류계의 배율을 9로 만들려면, 분류기 저항 RS는? (Time: 4.58 sec)
+Processed: 다음 논리회로와 등가인 논리 게이트는? (Time: 10.12 sec)
+Processed: 소방기본법령상 저수조 설치기준으로 틀린 것은? (Time: 6.46 sec)
+Processed: 소방시설공사업법령상 소방시설업 등록 없이 영업을 한 자에 대한 벌칙은? (Time: 2.58 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상, 대통령령 또는 화재안전기준이 개정되어 기준이 강화되는 경우 기존 특정소방대상물의 소방시설 중 강화된 기준을 적용해야 하는 것은? (Time: 7.40 sec)
+Processed: 소방기본법령상 화재조사의 종류 중 화재원인조사에 해당하지 않는 것은? (Time: 3.60 sec)
+Processed: 소방기본법령상 소방신호의 방법 중 틀린 것은? (Time: 10.30 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물 관계인이 수행해야 하는 소방안전관리 업무가 아닌 것은? (Time: 5.19 sec)
+Processed: 소방기본법에서 정의하는 소방대의 조직구성원이 아닌 것은? (Time: 3.58 sec)
+Processed: 위험물안전관리법령상 인화성액체위험물(이황화탄소 제외) 옥외탱크저장소 탱크주위 방유제 기준 중 틀린 것은? (Time: 7.74 sec)
+Processed: 위험물안전관리법령상 시ㆍ도지사 허가 없이 제조소등을 설치할 수 있는 기준으로, ( ) 안에 알맞은 것은?
+“위험물 종류가 다르거나 같은 위험물이 하나인 경우, 가장 많은 지정수량의 (   )배 이하로 각각 구분” (Time: 3.19 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 건축허가 동의대상물의 범위 중 틀린 것은? (Time: 10.25 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 지하가(터널 제외)로서 연면적 (   )m² 이상이면 스프링클러설비를 설치해야 하는 특정소방대상물에 해당하는가? (Time: 4.38 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방계획서에 포함되지 않는 사항은? (Time: 6.67 sec)
+Processed: 위험물안전관리법상 업무상 과실로 제조소등에서 위험물을 유출ㆍ방출ㆍ확산하여 사람 또는 재산에 위험을 발생시킨 자 벌칙은? (Time: 2.66 sec)
+Processed: 소방기본법령상 소방용수시설 설치기준에서 급수탑 급수배관의 구경은 몇 mm 이상이어야 하는가? (Time: 4.52 sec)
+Processed: 소방시설공사업법령상 공사감리자 지정대상 특정소방대상물 범위가 아닌 것은? (Time: 7.47 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 자동화재탐지설비 설치 기준 중 ( ) 안에 알맞은 것은?
+
+“지하층 제외 층수가 4층 이상이고 바닥면적 (   )m² 이상인 층” (Time: 4.00 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 형식승인을 받지 않은 방염물품을 판매ㆍ진열ㆍ소방공사에 사용 시 벌칙은? (Time: 3.12 sec)
+Processed: 소방기본법에서 정의하는 소방대상물에 해당하지 않는 것은? (Time: 4.75 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물의 소방시설 설치 면제기준 중 ( ) 안에 알맞은 것은?
+
+“(  )설비를 설치하는 특정소방대상물은 연결송수관설비를 설치하지 않을 수 있다.” (Time: 5.28 sec)
+Processed: 위험물안전관리법령상 위험물의 유별 저장ㆍ취급 공통기준 중 ( ) 안에 알맞은 것은?
+
+“(   ) 위험물은 불활성 기체 중 질소를 충전하여 산소 접촉을 차단할 수 있다.” (Time: 6.74 sec)
+Processed: 피난 시 하나의 수단이 고장 등으로 사용 불가능하더라도 다른 수단으로 피난할 수 있도록 2방향 이상의 피난통로를 확보하는 원칙은? (Time: 5.01 sec)
+Processed: 열분해에 의해 가연물 표면에 유리상의 메타인산 피막을 형성해 산소 유입을 차단하는 분말약제는? (Time: 4.79 sec)
+Processed: 공기 중 산소의 농도는 약 몇 vol%인가? (Time: 1.21 sec)
+Processed: 일반적인 플라스틱 분류 중 열경화성 플라스틱에 해당하는 것은? (Time: 4.62 sec)
+Processed: 자연발화 방지대책으로 틀린 것은? (Time: 4.88 sec)
+Processed: 공기 중 수소(H₂)의 연소범위로 옳은 것은? (Time: 3.68 sec)
+Processed: 탄산수소나트륨이 주성분인 분말소화약제는? (Time: 4.24 sec)
+Processed: 불연성 기체나 고체 등으로 연소물을 감싸 산소 공급을 차단하는 소화방법은? (Time: 4.83 sec)
+Processed: 증발잠열을 이용하여 가연물 온도를 낮춤으로써 화재를 진압하는 소화방법은? (Time: 4.15 sec)
+Processed: 화재 시 인간의 피난 특성으로 틀린 것은? (Time: 4.25 sec)
+Processed: 공기와 할론(Halon) 1301 혼합기체에서, 할론 1301에 비해 공기의 확산속도는 약 몇 배인가?
+(공기 평균분자량:29, 할론1301 분자량:149) (Time: 6.42 sec)
+Processed: 다음 원소 중 할로겐족 원소는? (Time: 3.59 sec)
+Processed: 건물 피난동선 조건으로 옳지 않은 것은? (Time: 4.51 sec)
+Processed: 실내화재에서 다량의 가연성 가스가 동시에 연소해 급격 온도상승을 유발, 최성기에 돌입하기 전 나타나는 현상은? (Time: 4.84 sec)
+Processed: 과산화수소와 과염소산의 공통 성질이 아닌 것은? (Time: 6.95 sec)
+Processed: 화재 소화방법 중 물리적 소화가 아닌 것은? (Time: 5.14 sec)
+Processed: 물과 반응하여 가연성 가스를 발생하지 않는 물질은? (Time: 5.43 sec)
+Processed: 목재건축물 화재 진행과정의 올바른 순서는? (Time: 3.81 sec)
+Processed: 다음 물질 저장장소 화재 시, 주수소화가 부적합한 것은? (Time: 3.95 sec)
+Processed: 다음 중 가연성 가스가 아닌 것은? (Time: 3.72 sec)
+Processed: 다음 중 쌍방향성 전력용 반도체 소자는? (Time: 4.15 sec)
+Processed: 그림 시퀀스(계전기 접점) 회로를 논리식으로 표현하면? (Time: 9.29 sec)
+Processed: 그림의 블록선도와 같은 제어시스템의 전달함수 G(s)는? (Time: 10.34 sec)
+Processed: 조작기기는 직접 제어대상에 작용하는 장치로 빠른 응답이 필요한데, 다음 중 전기식 조작기기가 아닌 것은? (Time: 4.45 sec)
+Processed: 전기자 제어 직류 서보전동기에 대한 설명으로 옳은 것은? (Time: 6.25 sec)
+Processed: 절연저항을 측정할 때 사용하는 계측기는? (Time: 4.93 sec)
+Processed: R=10Ω, ωL=20Ω 직렬회로에 220∠0° V 교류전압을 가할 때 흐르는 전류는 약 몇 A인가? (Time: 10.59 sec)
+Processed: 다음 논리식 중 틀린 것은? (Time: 9.23 sec)
+Processed: R=4Ω, Xc=9Ω인 RC 직렬회로에 e(t) = 50 + 10√2 sin(ωt) + 120√2 sin(3ωt) V 전압을 인가했을 때, 제3고조파 전류 실효값은 몇 A인가? (Time: 10.27 sec)
+Processed: 분류기를 사용해 전류를 측정할 경우, 전류계 내부저항이 0.28Ω이고, 분류기 저항이 0.07Ω라면 이 분류기의 배율은? (Time: 8.49 sec)
+Processed: 옴의 법칙(Ohm's law)에 대한 설명으로 옳은 것은? (Time: 6.12 sec)
+Processed: 3상 직권 정류자 전동기에서 고정자 권선과 회전자 권선 사이에 중간 변압기를 쓰는 이유가 아닌 것은? (Time: 6.61 sec)
+Processed: 공기 중 10μC와 20μC 두 점전하를 1m 간격으로 놓았을 때 작용하는 정전력은 몇 N인가? (Time: 8.73 sec)
+Processed: 교류회로 부하 역률 측정 시 필요한 계측기 구성으로 옳은 것은? (Time: 6.79 sec)
+Processed: 평형 3상회로에서 V_L=28.87V, I=10A, 역률=0.8일 때, 무효전력은 약 몇 var인가? (Time: 10.27 sec)
+Processed: 아래 회로에서 a, b 사이 합성저항은 몇 Ω인가? (Time: 3.67 sec)
+Processed: 60Hz의 3상 전압을 전파 정류 시 맥동주파수(Hz)는? (Time: 2.05 sec)
+Processed: 두 입력 중 하나만 1일 때 출력이 1이 되는 논리게이트는? (Time: 8.56 sec)
+Processed: 진공 중 면전하밀도 σ(C/m²)가 균일하게 분포된 도체 표면에서 전계 E(V/m)는?
+(ε0: 진공 유전율) (Time: 7.62 sec)
+Processed: 3상 유도전동기 출력 25HP, 전압 220V, 효율 85%, 역률85%라면 전동기에 흐르는 전류는 약 몇 A인가?
+(1HP=0.746kW) (Time: 10.28 sec)
+Processed: 위험물안전관리법령상 제1석유류에 속하는 것은? (Time: 3.11 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방시설 자체점검 중 "종합정밀점검"을 받아야 하는 특정소방대상물로 틀린 것은? (Time: 6.32 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방시설이 아닌 것은? (Time: 5.02 sec)
+Processed: 소방기본법상 소방대장의 권한이 아닌 것은? (Time: 5.08 sec)
+Processed: 위험물안전관리법령상 제조소등이 아닌 장소에서 지정수량 이상의 위험물을 취급할 수 있는 경우 기준으로 맞는 것은? (시ㆍ도 조례 준수) (Time: 6.44 sec)
+Processed: 위험물안전관리법령상 제4류 위험물별 지정수량 기준 연결이 틀린 것은? (Time: 10.15 sec)
+Processed: 화재예방강화지구 지정권자는? (Time: 2.01 sec)
+Processed: 위험물안전관리법령상 관계인이 예방규정을 정해야 하는 제조소의 지정수량 기준은? (Time: 2.24 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 주택의 소유자가 소방시설을 설치해야 하는 주택이 아닌 것은? (Time: 7.01 sec)
+Processed: 소방시설공사업법령상 업종 중 소방시설업 종류에 해당하지 않는 것은? (Time: 3.47 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 특정소방대상물 중 숙박시설에 해당하지 않는 것은? (Time: 5.07 sec)
+Processed: 화재의 예방 및 안전관리에 관한 법률상 특수가연물의 저장ㆍ취급기준 위반 시 과태료 부과기준은?(2023년 개정 규정) (Time: 5.31 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 아래 시설의 수용인원은?
+"강의실 바닥면적 합계가 480m², 종사자 수 15명" (Time: 8.97 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 소방시설 등에 대한 자체점검을 하지 않거나 정기점검을 맡기지 않은 자 벌칙 기준은? (Time: 2.76 sec)
+Processed: 화재예방강화지구 지정대상이 아닌 것은?(소방청장, 소방본부장, 소방서장이 화재경계지구로 필요 인정지역 제외) (Time: 5.27 sec)
+Processed: 소방기본법령상 특수가연물 품명과 지정수량 연결이 틀린 것은? (Time: 9.56 sec)
+Processed: 소방기본법령상 소방안전교육사의 배치기준으로 틀린 것은? (Time: 7.46 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 공동 소방안전관리자를 선임해야 하는 특정소방대상물로 옳지 않은 것은? (Time: 5.23 sec)
+Processed: 소방시설공사업법에 따라 도급받은 소방공사를 제3자에게 하도급한 경우 벌칙(단, 대통령령 정하는 경우 제외)은? (Time: 2.64 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 피난시설ㆍ방화구획ㆍ방화시설 유지관리 명령을 정당 사유 없이 위반한 경우 벌칙 기준은? (Time: 3.72 sec)
+Processed: 공기의 평균 분자량이 29일 때, 이산화탄소 기체의 증기비중은 얼마인가? (Time: 4.31 sec)
+Processed: 밀폐된 공간에 이산화탄소를 방사하여 산소 체적 농도를 12%가 되게 하려면, 상대적으로 이산화탄소 농도는 얼마가 되어야 하는가? (Time: 10.39 sec)
+Processed: 고체 가연물이 덩어리보다 가루 형태일 때 더 잘 연소되는 이유로 가장 적합한 것은? (Time: 4.99 sec)
+Processed: 발화점이 가장 낮은 물질은? (Time: 3.91 sec)
+Processed: 질식소화 시 일반적으로 공기 중 산소농도를 약 몇 vol% 이하로 낮춰야 하는가? (Time: 2.07 sec)
+Processed: 화재하중의 단위로 옳은 것은? (Time: 9.75 sec)
+Processed: 제1종 분말소화약제의 주성분으로 옳은 것은? (Time: 5.28 sec)
+Processed: 소화약제인 IG-541의 성분이 아닌 것은? (Time: 3.03 sec)
+Processed: 연소와 가장 관련 있는 화학반응은? (Time: 4.14 sec)
+Processed: 다음 중 위험물과 지정수량이 올바른 연결은? (Time: 10.20 sec)
+Processed: 화재 분류가 틀린 것은? (Time: 6.23 sec)
+Processed: 이산화탄소 소화약제 저장용기 설치장소 기준 중 틀린 것은? (Time: 6.53 sec)
+Processed: 화재 소화원리에 따른 소화방법 적용 중 틀린 것은? (Time: 7.11 sec)
+Processed: Halon 1301의 분자식은? (Time: 1.46 sec)
+Processed: 소화효과를 고려했을 때 화재 시 사용할 수 없는 물질은? (Time: 5.28 sec)
+Processed: 탄화칼슘(CaC₂)이 물과 반응하여 발생하는 가연성 가스는? (Time: 4.05 sec)
+Processed: 다음 원소 중 전기 음성도가 가장 큰 것은? (Time: 3.59 sec)
+Processed: 건축물 내화구조에서 바닥 두께가 몇 cm 이상이면 내화로 보나? (Time: 4.76 sec)
+Processed: 화재 시 발생하는 연소가스 중, 헤모글로빈과 결합하여 산소 운반을 저해하고 두통ㆍ근육조절 장애를 일으키는 것은? (Time: 5.25 sec)
+Processed: 인화점이 20℃인 액체위험물을 창고에 저장할 때, 인화위험성에 대한 설명 중 옳은 것은? (Time: 6.68 sec)
+Processed: 최대눈금 200mA, 내부저항 0.8Ω의 전류계에 8mΩ 분류기를 사용해 측정범위를 넓힐 경우, 몇 A까지 측정할 수 있는가? (Time: 10.27 sec)
+Processed: 저항 5Ω와 유도성 리액턴스 2Ω가 직렬로 접속된 회로에 5A 전류가 흐를 때, 이 회로의 복소전력(VA)은? (Time: 10.33 sec)
+Processed: 다음 회로에서 전압계 Ⓥ가 10V일 때, A-B 단자 간 전압은 몇 V인가? (Time: 6.72 sec)
+Processed: 50Hz 3상 전압을 전파정류할 때 발생하는 맥동 주파수(Hz)는? (Time: 3.92 sec)
+Processed: 개루프(open-loop) 제어와 비교해 폐루프(closed-loop) 제어에서 반드시 필요한 장치는? (Time: 7.82 sec)
+Processed: 그림 시퀀스회로와 논리게이트가 등가일 때, 어떤 게이트인가? (Time: 5.76 sec)
+Processed: 전압이득 60dB인 증폭기와 궤환율(β)=0.01인 궤환회로를 구성하여 부궤환 증폭기로 만들었다면, 전체이득은 약 몇 dB인가? (Time: 5.62 sec)
+Processed: 지하 1층, 지상 2층(연면적 1500m²) 기숙사에서 지상 2층 차동식스포트형감지기가 작동하자 전 층 지구경종이 울렸다. 각 층 지구경종 정격전류 60mA, 24V일 때, 모든 지구경종 소비 총 전력(W)은? (Time: 5.11 sec)
+Processed: 진공 중 5μC 점전하에서 2m 떨어진 지점의 전계세기는 몇 V/m인가? (Time: 10.38 sec)
+Processed: 교류회로 부하 역률 측정을 위해 필요한 계측기 구성으로 옳은 것은? (Time: 6.80 sec)
+Processed: 평형 3상회로에서 V_L=28.87V, I=10A, 역률=0.8일 때 무효전력은 몇 var인가? (Time: 10.37 sec)
+Processed: 다음 회로에서 a, b 사이 합성저항(Ω)은? (Time: 4.14 sec)
+Processed: 60Hz 3상 전압을 전파정류 시 맥동주파수(Hz)는? (Time: 3.52 sec)
+Processed: 진공 중 면전하밀도 σ(C/m²)가 균일하게 분포된 도체 표면 전계 E(V/m)는? (ε₀: 진공유전율) (Time: 8.90 sec)
+Processed: 3상 유도전동기(25HP, 220V, 효율85%, 역률85%)에 흐르는 전류는?
+(1HP=0.746kW) (Time: 10.27 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 '종합정밀점검'을 받아야 할 특정소방대상물로 틀린 것은? (Time: 7.93 sec)
+Processed: 위험물안전관리법령상 제조소등 아닌 장소에서 지정수량 이상 위험물 취급 기준으로 맞는 것은? (시ㆍ도 조례 준수) (Time: 6.68 sec)
+Processed: 위험물안전관리법령상 관계인이 예방규정을 정해야 하는 제조소 지정수량 기준은? (Time: 1.42 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 주택 소유자가 소방시설을 설치해야 하는 주택이 아닌 것은? (Time: 6.75 sec)
+Processed: 화재의 예방 및 안전관리에 관한 법률상 특수가연물 저장ㆍ취급 기준 위반 시 과태료 부과기준은?(2023년 개정) (Time: 4.24 sec)
+Processed: 다음 시설 수용인원을 산정할 때, '복도ㆍ계단ㆍ화장실 등'을 제외한 바닥면적이 158m²이고, 종사자 5명이 있을 경우 숙박시설 수용인원은 약 몇 명인가? (Time: 9.02 sec)
+Processed: 화재예방강화지구 지정대상이 아닌 것은?(소방청장ㆍ소방본부장ㆍ소방서장이 화재경계지구 필요 인정지역 제외) (Time: 4.23 sec)
+Processed: 소방시설공사업법상 도급받은 소방공사를 제3자에게 하도급한 경우 벌칙(대통령령 정하는 경우 제외)은? (Time: 2.89 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 피난시설ㆍ방화구획ㆍ방화시설 유지관리 명령 미이행 시 정당한 사유 없는 자 벌칙 기준은? (Time: 3.71 sec)
+Processed: 자동화재속보설비의 속보기 성능인증 및 제품검사의 기술기준에서, 교류입력측과 외함 간 절연저항은 DC 500V 절연저항계로 몇 MΩ 이상이어야 하는가? (Time: 2.15 sec)
+Processed: 무선통신보조설비의 화재안전기준(NFSC 505)에 따라, 금속제 지지금구로 벽에 고정하는 누설동축케이블은 (불연재료로 구획된 반자 제외) 몇 m 이내마다 고정해야 하는가? (Time: 5.61 sec)
+Processed: 비상경보설비 및 단독경보형감지기의 화재안전기준(NFSC 201)에 따라, 비상벨설비 음향장치 음량은 부착점 1m 떨어진 곳에서 몇 dB 이상이어야 하는가? (Time: 3.23 sec)
+Processed: 자동화재탐지설비 및 시각경보장치의 화재안전기준(NFSC 203)에 따라, 옥외와 상시 개방된 부분 있는 차고ㆍ주차장ㆍ창고 등에서 그 개방 부분으로부터 몇 m 미만 범위는 경계구역 면적에 산입하지 않는가? (Time: 2.28 sec)
+Processed: 이산화탄소에 대한 설명으로 틀린 것은? (Time: 4.26 sec)
+Processed: 물질의 화재 위험성에 대한 설명으로 틀린 것은? (Time: 6.08 sec)
+Processed: 연소범위를 근거로 계산한 위험도 값이 가장 큰 물질은? (Time: 9.12 sec)
+Processed: 위험물안전관리법령상 제2석유류에 해당하는 물질로만 이루어진 것은? (Time: 8.18 sec)
+Processed: 종이, 나무, 섬유류 등으로 발생한 화재 분류에 해당하는 것은? (Time: 3.08 sec)
+Processed: 0℃, 1기압에서 44.8m³ 용적을 가진 이산화탄소를 액화했을 때 얻을 수 있는 액화탄산가스는 약 몇 ㎏인가? (Time: 8.61 sec)
+Processed: 가연물이 연소가 잘 되기 위해 갖추어야 할 조건으로 틀린 것은? (Time: 6.11 sec)
+Processed: 이산화탄소 소화약제의 최소 설계농도가 가장 높은 물질은? (Time: 8.27 sec)
+Processed: 이산화탄소의 증기비중은 약 얼마인가? (공기 분자량=29) (Time: 5.09 sec)
+Processed: 유류탱크 화재 시 기름 표면에 살수하면 기름이 탱크 밖으로 비산해 화재가 확대되는 현상을 무엇이라 하는가? (Time: 4.60 sec)
+Processed: 실내 화재로 발생한 연기 감광계수와 가시거리 설명 중 틀린 것은? (Time: 9.85 sec)
+Processed: NH₄H₂PO₄를 주성분으로 한 분말소화약제는 제 몇 종 분말소화약제인가? (Time: 3.83 sec)
+Processed: 연소 시 시안화수소(HCN)를 가장 많이 발생시키는 물질은? (Time: 7.32 sec)
+Processed: 다음 중 주수소화하기 부적합한 물질을 보관한 창고 화재는? (Time: 5.63 sec)
+Processed: 다음 중 상온ㆍ상압에서 액체 상태인 물질은? (Time: 6.29 sec)
+Processed: 밀폐된 내화건물 실내 화재 시 환경변화에 대한 설명 중 틀린 것은? (Time: 8.33 sec)
+Processed: 제거소화 예시에 해당하지 않는 것은? (Time: 4.97 sec)
+Processed: 화재 시 인간의 피난특성으로 볼 수 없는 것은? (Time: 5.73 sec)
+Processed: 산소 농도를 낮추어 소화하는 방법은? (Time: 5.78 sec)
+Processed: 인화알루미늄 화재 시 물을 주수하면 발생하는 물질은? (Time: 3.95 sec)
+Processed: 인덕턴스가 0.5H인 코일 리액턴스가 753.6Ω일 때 주파수(Hz)는? (Time: 5.36 sec)
+Processed: 최고 눈금 50mV, 내부저항 100Ω인 직류 전압계에 1.2㏁ 배율기를 접속하면 측정할 수 있는 최대 전압은 약 몇 V인가? (Time: 6.67 sec)
+Processed: 다음 블록선도에서 출력 C(s)는? (Time: 10.27 sec)
+Processed: 변위를 전압으로 변환하는 장치가 아닌 것은? (Time: 5.22 sec)
+Processed: 단상 변압기 권수비 a=8, 1차 전압 실효값 110V이다. 2차 전압을 단상 반파 정류했을 때 평균 직류전압은 약 몇 V인가? (Time: 10.27 sec)
+Processed: 그림 유접점 회로의 논리식은? (Time: 4.96 sec)
+Processed: 평형 3상 부하 선간전압 200V, 전류 10A, 역률 70.7%일 때 무효전력은 약 몇 var인가? (Time: 8.80 sec)
+Processed: 제어 대상에서 제어량을 검출해 주궤환 신호를 만드는 것은? (Time: 3.70 sec)
+Processed: 전압 10 - j V, 전류 5 + j A가 흐르는 회로의 저항(Ω)은 약 몇 Ω인가? (Time: 10.31 sec)
+Processed: 다음 중 직류전동기의 제동법이 아닌 것은? (Time: 4.60 sec)
+Processed: 자동화재탐지설비 감지기 회로 길이 500m, 종단 8kΩ 저항, 인가전압 24V, 동선 저항률 1.69×10⁻⁸Ω·m, 단면적 2.5mm²일 때 도통시험 전류는 약 몇 mA인가? (접촉저항 등 제외) (Time: 10.29 sec)
+Processed: 다음 회로에서 A=5V, B=0V인 경우 출력전압은 몇 V인가? (Time: 5.65 sec)
+Processed: 평행 왕복전선 간격 40cm, 10A 전류가 흐를 때 작용 전자력은? (Time: 10.34 sec)
+Processed: 수정ㆍ전기석 등 결정에 압력을 가하면 변형에 비례해 전압이 발생하는 현상을 무엇이라 하는가? (Time: 1.63 sec)
+Processed: 아래 그림에서 A1=25A, A2=5A 지시하였다면 전류계 A2 내부저항은 몇 Ω인가? (Time: 5.28 sec)
+Processed: 반지름 20cm, 권수 50회인 원형코일에 2A 전류를 흘린다면 코일 중심 자계의 세기는 몇 AT/m인가? (Time: 10.28 sec)
+Processed: 다음 무접점회로 논리식(Y)은? (Time: 6.99 sec)
+Processed: 단상변압기 3대를 △결선 후 부하에 공급 중 변압기 1대 고장으로 V결선 시 병렬운전 전과 대비 몇 % 출력인가? (Time: 4.93 sec)
+Processed: 대칭 n상 환상결선에서 선전류와 상전류(환상전류)의 위상차는? (Time: 4.32 sec)
+Processed: 공기 중 50kW 방사전력이 사방 균일 방사될 때, 안테나에서 1km 거리 전계 실효값은 약 몇 V/m인가? (Time: 10.28 sec)
+Processed: 소방시설공사업법령상 소방시설업 등록이 가능한 사람은? (Time: 6.88 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 방염성능기준 이상 실내 장식물 설치해야 하는 특정소방대상물에 해당하지 않는 것은? (Time: 6.71 sec)
+Processed: 소방시설공사업법령상 공사감리자 아닌 자가 감리할 수 있는 장소는? (Time: 9.46 sec)
+Processed: 위험물안전관리법령상 위험물 운송 기준 위반 시 과태료 기준은?(2021년 개정) (Time: 4.28 sec)
+Processed: 소방시설 중 경보설비에 해당하지 않는 것은? (Time: 3.88 sec)
+Processed: 소방기본법령상 주거지역ㆍ상업지역ㆍ공업지역에 설치하는 소방용수시설은 소방대상물과 수평거리가 몇 m 이하가 되도록 해야 하는가? (Time: 3.62 sec)
+Processed: 소방기본법령상 화재예방조치 명령을 정당한 사유 없이 위반한 경우 벌칙은? (Time: 2.20 sec)
+Processed: 소방기본법령상 불꽃 용접ㆍ용단 작업장에서 준수해야 할 사항 중 ( )의 ㉠, ㉡에 알맞은 것은? (Time: 8.75 sec)
+Processed: 소방업무 상호응원협정에 반드시 포함되어야 할 사항이 아닌 것은? (Time: 4.30 sec)
+Processed: 위험물안전관리법령상 지정수량 10배 이상 위험물을 저장 취급하는 제조소등(이동탱크저장소 포함)은 화재 시 알릴 수 있는 경보설비를 설치해야 한다는 기준 설명 중 틀린 것은? (Time: 5.60 sec)
+Processed: 위험물안전관리자를 해임하거나 퇴직시킨 날부터 며칠 이내 다시 선임해야 하는가? (Time: 7.60 sec)
+Processed: 소방시설공사업법령상 소방시설업 등록권자는 누구인가? (Time: 3.57 sec)
+Processed: 소방기본법령상 소방용수시설 중 급수탑의 개폐밸브 설치기준으로 맞는 것은? (Time: 3.96 sec)
+Processed: 위험물안전관리법령상 특정ㆍ준특정옥외탱크저장소는 완공검사필증 발급일부터 몇 년 이내에 정기검사를 받아야 하는가? (Time: 1.49 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 '종합정밀점검' 대상인 소방시설은? (Time: 10.31 sec)
+Processed: 소방용품 형식승인 없이 제조 또는 수입 시 벌칙 기준은? (Time: 4.96 sec)
+Processed: 소방안전관리대상물의 소방안전관리자 업무가 아닌 것은? (Time: 4.41 sec)
+Processed: 소방기본법에 따라 화재 등 위급 현장에서 필요한 때 사람에게 구조ㆍ소화 업무 지시 권한이 없는 자는? (Time: 4.27 sec)
+Processed: 화재위험도가 낮은 특정소방대상물 중 소방대가 조직돼 24시간 근무 중인 청사 및 차고에 설치를 면제할 수 없는 소방시설은? (Time: 5.34 sec)
+Processed: 화재예방, 소방시설 설치ㆍ유지 및 안전관리에 관한 법령상 건축허가 동의대상물이 아닌 것은? (Time: 8.21 sec)
+Processed: 방화벽의 구조 기준 중 다음 ( ) 안에 알맞은 것은?
+
+        1) 벽은 내화구조 또는 방화구조로 할 것
+        2) 바닥으로부터 지붕틀 등까지 구획되도록 할 것
+        3) 두께는 ( ㉠ )m 이상, 벽돌벽은 ( ㉡ )홀로 채운 것 이상
+
+1)  ㉠ 0.3, ㉡ 2.5
+2)  ㉠ 0.3, ㉡ 3.0
+3)  ㉠ 0.5, ㉡ 2.5
+4)  ㉠ 0.5, ㉡ 3.0 (Time: 6.95 sec)
+Processed: 물의 소화력을 증대하기 위해 첨가하는 첨가제 중, 물의 유실을 방지하고 건물/임야 등의 입체면에 오래 잔류하게 하는 것은? (Time: 4.74 sec)
+Processed: BLEVE 현상에 대한 설명으로 옳은 것은? (Time: 6.01 sec)
+Processed: 화재강도(Fire Intensity)와 관계가 없는 것은? (Time: 4.93 sec)
+Processed: 인화점이 가장 낮은 물질은? (Time: 4.50 sec)
+Processed: 에테르ㆍ케톤ㆍ에스테르ㆍ알데히드ㆍ아민 등 수용성 용매에 유효한 포소화약제는? (Time: 8.78 sec)
+Processed: 할로겐화합물 청정소화약제는 보통 열 받아 분해된 할로겐족이 연쇄반응을 차단하는데, 연쇄반응 차단과 거리가 먼 소화약제는? (Time: 7.08 sec)
+Processed: 화재 시 인명피해 방지를 위한 건물로 적합한 것은? (Time: 6.30 sec)
+Processed: 특정소방대상물(소방안전관리대상은 제외) 관계인과 소방안전관리대상물 안전관리자의 업무가 아닌 것은? (Time: 3.98 sec)
+Processed: CF₃Br 소화약제 명칭이 옳은 것은? (Time: 10.25 sec)
+Processed: 화재유형별 특성 설명 중 옳은 것은? (Time: 9.39 sec)
+Processed: 전산실, 통신 기기실 등 화재 시 가장 적합한 소화설비는? (Time: 6.79 sec)
+Processed: 프로판가스 연소범위(vol%)에 가장 가까운 것은? (Time: 3.58 sec)
+Processed: 가연물 제거와 관련이 없는 소화방법은? (Time: 4.68 sec)
+Processed: 화재 시 산소농도를 13vol%로 낮춰 질식소화하려면, 필요한 CO₂ 농도는 약 몇 vol%인가? (Time: 8.14 sec)
+Processed: 독성이 매우 큰 가스로서 석유제품ㆍ유지 등이 연소할 때 생성되는 알데히드 계통 가스는? (Time: 5.02 sec)
+Processed: 다음 중 인명구조기구에 속하지 않는 것은? (Time: 3.16 sec)
+Processed: 불포화 섬유질이나 석탄에 자연발화를 일으키는 주된 원인은? (Time: 4.97 sec)
+Processed: 화재 지속시간ㆍ온도 측면에서, 목재건물과 내화건물 비교 시 목재건물의 화재 성상은? (Time: 4.24 sec)
+Processed: 변압기 임피던스 전압 구하기 위해 행하는 시험은? (Time: 5.54 sec)
+Processed: 50F 콘덴서 2개 직렬연결하면 합성정전용량(F)은? (Time: 3.83 sec)
+Processed: 다음 블록선도에서 전체 전달함수는?
+
+           +----- G -----+
+  R --->(+)--           --->(+)-> C
+          |            |
+          +-----H-----+
+
+1) G/(1+GH)
+2) (R(s)/(1+GH)) + N(s)
+3) G/(1+GH) + R(s)
+4) G/H + 1 (Time: 10.29 sec)
+Processed: 변압기의 내부보호용 계전기는? (Time: 6.46 sec)
+Processed: 제어요소 구성으로 옳은 것은? (Time: 5.69 sec)
+Processed: SCR(silicon-controlled rectifier)에 대한 설명 중 틀린 것은? (Time: 5.04 sec)
+Processed: 배선 절연저항은 어떤 측정기로 측정하는가? (Time: 5.81 sec)
+Processed: 다음 논리식 중 틀린 것은?
+1) (X+Y)(X+Y') = X + Y
+2) X+XY' = X
+3) X(X'+Y)=XY
+4) X+(X'Y)=X+Y (Time: 7.93 sec)
+Processed: 논리식 X·(X+Y)를 간략화하면? (Time: 4.51 sec)
+Processed: 상순 a,b,c일 때 Va,Vb,Vc가 3상 불평형 전압일 경우 정상분 전압은? (Time: 7.98 sec)
+Processed: 가동철편형 계기 구조 형태가 아닌 것은? (Time: 4.39 sec)
+Processed: 전압 v(t)=150sinωt(V)를 가한 회로에서 i(t)=6sin(ωt-30°)(A)가 흐를 때 소비전력(유효전력)은 약 몇 W인가? (Time: 10.27 sec)
+Processed: 1W·s와 같은 것은? (Time: 5.82 sec)
+Processed: 반파정류파 최대값=1이라 할 때, 그 실효값과 평균값은?
+1) 실효값 = 0.707, 평균값 = 0.637 (Time: 4.87 sec)
+Processed: 수신기에 내장된 축전지 용량이 6Ah이고 부하전류 0.4A일 때 몇 시간 사용가능한가? (Time: 5.12 sec)
+Processed: 내부저항 200Ω, 직류 120mA 전류계를 6A 측정가능 전류계로 쓰려면? (Time: 9.80 sec)
+Processed: 제연용 3상 유도전동기 Y-Δ 기동회로에서 기동 제어요소와 거리가 먼 것은? (Time: 4.25 sec)
+Processed: 직류회로 도체 길이를 10배 늘이되 체적은 동일하게 하면 도체 저항은 몇 배인가? (Time: 10.28 sec)
+Processed: 바리스터(varistor)의 용도는? (Time: 4.38 sec)
+Processed: 교류전압계 지침이 지시하는 전압은? (Time: 4.40 sec)
+Processed: 소방기본법상 소방대 구성원에 속하지 않는 자는? (Time: 3.55 sec)
+Processed: 화재예방, 소방시설 설치·유지 및 안전관리에 관한 법령상 소방특별조사를 실시할 수 있는 대상과 거리가 먼 것은? (개인 주거는 관계인 동의 시 가능) (Time: 6.00 sec)
+Processed: 항공기격납고는 특정소방대상물 중 어떤 시설에 해당되는가? (Time: 2.36 sec)
+Processed: 화재예방, 소방시설 설치·유지 및 안전관리에 관한 법령상 소방시설 등의 자체점검 시 점검 인력 배치기준 중, 종합정밀점검 1단위가 하루 점검할 수 있는 특정소방대상물 연면적은? (Time: 6.42 sec)
+Processed: 다음 중 간이스프링클러설비를 설치해야 하는 특정소방대상물 기준으로 옳은 것은? (Time: 7.62 sec)
+Processed: 소방대상물 방염 등에 관련된 방염성능기준은 무엇으로 정하는가? (Time: 5.72 sec)
+Processed: 위험물안전관리법령상 제6류 위험물에 해당하지 않는 것은? (Time: 6.20 sec)
+Processed: 소방특별조사 결과에 따른 조치명령을 위반한 자에 대한 벌칙으로 옳은 것은? (Time: 4.44 sec)
+Processed: 위험물안전관리법령상 제조소등 아닌 장소에서 지정수량 이상 위험물을 취급할 수 있는 기준 중 ( )에 알맞은 것은?
+
+"소방서장 승인받아 지정수량 이상 위험물을 (  )일 이내 기간 동안 임시저장/취급 가능" (Time: 5.69 sec)
+Processed: 다음 중 화재원인조사 종류에 해당하지 않는 것은? (Time: 3.92 sec)
+Processed: 위험물안전관리법령상 제조소등의 위치·구조·설비 변경 없이 당해 제조소등에서 위험물 품명·수량·지정수량배수를 변경 시 누구에게 신고? (Time: 5.51 sec)
+Processed: 소방본부장/소방서장은 화재예방강화지구 안의 관계인을 대상으로 소방상 필요한 훈련·교육을 연 몇 회 이상 실시 가능? (Time: 3.37 sec)
+Processed: 국고보조 대상사업 범위 중 소방활동장비·설비에 해당하지 않는 것은? (Time: 4.70 sec)
+Processed: 화재예방강화지구로 지정할 수 있는 대상이 아닌 것은? (Time: 7.83 sec)
+Processed: 위험물안전관리자가 해임/퇴직 시 몇 일 이내에 재선임해야 하는가?
+(주어진 보기 중 잘못된 걸 찾는 문제이긴 하지만, 예시는 해임/퇴직 후 15일이라고 되어있으나, 이는 틀린거. 원칙은 30일. 이에 따라 해당 선택지 틀린게 15일.  => question says which is '옳지 않은 것') (Time: 1.97 sec)
+Processed: 상주 공사감리를 해야 할 대상 기준 옳은 것은? (Time: 8.58 sec)
+Processed: 한국소방안전원 업무가 아닌 것은? (Time: 3.87 sec)
+Processed: 아래 조건을 참고 시 숙박시설 수용인원은?
+- 종사자 5명, 복도ㆍ계단ㆍ화장실 제외한 바닥면적 158m²
+- ... (식으로 158÷4.6=34.3, +5=39.3 → 39 or 40)
+문제 정답은 43? => Provided solution says 43명. (Time: 6.89 sec)
+Processed: 소방안전관리자·보조자 실무교육은 교육계획(대상·일정 등)을 매년 수립하여 누구 승인받아 실시? (Time: 1.56 sec)
+Processed: 화재예방, 소방시설 설치·유지 및 안전관리에 관한 법령상 소방대상물 개수·이전·제거 등 명령으로 손실 입은 자가 손실보상 청구 시 첨부서류 중 틀린 것은? (Time: 5.67 sec)
+Processed: 목조건축물의 화재 진행상황에 대한 설명으로 옳은 것은? (Time: 9.46 sec)
+Processed: 연면적이 1000m² 이상인 건축물에 설치하는 방화벽 기준으로 틀린 것은? (Time: 4.94 sec)
+Processed: 화재의 일반적 특성 중 틀린 것은? (Time: 4.15 sec)
+Processed: 질소 79%, 산소 21%인 전기실 화재 시 CO₂를 방사하여 산소 부피농도가 14%가 되었다면, 이 혼합공기 분자량은 약 얼마인가? (연소가스 무시) (Time: 8.51 sec)
+Processed: 아래 가연성 기체 1몰 완전연소에 필요한 이론공기량으로 틀린 것은?
+(체적비로 계산, 공기 중 산소농도 21vol%) (Time: 10.27 sec)
+Processed: 물 소화능력에 대한 설명 중 틀린 것은? (Time: 5.26 sec)
+Processed: 화재실 연기를 옥외로 배출하는 제연방식 중 효과가 가장 적은 것은? (Time: 6.72 sec)
+Processed: 분말소화약제 취급 시 주의사항으로 틀린 것은? (Time: 4.67 sec)
+Processed: 건축물 화재 확산 요인 중 아닌 것은? (Time: 4.43 sec)
+Processed: 석유, 고무, 동물 털, 가죽 등 황 성분 함유 물질 불완전연소 시 계란 썩은 냄새 가스는? (Time: 4.66 sec)
+Processed: 다음 중 동일 조건에서 증발잠열(kJ/kg)이 가장 큰 물질은? (Time: 5.86 sec)
+Processed: 탱크화재 시 발생하는 Boil Over 방지방법으로 틀린 것은? (Time: 4.82 sec)
+Processed: 화재 시 CO₂를 방사하여 산소농도를 11%로 낮춰 소화하려면, 공기 중 CO₂는 약 몇 vol%? (Time: 10.28 sec)
+Processed: 전기화재 시 물을 어떻게 주수하면 소화능력을 발휘할 수 있는가? (Time: 5.55 sec)
+Processed: 도장작업 공정에서 위험도 설명 중 틀린 것은? (Time: 3.80 sec)
+Processed: 방호공간 안 화재의 세기를 나타내고 온도-시간 곡선으로 표현되는 것은? (Time: 5.19 sec)
+Processed: 다음 중 특수인화물이 아닌 것은? (Time: 4.65 sec)
+Processed: 가연물 제거 통한 소화방법과 무관한 것은? (Time: 5.42 sec)
+Processed: 화재 표면온도(절대온도)가 2배 되면 복사에너지는 몇 배 증가? (Time: 2.27 sec)
+Processed: 산불화재 형태로 틀린 것은? (Time: 3.62 sec)
+fin

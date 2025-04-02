@@ -1,12 +1,12 @@
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
-YOUR_COLLECTION_NAME = "law_bme"
+# YOUR_COLLECTION_NAME = "law_bme"
 
-def retrieve_top1(db_dir, query):
+def retrieve_top1(db_dir, query, collection):
     embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
     vectorstore = Chroma(
-        collection_name=YOUR_COLLECTION_NAME, 
+        collection_name=collection, 
         persist_directory=db_dir,
         embedding_function=embeddings
     )
@@ -82,8 +82,5 @@ def retrieve_top1(db_dir, query):
         print("검색 결과가 없습니다.")
         return None
     
-    
-
-
 if __name__ == "__main__":
     test_search("/home/shared/RAG/vector_db", "과태료의 부과")
