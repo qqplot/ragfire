@@ -17,7 +17,6 @@ import gc
 import multiprocessing as mp
 import torch
 import argparse
-from transformers import AutoConfig, AutoTokenizer, AutoModelForCausalLM
 from tqdm import tqdm
 
 ######

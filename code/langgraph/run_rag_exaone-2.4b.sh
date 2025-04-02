@@ -10,6 +10,7 @@
 #SBATCH --partition=laal_3090                  
 
 echo "INPUT_LENGTH = $INPUT_LENGTH"
+echo "COLLECTION = $COLLECTION"
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export NCCL_ASYNC_ERROR_HANDLING=1
