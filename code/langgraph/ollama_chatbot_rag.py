@@ -42,7 +42,7 @@ def chatbot(state: AgentState, model_name, input_length) -> AgentState:
     llm = OllamaLLM(model = model_name, num_ctx = input_length)
     chain = template | llm
 
-    response = chain.invoke({"user_input": last_message, "context": state["context"]})
+    response = chain.invoke({"user_input": last_message, "context": state["context"], "model_name": model_name})
     state["messages"].append(AIMessage(content=response))
     print(f"ChatBot: {response}")
     
