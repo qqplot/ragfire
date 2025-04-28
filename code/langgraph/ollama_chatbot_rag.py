@@ -36,13 +36,13 @@ def chatbot(state: AgentState, model_name, input_length) -> AgentState:
     last_message = messages[-1].content
     
     template = ChatPromptTemplate([
-    ("system", "You are EXAONE model from LG AI Research, a helpful assistant."),
+    ("system", "You are {model_name} model, a helpful assistant."),
     ("human","질문: {user_input}" + "\n참고 문서: {context}"),
     ])
     llm = OllamaLLM(model = model_name, num_ctx = input_length)
     chain = template | llm
 
-    response = chain.invoke({"user_input": last_message, "context": state["context"]})
+    response = chain.invoke({"user_input": last_message, "context": state["context"], "model_name": model_name})
     state["messages"].append(AIMessage(content=response))
     print(f"ChatBot: {response}")
     
