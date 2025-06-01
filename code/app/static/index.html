@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LangGraph Chat</title>
+  <style>
+    #chat-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 300px;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>LangGraph + Ollama Chat</h2>
+  <div id="chat-box"></div>
+  <input type="text" id="user-input" placeholder="Ask something..." />
+  <button onclick="sendMessage()">Send</button>
+
+  <!-- ✅ JavaScript 코드 여기 삽입 -->
+  <script>
+    let session_id = null;
+
+    async function sendMessage() {
+      const input = document.getElementById("user-input").value;
+
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input, session_id: session_id })
+      });
+
+      const data = await res.json();
+      session_id = data.session_id;  // 다음 요청에 사용
+
+      const chatBox = document.getElementById("chat-box");
+      chatBox.innerHTML += `<p><b>You:</b> ${input}</p>`;
+      chatBox.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+
+      document.getElementById("user-input").value = "";  // 입력창 초기화
+      chatBox.scrollTop = chatBox.scrollHeight;          // 아래로 스크롤
+    }
+  </script>
+</body>
+</html>
