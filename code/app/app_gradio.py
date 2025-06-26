@@ -63,7 +63,7 @@ atexit.register(save_user_logs)
 
 # Gradio UI 구성
 with gr.Blocks() as demo:
-    gr.Markdown("### 💬 LangGraph + Ollama Multi-turn RAG Chatbot")
+    gr.Markdown("### 💬 LAAL RAG Chatbot")
 
     with gr.Row():
         user_id_input = gr.Textbox(label="🆔 User ID", placeholder="Enter your name or ID")

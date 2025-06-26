@@ -31,7 +31,7 @@ def load_documents(jsonl_path):
     return docs, metadatas
 
 
-def build_chroma_index(docs, metadatas, save_path):
+def build_chroma_index(docs, metadatas, save_path, context_encoder_path):
     if os.path.exists(save_path):
         print(f"⚠️ Warning: {save_path} already exists. Existing index may be overwritten.")
 
@@ -93,10 +93,11 @@ if __name__ == "__main__":
     # 절대 경로 설정
     jsonl_path = "/home/qqplot/ragfire/output_ver0.jsonl"
     vector_db_path = "/home/qqplot/ragfire/code/app/vector_db/lawDB_chroma"
+    context_encoder_path = "/home/qqplot/DPR-KO/pretrained_model/context_encoder"
 
     # 1. 문서 로드 및 DB 구축
     docs, metas = load_documents(jsonl_path)
-    build_chroma_index(docs, metas, save_path=vector_db_path)
+    build_chroma_index(docs, metas, save_path=vector_db_path, context_encoder_path=context_encoder_path)
 
     # 2. 검색 테스트
     query = "스프링클러 설치 기준은?"
