@@ -86,4 +86,4 @@ with gr.Blocks() as demo:
 # 실행
 if __name__ == "__main__":
     init_db()  # ✅ DB 테이블 없으면 생성
-    demo.launch(server_name="localhost", server_port=3000, share=False)
+    demo.launch(server_name="localhost", server_port=3002, share=True) # gradio 서비스 이용

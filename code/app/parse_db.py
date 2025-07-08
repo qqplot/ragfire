@@ -91,7 +91,7 @@ def retrieve_topk(db_path, query, collection_filter=None, k=3):
 
 if __name__ == "__main__":
     # 절대 경로 설정
-    jsonl_path = "/home/qqplot/ragfire/data/doc_ver2.jsonl"
+    jsonl_path = "/home/jeongjaepark/ragfire/data/doc_ver2.jsonl"
     vector_db_path = "./vector_db/lawDB_chroma"
 
     # 1. 문서 로드 및 DB 구축

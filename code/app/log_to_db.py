@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import datetime
 
-DB_PATH = "/home/qqplot/ragfire/code/app/chat_logs.db"
+DB_PATH = "/home/jeongjaepark/ragfire/code/app/chat_logs.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
