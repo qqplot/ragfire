@@ -1,3 +1,4 @@
+import html
 import gradio as gr
 import json
 import atexit
@@ -11,6 +12,16 @@ graph_app = build_workflow().compile()
 # 사용자별 히스토리 저장소
 user_histories = {}
 
+
+def highlight_text(text: str, keyword: str) -> str:
+    # 단순 하이라이팅: 대소문자 구분 없이 keyword 감싸기
+    safe_text = html.escape(text)  # XSS 방지
+    return safe_text.replace(
+        keyword,
+        f"<mark>{keyword}</mark>"
+    )
+
+
 # 초기 상태 생성 함수
 def init_state(user_id="user_default"):
     return {
@@ -21,38 +32,47 @@ def init_state(user_id="user_default"):
         "next": "user"
     }
 
-# 대화 처리 함수
 def chat_interface(history, message, state, user_id):
     if not user_id.strip():
-        return history, "❗ Please enter your user ID.", state
+        return history, "❗ Please enter your user ID.", state, ""
 
-    # state에 user_id 저장
     state["user_id"] = user_id
-
-    # 사용자 입력 메시지 추가
     state["messages"].append(HumanMessage(content=message))
 
-    # LangGraph 실행 (한 턴)
     state = graph_app.invoke(state)
     answer = state["messages"][-1].content
-    context = state.get("context", "")
     retrieved_docs = state.get("retrieved_docs", [])
 
-    # 사용자별 히스토리 누적
-    if user_id not in user_histories:
-        user_histories[user_id] = []
-    user_histories[user_id].append({
+    # 히스토리 저장
+    user_histories.setdefault(user_id, []).append({
         "question": message,
-        "retrieved_docs": context,
+        "retrieved_docs": [doc.page_content for doc in retrieved_docs],
         "response": answer
     })
 
-    # ✅ SQLite 로그 기록
+    # SQLite 기록
     log_chat_with_docs(user_id, message, answer, retrieved_docs)
+
+    # ✅ 하이라이팅 포함 Accordion HTML
+    references_html = ""
+    if retrieved_docs:
+        references_html += "<h4>📄 참고 문서</h4>"
+        for i, doc in enumerate(retrieved_docs, start=1):
+            title = f"{doc.metadata.get('law_name', '')} {doc.metadata.get('chapter', '')}" or f"문서 {i}"
+
+            snippet = highlight_text(doc.page_content.strip(), message)
+            references_html += f"""
+            <details style="margin-bottom: 10px;">
+                <summary><b>[{i}] {html.escape(title)}</b></summary>
+                <div style="margin-left: 15px; white-space: pre-wrap; font-size: 0.9em;">{snippet}</div>
+            </details>
+            """
 
     # 채팅 UI 업데이트
     history.append((message, answer))
-    return history, "", state
+    return history, "", state, references_html
+
+
 
 # 종료 시 JSON으로 백업 저장 (보조용)
 def save_user_logs():
@@ -63,7 +83,7 @@ atexit.register(save_user_logs)
 
 # Gradio UI 구성
 with gr.Blocks() as demo:
-    gr.Markdown("### 💬 LAAL RAG Chatbot")
+    gr.Markdown("### 💬 내담-서울대 RAG Chatbot")
 
     with gr.Row():
         user_id_input = gr.Textbox(label="🆔 User ID", placeholder="Enter your name or ID")
@@ -71,16 +91,24 @@ with gr.Blocks() as demo:
 
     chatbot = gr.Chatbot()
     msg = gr.Textbox(placeholder="Ask something...", label="Your Message")
+
+    # ✅ 새로 추가될 Accordion 출력 영역
+    references_output = gr.HTML(label="참고 문서")  # 출력은 HTML로
+
     state = gr.State(init_state())
 
     # 메시지 입력 시 처리
-    msg.submit(chat_interface, [chatbot, msg, state, user_id_input], [chatbot, msg, state])
+    msg.submit(
+        chat_interface,
+        [chatbot, msg, state, user_id_input],
+        [chatbot, msg, state, references_output]  # ✅ references_output 추가
+    )
 
     # 초기화 버튼 클릭 시 상태 재설정
     clear_btn.click(
-        lambda user_id: ([], "", init_state(user_id)),
+        lambda user_id: ([], "", init_state(user_id), ""),
         inputs=[user_id_input],
-        outputs=[chatbot, msg, state]
+        outputs=[chatbot, msg, state, references_output]
     )
 
 # 실행
