@@ -1,28 +1,22 @@
 import html
-import gradio as gr
 import json
 import atexit
+import argparse
+import gradio as gr
 from langchain_core.messages import HumanMessage
 from graph_workflow import build_workflow
-from log_to_db import init_db, log_chat_with_docs
+from log_to_db import ChatLogger
 
-# LangGraph 앱 빌드
-graph_app = build_workflow().compile()
 
 # 사용자별 히스토리 저장소
 user_histories = {}
 
 
 def highlight_text(text: str, keyword: str) -> str:
-    # 단순 하이라이팅: 대소문자 구분 없이 keyword 감싸기
-    safe_text = html.escape(text)  # XSS 방지
-    return safe_text.replace(
-        keyword,
-        f"<mark>{keyword}</mark>"
-    )
+    safe_text = html.escape(text)
+    return safe_text.replace(keyword, f"<mark>{keyword}</mark>")
 
 
-# 초기 상태 생성 함수
 def init_state(user_id="user_default"):
     return {
         "user_id": user_id,
@@ -32,7 +26,8 @@ def init_state(user_id="user_default"):
         "next": "user"
     }
 
-def chat_interface(history, message, state, user_id):
+
+def chat_interface(graph_app, history, message, state, user_id, logger=None):
     if not user_id.strip():
         return history, "❗ Please enter your user ID.", state, ""
 
@@ -43,23 +38,19 @@ def chat_interface(history, message, state, user_id):
     answer = state["messages"][-1].content
     retrieved_docs = state.get("retrieved_docs", [])
 
-    # 히스토리 저장
     user_histories.setdefault(user_id, []).append({
         "question": message,
         "retrieved_docs": [doc.page_content for doc in retrieved_docs],
         "response": answer
     })
 
-    # SQLite 기록
-    log_chat_with_docs(user_id, message, answer, retrieved_docs)
+    logger.log_chat_with_docs(user_id, message, answer, retrieved_docs)
 
-    # ✅ 하이라이팅 포함 Accordion HTML
     references_html = ""
     if retrieved_docs:
         references_html += "<h4>📄 참고 문서</h4>"
         for i, doc in enumerate(retrieved_docs, start=1):
             title = f"{doc.metadata.get('law_name', '')} {doc.metadata.get('chapter', '')}" or f"문서 {i}"
-
             snippet = highlight_text(doc.page_content.strip(), message)
             references_html += f"""
             <details style="margin-bottom: 10px;">
@@ -68,50 +59,62 @@ def chat_interface(history, message, state, user_id):
             </details>
             """
 
-    # 채팅 UI 업데이트
     history.append((message, answer))
     return history, "", state, references_html
 
 
-
-# 종료 시 JSON으로 백업 저장 (보조용)
 def save_user_logs():
     with open("user_histories.json", "w", encoding="utf-8") as f:
         json.dump(user_histories, f, indent=2, ensure_ascii=False)
 
-atexit.register(save_user_logs)
 
-# Gradio UI 구성
-with gr.Blocks() as demo:
-    gr.Markdown("### 💬 내담-서울대 RAG Chatbot")
+def launch_ui(graph_app, logger=None):
+    with gr.Blocks() as demo:
+        gr.Markdown("### 💬 내담-서울대 RAG Chatbot")
 
-    with gr.Row():
-        user_id_input = gr.Textbox(label="🆔 User ID", placeholder="Enter your name or ID")
-        clear_btn = gr.Button("🧹 Clear")
+        with gr.Row():
+            user_id_input = gr.Textbox(label="🆔 User ID", placeholder="Enter your name or ID")
+            clear_btn = gr.Button("🧹 Clear")
 
-    chatbot = gr.Chatbot()
-    msg = gr.Textbox(placeholder="Ask something...", label="Your Message")
+        chatbot = gr.Chatbot()
+        msg = gr.Textbox(placeholder="Ask something...", label="Your Message")
+        references_output = gr.HTML(label="참고 문서")
+        state = gr.State(init_state())
 
-    # ✅ 새로 추가될 Accordion 출력 영역
-    references_output = gr.HTML(label="참고 문서")  # 출력은 HTML로
+        # submit handler
+        msg.submit(
+            lambda h, m, s, uid: chat_interface(graph_app, h, m, s, uid, logger),
+            inputs=[chatbot, msg, state, user_id_input],
+            outputs=[chatbot, msg, state, references_output]
+        )
 
-    state = gr.State(init_state())
+        # clear handler
+        clear_btn.click(
+            lambda uid: ([], "", init_state(uid), ""),
+            inputs=[user_id_input],
+            outputs=[chatbot, msg, state, references_output]
+        )
 
-    # 메시지 입력 시 처리
-    msg.submit(
-        chat_interface,
-        [chatbot, msg, state, user_id_input],
-        [chatbot, msg, state, references_output]  # ✅ references_output 추가
-    )
-
-    # 초기화 버튼 클릭 시 상태 재설정
-    clear_btn.click(
-        lambda user_id: ([], "", init_state(user_id), ""),
-        inputs=[user_id_input],
-        outputs=[chatbot, msg, state, references_output]
-    )
-
-# 실행
-if __name__ == "__main__":
-    init_db()  # ✅ DB 테이블 없으면 생성
     demo.launch(server_name="localhost", server_port=3000, share=False)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, default="qwen2.5:32b-instruct", help="Ollama 모델 이름")
+    parser.add_argument("--ctx", type=int, default=4096, help="LLM context window 크기")
+    return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+
+    logger = ChatLogger(db_path="./chat_logs.db")
+    logger.init_db()
+
+    graph_app = build_workflow(model_name=args.model, input_length=args.ctx).compile()
+    atexit.register(save_user_logs)
+    launch_ui(graph_app, logger=logger)
+
+
+if __name__ == "__main__":
+    main()

@@ -276,7 +276,7 @@ def decide_to_retrieve(state: AgentState, model_name: str, input_length: int) ->
         print("==== [ROUTE QUESTION TO NO_RETRIEVE] ====")
         return "no_retrieve"
 
-def build_workflow(model_name="qwen2.5:32b-instruct", input_length=4096, partition=None):
+def build_workflow(model_name="qwen2.5:32b-instruct", input_length=4096):
     workflow = StateGraph(AgentState)
     workflow.add_node("user", user)
     workflow.add_node("retrieve_law", lambda s: retrieve(s, partition="law"))
