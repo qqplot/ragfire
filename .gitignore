@@ -6,7 +6,7 @@ __pycache__/
 hub/
 model/
 vector_db/
-
+.gradio
 
 # C extensions
 *.so
