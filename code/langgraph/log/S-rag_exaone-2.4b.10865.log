@@ -1,1093 +1,0 @@
-INPUT_LENGTH = 8192
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.02it/s]
-inference FEtest.json:   0%|          | 0/543 [00:00<?, ?it/s]/home/jeongjaepark/ragfire/code/langgraph/retrieve_top1.py:7: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
-  embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
-/home/jeongjaepark/ragfire/code/langgraph/retrieve_top1.py:8: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-chroma package and should be used instead. To use it run `pip install -U :class:`~langchain-chroma` and import as `from :class:`~langchain_chroma import Chroma``.
-  vectorstore = Chroma(
-inference FEtest.json:   0%|          | 1/543 [00:22<3:19:04, 22.04s/it]inference FEtest.json:   0%|          | 2/543 [00:34<2:25:56, 16.19s/it]inference FEtest.json:   1%|          | 3/543 [00:46<2:08:21, 14.26s/it]inference FEtest.json:   1%|          | 4/543 [00:57<1:58:45, 13.22s/it]inference FEtest.json:   1%|          | 5/543 [01:09<1:55:16, 12.86s/it]inference FEtest.json:   1%|          | 6/543 [01:22<1:55:22, 12.89s/it]inference FEtest.json:   1%|▏         | 7/543 [01:38<2:02:36, 13.73s/it]inference FEtest.json:   1%|▏         | 8/543 [01:50<1:56:59, 13.12s/it]inference FEtest.json:   2%|▏         | 9/543 [02:03<1:57:12, 13.17s/it]inference FEtest.json:   2%|▏         | 10/543 [02:16<1:56:52, 13.16s/it]inference FEtest.json:   2%|▏         | 11/543 [02:23<1:40:29, 11.33s/it]inference FEtest.json:   2%|▏         | 12/543 [02:36<1:44:21, 11.79s/it]inference FEtest.json:   2%|▏         | 13/543 [02:48<1:43:21, 11.70s/it]inference FEtest.json:   3%|▎         | 14/543 [02:59<1:42:01, 11.57s/it]inference FEtest.json:   3%|▎         | 15/543 [03:09<1:37:56, 11.13s/it]inference FEtest.json:   3%|▎         | 16/543 [03:23<1:44:59, 11.95s/it]inference FEtest.json:   3%|▎         | 17/543 [03:38<1:52:39, 12.85s/it]inference FEtest.json:   3%|▎         | 18/543 [03:49<1:47:38, 12.30s/it]inference FEtest.json:   3%|▎         | 19/543 [03:59<1:41:53, 11.67s/it]inference FEtest.json:   4%|▎         | 20/543 [04:12<1:43:54, 11.92s/it]inference FEtest.json:   4%|▍         | 21/543 [04:25<1:47:38, 12.37s/it]inference FEtest.json:   4%|▍         | 22/543 [04:40<1:55:11, 13.27s/it]inference FEtest.json:   4%|▍         | 23/543 [04:57<2:02:55, 14.18s/it]inference FEtest.json:   4%|▍         | 24/543 [05:04<1:45:28, 12.19s/it]inference FEtest.json:   5%|▍         | 25/543 [05:17<1:46:03, 12.29s/it]inference FEtest.json:   5%|▍         | 26/543 [05:28<1:42:11, 11.86s/it]inference FEtest.json:   5%|▍         | 27/543 [05:43<1:50:45, 12.88s/it]inference FEtest.json:   5%|▌         | 28/543 [05:58<1:56:32, 13.58s/it]inference FEtest.json:   5%|▌         | 29/543 [06:05<1:40:14, 11.70s/it]inference FEtest.json:   6%|▌         | 30/543 [06:16<1:38:41, 11.54s/it]inference FEtest.json:   6%|▌         | 31/543 [06:26<1:33:25, 10.95s/it]inference FEtest.json:   6%|▌         | 32/543 [06:33<1:23:59,  9.86s/it]inference FEtest.json:   6%|▌         | 33/543 [06:47<1:33:32, 11.01s/it]inference FEtest.json:   6%|▋         | 34/543 [06:59<1:35:05, 11.21s/it]inference FEtest.json:   6%|▋         | 35/543 [07:09<1:33:16, 11.02s/it]inference FEtest.json:   7%|▋         | 36/543 [07:23<1:40:53, 11.94s/it]inference FEtest.json:   7%|▋         | 37/543 [07:33<1:35:05, 11.28s/it]inference FEtest.json:   7%|▋         | 38/543 [07:41<1:27:19, 10.38s/it]inference FEtest.json:   7%|▋         | 39/543 [07:50<1:22:47,  9.86s/it]inference FEtest.json:   7%|▋         | 40/543 [08:01<1:24:34, 10.09s/it]inference FEtest.json:   8%|▊         | 41/543 [08:11<1:24:46, 10.13s/it]inference FEtest.json:   8%|▊         | 42/543 [08:21<1:23:55, 10.05s/it]inference FEtest.json:   8%|▊         | 43/543 [08:31<1:24:13, 10.11s/it]inference FEtest.json:   8%|▊         | 44/543 [08:40<1:21:05,  9.75s/it]inference FEtest.json:   8%|▊         | 45/543 [08:53<1:29:43, 10.81s/it]inference FEtest.json:   8%|▊         | 46/543 [09:08<1:40:26, 12.13s/it]inference FEtest.json:   9%|▊         | 47/543 [09:18<1:32:48, 11.23s/it]inference FEtest.json:   9%|▉         | 48/543 [09:28<1:31:44, 11.12s/it]inference FEtest.json:   9%|▉         | 49/543 [09:41<1:35:00, 11.54s/it]inference FEtest.json:   9%|▉         | 50/543 [09:53<1:36:10, 11.70s/it]inference FEtest.json:   9%|▉         | 51/543 [10:01<1:27:55, 10.72s/it]inference FEtest.json:  10%|▉         | 52/543 [10:16<1:36:45, 11.82s/it]inference FEtest.json:  10%|▉         | 53/543 [10:26<1:32:09, 11.28s/it]inference FEtest.json:  10%|▉         | 54/543 [10:38<1:35:08, 11.67s/it]inference FEtest.json:  10%|█         | 55/543 [10:46<1:23:49, 10.31s/it]inference FEtest.json:  10%|█         | 56/543 [10:53<1:15:45,  9.33s/it]inference FEtest.json:  10%|█         | 57/543 [11:07<1:28:25, 10.92s/it]inference FEtest.json:  11%|█         | 58/543 [11:17<1:24:24, 10.44s/it]inference FEtest.json:  11%|█         | 59/543 [11:26<1:22:03, 10.17s/it]inference FEtest.json:  11%|█         | 60/543 [11:41<1:33:39, 11.63s/it]inference FEtest.json:  11%|█         | 61/543 [11:52<1:30:28, 11.26s/it]inference FEtest.json:  11%|█▏        | 62/543 [12:00<1:24:37, 10.56s/it]inference FEtest.json:  12%|█▏        | 63/543 [12:11<1:25:37, 10.70s/it]inference FEtest.json:  12%|█▏        | 64/543 [12:22<1:24:05, 10.53s/it]inference FEtest.json:  12%|█▏        | 65/543 [12:35<1:30:57, 11.42s/it]inference FEtest.json:  12%|█▏        | 66/543 [12:44<1:25:35, 10.77s/it]inference FEtest.json:  12%|█▏        | 67/543 [12:54<1:22:54, 10.45s/it]inference FEtest.json:  13%|█▎        | 68/543 [13:04<1:20:22, 10.15s/it]inference FEtest.json:  13%|█▎        | 69/543 [13:15<1:23:40, 10.59s/it]inference FEtest.json:  13%|█▎        | 70/543 [13:29<1:31:18, 11.58s/it]inference FEtest.json:  13%|█▎        | 71/543 [13:39<1:27:35, 11.14s/it]inference FEtest.json:  13%|█▎        | 72/543 [13:49<1:24:30, 10.76s/it]inference FEtest.json:  13%|█▎        | 73/543 [14:02<1:28:44, 11.33s/it]inference FEtest.json:  14%|█▎        | 74/543 [14:13<1:28:01, 11.26s/it]inference FEtest.json:  14%|█▍        | 75/543 [14:22<1:21:58, 10.51s/it]inference FEtest.json:  14%|█▍        | 76/543 [14:31<1:18:20, 10.07s/it]inference FEtest.json:  14%|█▍        | 77/543 [14:41<1:19:28, 10.23s/it]inference FEtest.json:  14%|█▍        | 78/543 [14:50<1:15:02,  9.68s/it]inference FEtest.json:  15%|█▍        | 79/543 [15:00<1:16:30,  9.89s/it]inference FEtest.json:  15%|█▍        | 80/543 [15:12<1:20:54, 10.49s/it]inference FEtest.json:  15%|█▍        | 81/543 [15:27<1:32:09, 11.97s/it]inference FEtest.json:  15%|█▌        | 82/543 [15:37<1:26:16, 11.23s/it]inference FEtest.json:  15%|█▌        | 83/543 [15:45<1:20:16, 10.47s/it]inference FEtest.json:  15%|█▌        | 84/543 [15:57<1:23:19, 10.89s/it]inference FEtest.json:  16%|█▌        | 85/543 [16:08<1:22:51, 10.86s/it]inference FEtest.json:  16%|█▌        | 86/543 [16:23<1:32:43, 12.17s/it]inference FEtest.json:  16%|█▌        | 87/543 [16:32<1:24:16, 11.09s/it]inference FEtest.json:  16%|█▌        | 88/543 [16:47<1:32:21, 12.18s/it]inference FEtest.json:  16%|█▋        | 89/543 [16:56<1:26:09, 11.39s/it]inference FEtest.json:  17%|█▋        | 90/543 [17:11<1:32:50, 12.30s/it]inference FEtest.json:  17%|█▋        | 91/543 [17:25<1:36:17, 12.78s/it]inference FEtest.json:  17%|█▋        | 92/543 [17:35<1:31:13, 12.14s/it]inference FEtest.json:  17%|█▋        | 93/543 [17:44<1:22:42, 11.03s/it]inference FEtest.json:  17%|█▋        | 94/543 [17:56<1:24:41, 11.32s/it]inference FEtest.json:  17%|█▋        | 95/543 [18:06<1:23:33, 11.19s/it]inference FEtest.json:  18%|█▊        | 96/543 [18:18<1:25:08, 11.43s/it]inference FEtest.json:  18%|█▊        | 97/543 [18:31<1:27:12, 11.73s/it]inference FEtest.json:  18%|█▊        | 98/543 [18:39<1:19:57, 10.78s/it]inference FEtest.json:  18%|█▊        | 99/543 [18:54<1:28:28, 11.96s/it]inference FEtest.json:  18%|█▊        | 100/543 [19:09<1:34:13, 12.76s/it]inference FEtest.json:  19%|█▊        | 101/543 [19:21<1:32:53, 12.61s/it]inference FEtest.json:  19%|█▉        | 102/543 [19:36<1:38:30, 13.40s/it]inference FEtest.json:  19%|█▉        | 103/543 [19:47<1:31:36, 12.49s/it]inference FEtest.json:  19%|█▉        | 104/543 [20:02<1:37:06, 13.27s/it]inference FEtest.json:  19%|█▉        | 105/543 [20:13<1:33:00, 12.74s/it]inference FEtest.json:  20%|█▉        | 106/543 [20:27<1:35:20, 13.09s/it]inference FEtest.json:  20%|█▉        | 107/543 [20:39<1:31:59, 12.66s/it]inference FEtest.json:  20%|█▉        | 108/543 [20:48<1:25:09, 11.75s/it]inference FEtest.json:  20%|██        | 109/543 [21:06<1:36:35, 13.35s/it]inference FEtest.json:  20%|██        | 110/543 [21:18<1:33:38, 12.97s/it]inference FEtest.json:  20%|██        | 111/543 [21:34<1:40:18, 13.93s/it]inference FEtest.json:  21%|██        | 112/543 [21:48<1:39:38, 13.87s/it]inference FEtest.json:  21%|██        | 113/543 [21:58<1:32:53, 12.96s/it]inference FEtest.json:  21%|██        | 114/543 [22:09<1:27:29, 12.24s/it]inference FEtest.json:  21%|██        | 115/543 [22:19<1:22:28, 11.56s/it]inference FEtest.json:  21%|██▏       | 116/543 [22:33<1:28:24, 12.42s/it]inference FEtest.json:  22%|██▏       | 117/543 [22:45<1:27:23, 12.31s/it]inference FEtest.json:  22%|██▏       | 118/543 [22:55<1:20:28, 11.36s/it]inference FEtest.json:  22%|██▏       | 119/543 [23:07<1:22:21, 11.65s/it]inference FEtest.json:  22%|██▏       | 120/543 [23:18<1:20:54, 11.48s/it]inference FEtest.json:  22%|██▏       | 121/543 [23:28<1:17:27, 11.01s/it]inference FEtest.json:  22%|██▏       | 122/543 [23:40<1:19:34, 11.34s/it]inference FEtest.json:  23%|██▎       | 123/543 [23:51<1:18:02, 11.15s/it]inference FEtest.json:  23%|██▎       | 124/543 [24:00<1:14:11, 10.62s/it]inference FEtest.json:  23%|██▎       | 125/543 [24:11<1:14:25, 10.68s/it]inference FEtest.json:  23%|██▎       | 126/543 [24:22<1:15:09, 10.81s/it]inference FEtest.json:  23%|██▎       | 127/543 [24:34<1:17:51, 11.23s/it]inference FEtest.json:  24%|██▎       | 128/543 [24:45<1:15:48, 10.96s/it]inference FEtest.json:  24%|██▍       | 129/543 [24:54<1:13:16, 10.62s/it]inference FEtest.json:  24%|██▍       | 130/543 [25:07<1:17:17, 11.23s/it]inference FEtest.json:  24%|██▍       | 131/543 [25:14<1:09:16, 10.09s/it]inference FEtest.json:  24%|██▍       | 132/543 [25:22<1:03:12,  9.23s/it]inference FEtest.json:  24%|██▍       | 133/543 [25:32<1:05:58,  9.65s/it]inference FEtest.json:  25%|██▍       | 134/543 [25:41<1:04:14,  9.42s/it]inference FEtest.json:  25%|██▍       | 135/543 [25:49<1:01:41,  9.07s/it]inference FEtest.json:  25%|██▌       | 136/543 [25:56<57:07,  8.42s/it]  inference FEtest.json:  25%|██▌       | 137/543 [26:07<1:01:02,  9.02s/it]inference FEtest.json:  25%|██▌       | 138/543 [26:20<1:10:09, 10.39s/it]inference FEtest.json:  26%|██▌       | 139/543 [26:30<1:08:34, 10.18s/it]inference FEtest.json:  26%|██▌       | 140/543 [26:38<1:04:19,  9.58s/it]inference FEtest.json:  26%|██▌       | 141/543 [26:50<1:08:28, 10.22s/it]inference FEtest.json:  26%|██▌       | 142/543 [27:02<1:11:33, 10.71s/it]inference FEtest.json:  26%|██▋       | 143/543 [27:17<1:20:01, 12.00s/it]inference FEtest.json:  27%|██▋       | 144/543 [27:24<1:10:44, 10.64s/it]inference FEtest.json:  27%|██▋       | 145/543 [27:39<1:18:12, 11.79s/it]inference FEtest.json:  27%|██▋       | 146/543 [27:49<1:14:08, 11.20s/it]inference FEtest.json:  27%|██▋       | 147/543 [27:58<1:10:30, 10.68s/it]inference FEtest.json:  27%|██▋       | 148/543 [28:07<1:07:24, 10.24s/it]inference FEtest.json:  27%|██▋       | 149/543 [28:18<1:08:54, 10.49s/it]inference FEtest.json:  28%|██▊       | 150/543 [28:29<1:08:29, 10.46s/it]inference FEtest.json:  28%|██▊       | 151/543 [28:40<1:10:08, 10.74s/it]inference FEtest.json:  28%|██▊       | 152/543 [28:46<1:01:14,  9.40s/it]inference FEtest.json:  28%|██▊       | 153/543 [29:01<1:12:09, 11.10s/it]inference FEtest.json:  28%|██▊       | 154/543 [29:08<1:03:45,  9.83s/it]inference FEtest.json:  29%|██▊       | 155/543 [29:18<1:02:54,  9.73s/it]inference FEtest.json:  29%|██▊       | 156/543 [29:27<1:01:50,  9.59s/it]inference FEtest.json:  29%|██▉       | 157/543 [29:38<1:05:13, 10.14s/it]inference FEtest.json:  29%|██▉       | 158/543 [29:53<1:13:53, 11.52s/it]inference FEtest.json:  29%|██▉       | 159/543 [30:03<1:10:48, 11.06s/it]inference FEtest.json:  29%|██▉       | 160/543 [30:12<1:06:35, 10.43s/it]inference FEtest.json:  30%|██▉       | 161/543 [30:25<1:11:40, 11.26s/it]inference FEtest.json:  30%|██▉       | 162/543 [30:35<1:08:43, 10.82s/it]inference FEtest.json:  30%|███       | 163/543 [30:48<1:12:48, 11.50s/it]inference FEtest.json:  30%|███       | 164/543 [31:04<1:19:49, 12.64s/it]inference FEtest.json:  30%|███       | 165/543 [31:16<1:19:15, 12.58s/it]inference FEtest.json:  31%|███       | 166/543 [31:31<1:23:59, 13.37s/it]inference FEtest.json:  31%|███       | 167/543 [31:44<1:23:00, 13.25s/it]inference FEtest.json:  31%|███       | 168/543 [31:57<1:22:16, 13.17s/it]inference FEtest.json:  31%|███       | 169/543 [32:11<1:23:05, 13.33s/it]inference FEtest.json:  31%|███▏      | 170/543 [32:25<1:24:34, 13.60s/it]inference FEtest.json:  31%|███▏      | 171/543 [32:39<1:25:07, 13.73s/it]inference FEtest.json:  32%|███▏      | 172/543 [32:52<1:23:06, 13.44s/it]inference FEtest.json:  32%|███▏      | 173/543 [33:01<1:15:06, 12.18s/it]inference FEtest.json:  32%|███▏      | 174/543 [33:12<1:13:14, 11.91s/it]inference FEtest.json:  32%|███▏      | 175/543 [33:24<1:12:11, 11.77s/it]inference FEtest.json:  32%|███▏      | 176/543 [33:32<1:05:28, 10.71s/it]inference FEtest.json:  33%|███▎      | 177/543 [33:42<1:03:31, 10.41s/it]inference FEtest.json:  33%|███▎      | 178/543 [33:54<1:07:15, 11.06s/it]inference FEtest.json:  33%|███▎      | 179/543 [34:01<59:15,  9.77s/it]  inference FEtest.json:  33%|███▎      | 180/543 [34:13<1:03:26, 10.49s/it]inference FEtest.json:  33%|███▎      | 181/543 [34:22<1:00:17,  9.99s/it]inference FEtest.json:  34%|███▎      | 182/543 [34:29<54:08,  9.00s/it]  inference FEtest.json:  34%|███▎      | 183/543 [34:41<1:00:11, 10.03s/it]inference FEtest.json:  34%|███▍      | 184/543 [34:51<1:00:09, 10.05s/it]inference FEtest.json:  34%|███▍      | 185/543 [35:04<1:05:24, 10.96s/it]inference FEtest.json:  34%|███▍      | 186/543 [35:11<56:51,  9.56s/it]  inference FEtest.json:  34%|███▍      | 187/543 [35:20<56:45,  9.57s/it]inference FEtest.json:  35%|███▍      | 188/543 [35:28<54:04,  9.14s/it]inference FEtest.json:  35%|███▍      | 189/543 [35:41<1:00:37, 10.28s/it]inference FEtest.json:  35%|███▍      | 190/543 [35:52<1:00:11, 10.23s/it]inference FEtest.json:  35%|███▌      | 191/543 [36:02<1:00:40, 10.34s/it]inference FEtest.json:  35%|███▌      | 192/543 [36:15<1:05:08, 11.13s/it]inference FEtest.json:  36%|███▌      | 193/543 [36:24<1:01:26, 10.53s/it]inference FEtest.json:  36%|███▌      | 194/543 [36:34<59:44, 10.27s/it]  inference FEtest.json:  36%|███▌      | 195/543 [36:43<56:51,  9.80s/it]inference FEtest.json:  36%|███▌      | 196/543 [36:56<1:03:05, 10.91s/it]inference FEtest.json:  36%|███▋      | 197/543 [37:07<1:02:13, 10.79s/it]inference FEtest.json:  36%|███▋      | 198/543 [37:14<56:10,  9.77s/it]  inference FEtest.json:  37%|███▋      | 199/543 [37:25<57:53, 10.10s/it]inference FEtest.json:  37%|███▋      | 200/543 [37:37<1:00:37, 10.61s/it]inference FEtest.json:  37%|███▋      | 201/543 [37:50<1:04:37, 11.34s/it]inference FEtest.json:  37%|███▋      | 202/543 [37:58<59:37, 10.49s/it]  inference FEtest.json:  37%|███▋      | 203/543 [38:12<1:05:34, 11.57s/it]inference FEtest.json:  38%|███▊      | 204/543 [38:28<1:12:12, 12.78s/it]inference FEtest.json:  38%|███▊      | 205/543 [38:37<1:06:12, 11.75s/it]inference FEtest.json:  38%|███▊      | 206/543 [38:44<58:16, 10.37s/it]  inference FEtest.json:  38%|███▊      | 207/543 [38:52<52:48,  9.43s/it]inference FEtest.json:  38%|███▊      | 208/543 [39:07<1:02:35, 11.21s/it]inference FEtest.json:  38%|███▊      | 209/543 [39:18<1:01:24, 11.03s/it]inference FEtest.json:  39%|███▊      | 210/543 [39:33<1:09:09, 12.46s/it]inference FEtest.json:  39%|███▉      | 211/543 [39:47<1:11:12, 12.87s/it]inference FEtest.json:  39%|███▉      | 212/543 [39:58<1:07:33, 12.24s/it]inference FEtest.json:  39%|███▉      | 213/543 [40:11<1:08:56, 12.53s/it]inference FEtest.json:  39%|███▉      | 214/543 [40:24<1:09:39, 12.70s/it]inference FEtest.json:  40%|███▉      | 215/543 [40:34<1:04:47, 11.85s/it]inference FEtest.json:  40%|███▉      | 216/543 [40:46<1:04:32, 11.84s/it]inference FEtest.json:  40%|███▉      | 217/543 [40:57<1:02:55, 11.58s/it]inference FEtest.json:  40%|████      | 218/543 [41:08<1:02:35, 11.56s/it]inference FEtest.json:  40%|████      | 219/543 [41:21<1:04:03, 11.86s/it]inference FEtest.json:  41%|████      | 220/543 [41:33<1:03:29, 11.80s/it]inference FEtest.json:  41%|████      | 221/543 [41:46<1:05:58, 12.29s/it]inference FEtest.json:  41%|████      | 222/543 [41:58<1:04:34, 12.07s/it]inference FEtest.json:  41%|████      | 223/543 [42:06<58:58, 11.06s/it]  inference FEtest.json:  41%|████▏     | 224/543 [42:18<59:35, 11.21s/it]inference FEtest.json:  41%|████▏     | 225/543 [42:25<52:09,  9.84s/it]inference FEtest.json:  42%|████▏     | 226/543 [42:36<54:08, 10.25s/it]inference FEtest.json:  42%|████▏     | 227/543 [42:50<59:46, 11.35s/it]inference FEtest.json:  42%|████▏     | 228/543 [43:01<58:56, 11.23s/it]inference FEtest.json:  42%|████▏     | 229/543 [43:14<1:02:45, 11.99s/it]inference FEtest.json:  42%|████▏     | 230/543 [43:31<1:09:01, 13.23s/it]inference FEtest.json:  43%|████▎     | 231/543 [43:47<1:13:25, 14.12s/it]inference FEtest.json:  43%|████▎     | 232/543 [43:59<1:09:57, 13.50s/it]inference FEtest.json:  43%|████▎     | 233/543 [44:11<1:07:15, 13.02s/it]inference FEtest.json:  43%|████▎     | 234/543 [44:21<1:03:22, 12.31s/it]inference FEtest.json:  43%|████▎     | 235/543 [44:37<1:07:55, 13.23s/it]inference FEtest.json:  43%|████▎     | 236/543 [44:48<1:05:26, 12.79s/it]inference FEtest.json:  44%|████▎     | 237/543 [45:02<1:05:36, 12.86s/it]inference FEtest.json:  44%|████▍     | 238/543 [45:09<56:47, 11.17s/it]  inference FEtest.json:  44%|████▍     | 239/543 [45:22<1:00:24, 11.92s/it]inference FEtest.json:  44%|████▍     | 240/543 [45:32<57:19, 11.35s/it]  inference FEtest.json:  44%|████▍     | 241/543 [45:43<55:50, 11.10s/it]inference FEtest.json:  45%|████▍     | 242/543 [45:55<57:14, 11.41s/it]inference FEtest.json:  45%|████▍     | 243/543 [46:05<54:38, 10.93s/it]inference FEtest.json:  45%|████▍     | 244/543 [46:15<52:29, 10.53s/it]inference FEtest.json:  45%|████▌     | 245/543 [46:30<1:00:14, 12.13s/it]inference FEtest.json:  45%|████▌     | 246/543 [46:44<1:02:43, 12.67s/it]inference FEtest.json:  45%|████▌     | 247/543 [47:00<1:07:20, 13.65s/it]inference FEtest.json:  46%|████▌     | 248/543 [47:14<1:07:17, 13.69s/it]inference FEtest.json:  46%|████▌     | 249/543 [47:24<1:02:21, 12.73s/it]inference FEtest.json:  46%|████▌     | 250/543 [47:35<58:24, 11.96s/it]  inference FEtest.json:  46%|████▌     | 251/543 [47:44<55:02, 11.31s/it]inference FEtest.json:  46%|████▋     | 252/543 [47:53<51:13, 10.56s/it]inference FEtest.json:  47%|████▋     | 253/543 [48:04<51:28, 10.65s/it]inference FEtest.json:  47%|████▋     | 254/543 [48:18<56:31, 11.73s/it]inference FEtest.json:  47%|████▋     | 255/543 [48:29<54:09, 11.28s/it]inference FEtest.json:  47%|████▋     | 256/543 [48:43<58:22, 12.20s/it]inference FEtest.json:  47%|████▋     | 257/543 [48:58<1:02:33, 13.12s/it]inference FEtest.json:  48%|████▊     | 258/543 [49:05<53:58, 11.36s/it]  inference FEtest.json:  48%|████▊     | 259/543 [49:17<54:02, 11.42s/it]inference FEtest.json:  48%|████▊     | 260/543 [49:30<56:05, 11.89s/it]inference FEtest.json:  48%|████▊     | 261/543 [49:39<51:06, 10.88s/it]inference FEtest.json:  48%|████▊     | 262/543 [49:52<54:06, 11.55s/it]inference FEtest.json:  48%|████▊     | 263/543 [50:05<56:15, 12.06s/it]inference FEtest.json:  49%|████▊     | 264/543 [50:20<1:00:20, 12.98s/it]inference FEtest.json:  49%|████▉     | 265/543 [50:29<54:38, 11.79s/it]  inference FEtest.json:  49%|████▉     | 266/543 [50:44<59:14, 12.83s/it]inference FEtest.json:  49%|████▉     | 267/543 [50:59<1:01:29, 13.37s/it]inference FEtest.json:  49%|████▉     | 268/543 [51:12<1:01:03, 13.32s/it]inference FEtest.json:  50%|████▉     | 269/543 [51:23<57:47, 12.66s/it]  inference FEtest.json:  50%|████▉     | 270/543 [51:36<58:04, 12.76s/it]inference FEtest.json:  50%|████▉     | 271/543 [51:46<53:35, 11.82s/it]inference FEtest.json:  50%|█████     | 272/543 [51:58<53:40, 11.89s/it]inference FEtest.json:  50%|█████     | 273/543 [52:12<56:57, 12.66s/it]inference FEtest.json:  50%|█████     | 274/543 [52:27<59:58, 13.38s/it]inference FEtest.json:  51%|█████     | 275/543 [52:38<55:23, 12.40s/it]inference FEtest.json:  51%|█████     | 276/543 [52:54<59:55, 13.47s/it]inference FEtest.json:  51%|█████     | 277/543 [53:09<1:02:55, 14.19s/it]inference FEtest.json:  51%|█████     | 278/543 [53:16<52:15, 11.83s/it]  inference FEtest.json:  51%|█████▏    | 279/543 [53:28<52:42, 11.98s/it]inference FEtest.json:  52%|█████▏    | 280/543 [53:39<50:49, 11.60s/it]inference FEtest.json:  52%|█████▏    | 281/543 [53:51<51:08, 11.71s/it]inference FEtest.json:  52%|█████▏    | 282/543 [54:02<50:26, 11.59s/it]inference FEtest.json:  52%|█████▏    | 283/543 [54:13<49:38, 11.46s/it]inference FEtest.json:  52%|█████▏    | 284/543 [54:29<54:50, 12.71s/it]inference FEtest.json:  52%|█████▏    | 285/543 [54:36<47:46, 11.11s/it]inference FEtest.json:  53%|█████▎    | 286/543 [54:50<50:30, 11.79s/it]inference FEtest.json:  53%|█████▎    | 287/543 [54:58<45:27, 10.65s/it]inference FEtest.json:  53%|█████▎    | 288/543 [55:11<48:55, 11.51s/it]inference FEtest.json:  53%|█████▎    | 289/543 [55:21<47:04, 11.12s/it]inference FEtest.json:  53%|█████▎    | 290/543 [55:35<50:03, 11.87s/it]inference FEtest.json:  54%|█████▎    | 291/543 [55:44<45:55, 10.93s/it]inference FEtest.json:  54%|█████▍    | 292/543 [55:56<46:58, 11.23s/it]inference FEtest.json:  54%|█████▍    | 293/543 [56:05<44:35, 10.70s/it]inference FEtest.json:  54%|█████▍    | 294/543 [56:13<40:26,  9.74s/it]inference FEtest.json:  54%|█████▍    | 295/543 [56:24<42:27, 10.27s/it]inference FEtest.json:  55%|█████▍    | 296/543 [56:36<44:30, 10.81s/it]inference FEtest.json:  55%|█████▍    | 297/543 [56:46<43:15, 10.55s/it]inference FEtest.json:  55%|█████▍    | 298/543 [56:58<44:31, 10.91s/it]inference FEtest.json:  55%|█████▌    | 299/543 [57:04<38:10,  9.39s/it]inference FEtest.json:  55%|█████▌    | 300/543 [57:13<38:13,  9.44s/it]inference FEtest.json:  55%|█████▌    | 301/543 [57:23<38:29,  9.54s/it]inference FEtest.json:  56%|█████▌    | 302/543 [57:33<39:16,  9.78s/it]inference FEtest.json:  56%|█████▌    | 303/543 [57:40<35:19,  8.83s/it]inference FEtest.json:  56%|█████▌    | 304/543 [57:50<36:03,  9.05s/it]inference FEtest.json:  56%|█████▌    | 305/543 [58:02<40:22, 10.18s/it]inference FEtest.json:  56%|█████▋    | 306/543 [58:13<41:21, 10.47s/it]inference FEtest.json:  57%|█████▋    | 307/543 [58:29<47:09, 11.99s/it]inference FEtest.json:  57%|█████▋    | 308/543 [58:36<41:16, 10.54s/it]inference FEtest.json:  57%|█████▋    | 309/543 [58:49<43:19, 11.11s/it]inference FEtest.json:  57%|█████▋    | 310/543 [59:01<44:30, 11.46s/it]inference FEtest.json:  57%|█████▋    | 311/543 [59:16<48:43, 12.60s/it]inference FEtest.json:  57%|█████▋    | 312/543 [59:26<45:17, 11.76s/it]inference FEtest.json:  58%|█████▊    | 313/543 [59:38<44:56, 11.72s/it]inference FEtest.json:  58%|█████▊    | 314/543 [59:50<45:48, 12.00s/it]inference FEtest.json:  58%|█████▊    | 315/543 [1:00:03<46:17, 12.18s/it]inference FEtest.json:  58%|█████▊    | 316/543 [1:00:11<41:10, 10.88s/it]inference FEtest.json:  58%|█████▊    | 317/543 [1:00:21<40:14, 10.68s/it]inference FEtest.json:  59%|█████▊    | 318/543 [1:00:36<45:01, 12.01s/it]inference FEtest.json:  59%|█████▊    | 319/543 [1:00:51<48:32, 13.00s/it]inference FEtest.json:  59%|█████▉    | 320/543 [1:01:00<44:03, 11.85s/it]inference FEtest.json:  59%|█████▉    | 321/543 [1:01:13<44:46, 12.10s/it]inference FEtest.json:  59%|█████▉    | 322/543 [1:01:23<42:15, 11.47s/it]inference FEtest.json:  59%|█████▉    | 323/543 [1:01:39<46:59, 12.82s/it]inference FEtest.json:  60%|█████▉    | 324/543 [1:01:55<49:48, 13.65s/it]inference FEtest.json:  60%|█████▉    | 325/543 [1:02:10<51:41, 14.23s/it]inference FEtest.json:  60%|██████    | 326/543 [1:02:26<52:41, 14.57s/it]inference FEtest.json:  60%|██████    | 327/543 [1:02:37<48:54, 13.59s/it]inference FEtest.json:  60%|██████    | 328/543 [1:02:51<49:11, 13.73s/it]inference FEtest.json:  61%|██████    | 329/543 [1:03:06<50:43, 14.22s/it]inference FEtest.json:  61%|██████    | 330/543 [1:03:17<46:30, 13.10s/it]inference FEtest.json:  61%|██████    | 331/543 [1:03:27<43:34, 12.33s/it]inference FEtest.json:  61%|██████    | 332/543 [1:03:38<41:35, 11.83s/it]inference FEtest.json:  61%|██████▏   | 333/543 [1:03:48<39:33, 11.30s/it]inference FEtest.json:  62%|██████▏   | 334/543 [1:03:56<35:18, 10.13s/it]inference FEtest.json:  62%|██████▏   | 335/543 [1:04:05<34:44, 10.02s/it]inference FEtest.json:  62%|██████▏   | 336/543 [1:04:21<40:30, 11.74s/it]inference FEtest.json:  62%|██████▏   | 337/543 [1:04:29<36:54, 10.75s/it]inference FEtest.json:  62%|██████▏   | 338/543 [1:04:45<41:18, 12.09s/it]inference FEtest.json:  62%|██████▏   | 339/543 [1:04:55<39:35, 11.64s/it]inference FEtest.json:  63%|██████▎   | 340/543 [1:05:07<39:18, 11.62s/it]inference FEtest.json:  63%|██████▎   | 341/543 [1:05:17<37:26, 11.12s/it]inference FEtest.json:  63%|██████▎   | 342/543 [1:05:29<37:50, 11.30s/it]inference FEtest.json:  63%|██████▎   | 343/543 [1:05:35<33:14,  9.97s/it]inference FEtest.json:  63%|██████▎   | 344/543 [1:05:49<36:21, 10.96s/it]inference FEtest.json:  64%|██████▎   | 345/543 [1:05:59<35:16, 10.69s/it]inference FEtest.json:  64%|██████▎   | 346/543 [1:06:10<35:58, 10.95s/it]inference FEtest.json:  64%|██████▍   | 347/543 [1:06:20<34:52, 10.67s/it]inference FEtest.json:  64%|██████▍   | 348/543 [1:06:28<31:34,  9.72s/it]inference FEtest.json:  64%|██████▍   | 349/543 [1:06:40<34:06, 10.55s/it]inference FEtest.json:  64%|██████▍   | 350/543 [1:06:48<30:42,  9.55s/it]inference FEtest.json:  65%|██████▍   | 351/543 [1:07:00<32:58, 10.31s/it]inference FEtest.json:  65%|██████▍   | 352/543 [1:07:11<33:58, 10.67s/it]inference FEtest.json:  65%|██████▌   | 353/543 [1:07:24<36:03, 11.39s/it]inference FEtest.json:  65%|██████▌   | 354/543 [1:07:39<38:43, 12.29s/it]inference FEtest.json:  65%|██████▌   | 355/543 [1:07:46<33:37, 10.73s/it]inference FEtest.json:  66%|██████▌   | 356/543 [1:07:59<36:00, 11.55s/it]inference FEtest.json:  66%|██████▌   | 357/543 [1:08:11<36:00, 11.62s/it]inference FEtest.json:  66%|██████▌   | 358/543 [1:08:24<37:31, 12.17s/it]inference FEtest.json:  66%|██████▌   | 359/543 [1:08:35<35:27, 11.56s/it]inference FEtest.json:  66%|██████▋   | 360/543 [1:08:44<33:22, 10.94s/it]inference FEtest.json:  66%|██████▋   | 361/543 [1:08:51<29:18,  9.66s/it]inference FEtest.json:  67%|██████▋   | 362/543 [1:09:05<33:13, 11.01s/it]inference FEtest.json:  67%|██████▋   | 363/543 [1:09:14<31:32, 10.52s/it]inference FEtest.json:  67%|██████▋   | 364/543 [1:09:28<33:54, 11.37s/it]inference FEtest.json:  67%|██████▋   | 365/543 [1:09:37<32:24, 10.92s/it]inference FEtest.json:  67%|██████▋   | 366/543 [1:09:50<33:42, 11.43s/it]inference FEtest.json:  68%|██████▊   | 367/543 [1:10:02<33:54, 11.56s/it]inference FEtest.json:  68%|██████▊   | 368/543 [1:10:14<34:21, 11.78s/it]inference FEtest.json:  68%|██████▊   | 369/543 [1:10:25<33:39, 11.60s/it]inference FEtest.json:  68%|██████▊   | 370/543 [1:10:32<29:02, 10.07s/it]inference FEtest.json:  68%|██████▊   | 371/543 [1:10:44<30:42, 10.71s/it]inference FEtest.json:  69%|██████▊   | 372/543 [1:10:53<29:10, 10.24s/it]inference FEtest.json:  69%|██████▊   | 373/543 [1:11:03<28:57, 10.22s/it]inference FEtest.json:  69%|██████▉   | 374/543 [1:11:14<29:15, 10.39s/it]inference FEtest.json:  69%|██████▉   | 375/543 [1:11:24<28:38, 10.23s/it]inference FEtest.json:  69%|██████▉   | 376/543 [1:11:35<29:06, 10.46s/it]inference FEtest.json:  69%|██████▉   | 377/543 [1:11:50<32:51, 11.87s/it]inference FEtest.json:  70%|██████▉   | 378/543 [1:12:03<33:25, 12.15s/it]inference FEtest.json:  70%|██████▉   | 379/543 [1:12:13<31:26, 11.50s/it]inference FEtest.json:  70%|██████▉   | 380/543 [1:12:24<30:52, 11.37s/it]inference FEtest.json:  70%|███████   | 381/543 [1:12:34<29:40, 10.99s/it]inference FEtest.json:  70%|███████   | 382/543 [1:12:46<30:22, 11.32s/it]inference FEtest.json:  71%|███████   | 383/543 [1:12:57<29:50, 11.19s/it]inference FEtest.json:  71%|███████   | 384/543 [1:13:13<33:00, 12.45s/it]inference FEtest.json:  71%|███████   | 385/543 [1:13:27<34:02, 12.93s/it]inference FEtest.json:  71%|███████   | 386/543 [1:13:35<30:13, 11.55s/it]inference FEtest.json:  71%|███████▏  | 387/543 [1:13:48<30:57, 11.91s/it]inference FEtest.json:  71%|███████▏  | 388/543 [1:14:00<31:14, 12.10s/it]inference FEtest.json:  72%|███████▏  | 389/543 [1:14:13<31:33, 12.30s/it]inference FEtest.json:  72%|███████▏  | 390/543 [1:14:24<30:00, 11.77s/it]inference FEtest.json:  72%|███████▏  | 391/543 [1:14:37<31:00, 12.24s/it]inference FEtest.json:  72%|███████▏  | 392/543 [1:14:53<33:35, 13.35s/it]inference FEtest.json:  72%|███████▏  | 393/543 [1:15:01<29:33, 11.82s/it]inference FEtest.json:  73%|███████▎  | 394/543 [1:15:16<31:55, 12.85s/it]inference FEtest.json:  73%|███████▎  | 395/543 [1:15:26<29:38, 12.02s/it]inference FEtest.json:  73%|███████▎  | 396/543 [1:15:35<27:13, 11.11s/it]inference FEtest.json:  73%|███████▎  | 397/543 [1:15:50<29:42, 12.21s/it]inference FEtest.json:  73%|███████▎  | 398/543 [1:16:00<27:26, 11.36s/it]inference FEtest.json:  73%|███████▎  | 399/543 [1:16:07<24:22, 10.15s/it]inference FEtest.json:  74%|███████▎  | 400/543 [1:16:19<25:37, 10.75s/it]inference FEtest.json:  74%|███████▍  | 401/543 [1:16:31<26:00, 10.99s/it]inference FEtest.json:  74%|███████▍  | 402/543 [1:16:40<25:03, 10.66s/it]inference FEtest.json:  74%|███████▍  | 403/543 [1:16:51<24:29, 10.50s/it]inference FEtest.json:  74%|███████▍  | 404/543 [1:17:00<23:48, 10.28s/it]inference FEtest.json:  75%|███████▍  | 405/543 [1:17:11<23:48, 10.35s/it]inference FEtest.json:  75%|███████▍  | 406/543 [1:17:21<23:36, 10.34s/it]inference FEtest.json:  75%|███████▍  | 407/543 [1:17:34<25:23, 11.20s/it]inference FEtest.json:  75%|███████▌  | 408/543 [1:17:51<28:43, 12.76s/it]inference FEtest.json:  75%|███████▌  | 409/543 [1:17:59<25:15, 11.31s/it]inference FEtest.json:  76%|███████▌  | 410/543 [1:18:15<28:03, 12.66s/it]inference FEtest.json:  76%|███████▌  | 411/543 [1:18:25<26:34, 12.08s/it]inference FEtest.json:  76%|███████▌  | 412/543 [1:18:35<25:00, 11.45s/it]inference FEtest.json:  76%|███████▌  | 413/543 [1:18:44<23:05, 10.65s/it]inference FEtest.json:  76%|███████▌  | 414/543 [1:18:54<22:34, 10.50s/it]inference FEtest.json:  76%|███████▋  | 415/543 [1:19:09<25:05, 11.76s/it]inference FEtest.json:  77%|███████▋  | 416/543 [1:19:20<24:45, 11.69s/it]inference FEtest.json:  77%|███████▋  | 417/543 [1:19:33<24:58, 11.89s/it]inference FEtest.json:  77%|███████▋  | 418/543 [1:19:44<24:32, 11.78s/it]inference FEtest.json:  77%|███████▋  | 419/543 [1:19:53<22:30, 10.89s/it]inference FEtest.json:  77%|███████▋  | 420/543 [1:20:08<24:38, 12.02s/it]inference FEtest.json:  78%|███████▊  | 421/543 [1:20:18<23:13, 11.42s/it]inference FEtest.json:  78%|███████▊  | 422/543 [1:20:28<22:20, 11.07s/it]inference FEtest.json:  78%|███████▊  | 423/543 [1:20:37<20:52, 10.44s/it]inference FEtest.json:  78%|███████▊  | 424/543 [1:20:43<18:16,  9.22s/it]inference FEtest.json:  78%|███████▊  | 425/543 [1:20:53<18:38,  9.48s/it]inference FEtest.json:  78%|███████▊  | 426/543 [1:21:09<21:52, 11.22s/it]inference FEtest.json:  79%|███████▊  | 427/543 [1:21:24<24:03, 12.45s/it]inference FEtest.json:  79%|███████▉  | 428/543 [1:21:37<23:57, 12.50s/it]inference FEtest.json:  79%|███████▉  | 429/543 [1:21:52<25:19, 13.33s/it]inference FEtest.json:  79%|███████▉  | 430/543 [1:22:07<25:48, 13.70s/it]inference FEtest.json:  79%|███████▉  | 431/543 [1:22:23<27:03, 14.49s/it]inference FEtest.json:  80%|███████▉  | 432/543 [1:22:31<23:33, 12.73s/it]inference FEtest.json:  80%|███████▉  | 433/543 [1:22:47<24:53, 13.58s/it]inference FEtest.json:  80%|███████▉  | 434/543 [1:22:56<22:13, 12.23s/it]inference FEtest.json:  80%|████████  | 435/543 [1:23:11<23:36, 13.11s/it]inference FEtest.json:  80%|████████  | 436/543 [1:23:21<21:26, 12.02s/it]inference FEtest.json:  80%|████████  | 437/543 [1:23:36<23:09, 13.11s/it]inference FEtest.json:  81%|████████  | 438/543 [1:23:44<20:17, 11.59s/it]inference FEtest.json:  81%|████████  | 439/543 [1:23:58<20:55, 12.07s/it]inference FEtest.json:  81%|████████  | 440/543 [1:24:13<22:09, 12.90s/it]inference FEtest.json:  81%|████████  | 441/543 [1:24:26<22:14, 13.09s/it]inference FEtest.json:  81%|████████▏ | 442/543 [1:24:38<21:27, 12.75s/it]inference FEtest.json:  82%|████████▏ | 443/543 [1:24:47<19:14, 11.55s/it]inference FEtest.json:  82%|████████▏ | 444/543 [1:25:02<20:52, 12.66s/it]inference FEtest.json:  82%|████████▏ | 445/543 [1:25:15<21:04, 12.91s/it]inference FEtest.json:  82%|████████▏ | 446/543 [1:25:27<20:20, 12.58s/it]inference FEtest.json:  82%|████████▏ | 447/543 [1:25:36<18:30, 11.57s/it]inference FEtest.json:  83%|████████▎ | 448/543 [1:25:43<15:48,  9.98s/it]inference FEtest.json:  83%|████████▎ | 449/543 [1:25:54<16:11, 10.34s/it]inference FEtest.json:  83%|████████▎ | 450/543 [1:26:02<15:10,  9.79s/it]inference FEtest.json:  83%|████████▎ | 451/543 [1:26:08<13:04,  8.52s/it]inference FEtest.json:  83%|████████▎ | 452/543 [1:26:20<14:38,  9.65s/it]inference FEtest.json:  83%|████████▎ | 453/543 [1:26:30<14:35,  9.73s/it]inference FEtest.json:  84%|████████▎ | 454/543 [1:26:44<16:10, 10.90s/it]inference FEtest.json:  84%|████████▍ | 455/543 [1:26:51<14:33,  9.92s/it]inference FEtest.json:  84%|████████▍ | 456/543 [1:26:58<12:59,  8.96s/it]inference FEtest.json:  84%|████████▍ | 457/543 [1:27:08<13:13,  9.22s/it]inference FEtest.json:  84%|████████▍ | 458/543 [1:27:15<11:55,  8.41s/it]inference FEtest.json:  85%|████████▍ | 459/543 [1:27:32<15:41, 11.21s/it]inference FEtest.json:  85%|████████▍ | 460/543 [1:27:39<13:43,  9.92s/it]inference FEtest.json:  85%|████████▍ | 461/543 [1:27:50<14:01, 10.26s/it]inference FEtest.json:  85%|████████▌ | 462/543 [1:27:58<13:01,  9.65s/it]inference FEtest.json:  85%|████████▌ | 463/543 [1:28:15<15:44, 11.81s/it]inference FEtest.json:  85%|████████▌ | 464/543 [1:28:29<16:09, 12.27s/it]inference FEtest.json:  86%|████████▌ | 465/543 [1:28:41<16:06, 12.39s/it]inference FEtest.json:  86%|████████▌ | 466/543 [1:28:51<14:45, 11.50s/it]inference FEtest.json:  86%|████████▌ | 467/543 [1:29:04<15:04, 11.90s/it]inference FEtest.json:  86%|████████▌ | 468/543 [1:29:15<14:33, 11.65s/it]inference FEtest.json:  86%|████████▋ | 469/543 [1:29:28<14:50, 12.04s/it]inference FEtest.json:  87%|████████▋ | 470/543 [1:29:36<13:29, 11.09s/it]inference FEtest.json:  87%|████████▋ | 471/543 [1:29:50<14:19, 11.94s/it]inference FEtest.json:  87%|████████▋ | 472/543 [1:30:01<13:44, 11.62s/it]inference FEtest.json:  87%|████████▋ | 473/543 [1:30:11<12:57, 11.11s/it]inference FEtest.json:  87%|████████▋ | 474/543 [1:30:22<12:45, 11.10s/it]inference FEtest.json:  87%|████████▋ | 475/543 [1:30:35<13:07, 11.59s/it]inference FEtest.json:  88%|████████▊ | 476/543 [1:30:50<14:14, 12.76s/it]inference FEtest.json:  88%|████████▊ | 477/543 [1:30:59<12:45, 11.60s/it]inference FEtest.json:  88%|████████▊ | 478/543 [1:31:09<11:53, 10.97s/it]inference FEtest.json:  88%|████████▊ | 479/543 [1:31:22<12:19, 11.55s/it]inference FEtest.json:  88%|████████▊ | 480/543 [1:31:32<11:46, 11.21s/it]inference FEtest.json:  89%|████████▊ | 481/543 [1:31:45<12:06, 11.72s/it]inference FEtest.json:  89%|████████▉ | 482/543 [1:31:55<11:28, 11.29s/it]inference FEtest.json:  89%|████████▉ | 483/543 [1:32:06<10:59, 10.99s/it]inference FEtest.json:  89%|████████▉ | 484/543 [1:32:21<11:59, 12.20s/it]inference FEtest.json:  89%|████████▉ | 485/543 [1:32:34<12:11, 12.62s/it]inference FEtest.json:  90%|████████▉ | 486/543 [1:32:50<12:44, 13.41s/it]inference FEtest.json:  90%|████████▉ | 487/543 [1:33:02<12:15, 13.13s/it]inference FEtest.json:  90%|████████▉ | 488/543 [1:33:13<11:31, 12.57s/it]inference FEtest.json:  90%|█████████ | 489/543 [1:33:23<10:36, 11.78s/it]inference FEtest.json:  90%|█████████ | 490/543 [1:33:29<08:51, 10.03s/it]inference FEtest.json:  90%|█████████ | 491/543 [1:33:38<08:20,  9.63s/it]inference FEtest.json:  91%|█████████ | 492/543 [1:33:50<08:54, 10.48s/it]inference FEtest.json:  91%|█████████ | 493/543 [1:34:06<09:58, 11.97s/it]inference FEtest.json:  91%|█████████ | 494/543 [1:34:16<09:21, 11.46s/it]inference FEtest.json:  91%|█████████ | 495/543 [1:34:32<10:07, 12.67s/it]inference FEtest.json:  91%|█████████▏| 496/543 [1:34:46<10:14, 13.08s/it]inference FEtest.json:  92%|█████████▏| 497/543 [1:34:56<09:25, 12.28s/it]inference FEtest.json:  92%|█████████▏| 498/543 [1:35:07<08:56, 11.91s/it]inference FEtest.json:  92%|█████████▏| 499/543 [1:35:22<09:27, 12.89s/it]inference FEtest.json:  92%|█████████▏| 500/543 [1:35:33<08:44, 12.19s/it]inference FEtest.json:  92%|█████████▏| 501/543 [1:35:41<07:46, 11.10s/it]inference FEtest.json:  92%|█████████▏| 502/543 [1:35:50<07:07, 10.43s/it]inference FEtest.json:  93%|█████████▎| 503/543 [1:36:01<07:05, 10.63s/it]inference FEtest.json:  93%|█████████▎| 504/543 [1:36:15<07:25, 11.43s/it]inference FEtest.json:  93%|█████████▎| 505/543 [1:36:27<07:27, 11.77s/it]inference FEtest.json:  93%|█████████▎| 506/543 [1:36:35<06:33, 10.64s/it]inference FEtest.json:  93%|█████████▎| 507/543 [1:36:47<06:40, 11.12s/it]inference FEtest.json:  94%|█████████▎| 508/543 [1:37:03<07:12, 12.36s/it]inference FEtest.json:  94%|█████████▎| 509/543 [1:37:12<06:29, 11.46s/it]inference FEtest.json:  94%|█████████▍| 510/543 [1:37:24<06:22, 11.59s/it]inference FEtest.json:  94%|█████████▍| 511/543 [1:37:31<05:23, 10.11s/it]inference FEtest.json:  94%|█████████▍| 512/543 [1:37:37<04:43,  9.13s/it]inference FEtest.json:  94%|█████████▍| 513/543 [1:37:48<04:42,  9.42s/it]inference FEtest.json:  95%|█████████▍| 514/543 [1:37:55<04:14,  8.78s/it]inference FEtest.json:  95%|█████████▍| 515/543 [1:38:01<03:43,  8.00s/it]inference FEtest.json:  95%|█████████▌| 516/543 [1:38:10<03:46,  8.41s/it]inference FEtest.json:  95%|█████████▌| 517/543 [1:38:21<03:52,  8.94s/it]inference FEtest.json:  95%|█████████▌| 518/543 [1:38:29<03:39,  8.78s/it]inference FEtest.json:  96%|█████████▌| 519/543 [1:38:44<04:17, 10.75s/it]inference FEtest.json:  96%|█████████▌| 520/543 [1:38:55<04:09, 10.84s/it]inference FEtest.json:  96%|█████████▌| 521/543 [1:39:07<04:02, 11.03s/it]inference FEtest.json:  96%|█████████▌| 522/543 [1:39:15<03:31, 10.06s/it]inference FEtest.json:  96%|█████████▋| 523/543 [1:39:23<03:09,  9.49s/it]inference FEtest.json:  97%|█████████▋| 524/543 [1:39:34<03:12, 10.13s/it]inference FEtest.json:  97%|█████████▋| 525/543 [1:39:49<03:28, 11.61s/it]inference FEtest.json:  97%|█████████▋| 526/543 [1:40:00<03:11, 11.27s/it]inference FEtest.json:  97%|█████████▋| 527/543 [1:40:12<03:03, 11.45s/it]inference FEtest.json:  97%|█████████▋| 528/543 [1:40:27<03:09, 12.62s/it]inference FEtest.json:  97%|█████████▋| 529/543 [1:40:41<03:01, 12.99s/it]inference FEtest.json:  98%|█████████▊| 530/543 [1:40:53<02:43, 12.56s/it]inference FEtest.json:  98%|█████████▊| 531/543 [1:41:05<02:31, 12.64s/it]inference FEtest.json:  98%|█████████▊| 532/543 [1:41:14<02:04, 11.34s/it]inference FEtest.json:  98%|█████████▊| 533/543 [1:41:25<01:52, 11.26s/it]inference FEtest.json:  98%|█████████▊| 534/543 [1:41:36<01:40, 11.13s/it]inference FEtest.json:  99%|█████████▊| 535/543 [1:41:48<01:32, 11.52s/it]inference FEtest.json:  99%|█████████▊| 536/543 [1:42:00<01:20, 11.51s/it]inference FEtest.json:  99%|█████████▉| 537/543 [1:42:11<01:09, 11.59s/it]inference FEtest.json:  99%|█████████▉| 538/543 [1:42:23<00:57, 11.52s/it]inference FEtest.json:  99%|█████████▉| 539/543 [1:42:34<00:46, 11.61s/it]inference FEtest.json:  99%|█████████▉| 540/543 [1:42:45<00:33, 11.24s/it]inference FEtest.json: 100%|█████████▉| 541/543 [1:42:56<00:22, 11.14s/it]inference FEtest.json: 100%|█████████▉| 542/543 [1:43:04<00:10, 10.40s/it]inference FEtest.json: 100%|██████████| 543/543 [1:43:15<00:00, 10.42s/it]inference FEtest.json: 100%|██████████| 543/543 [1:43:15<00:00, 11.41s/it]
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제46조(방화구획 등의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(탱크 용적의 산정기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제11조(화재안전등급)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제22조(화재안전영향평가심의회)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(탱크 용적의 산정기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제33004호, 2022. 11. 29.>')와 article('부      칙 <대통령령 제33004호, 2022. 11. 29.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 화재안전조사')와 article('제15조(손실보상)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제24조(소방활동 종사 명령)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제34조의3(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방장비 및 소방용수시설 등')와 article('제10조(소방용수시설의 설치 및 관리 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_5')와 article('제5조(소방안전관리자의 선임)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제24조(특정소방대상물의 소방안전관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제6조의2(기존의 건축물 등에 대한 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제58조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 소방공사감리자의 지정신고 등')와 article('제16조(감리원의 세부 배치 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 화재안전조사')와 article('제11조(화재안전조사위원회의 구성ㆍ운영 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제25조(강제처분 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(불을 사용하는 설비의 관리기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(소방용수시설 및 비상소화장치의 설치기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제10조(주택에 설치하는 소방시설)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방용품의 품질관리')와 article('제37조(소방용품의 형식승인 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(하자보수 대상 소방시설과 하자보수 보증기간)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제21214호, 2008. 12. 31.> (행정안전부와 그 소속기관 직제)')와 article('부      칙 <대통령령 제21214호, 2008. 12. 31.> (행정안전부와 그 소속기관 직제)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제87조(건축설비 설치의 원칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제21214호, 2008. 12. 31.> (행정안전부와 그 소속기관 직제)')와 article('부      칙 <대통령령 제21214호, 2008. 12. 31.> (행정안전부와 그 소속기관 직제)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제90조(비상용 승강기의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제28조(소방용수시설 또는 비상소화장치의 사용금지 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(위험물의 품명)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제46조(화재안전기준 등의 적용)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제1조(목적)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제57조(대규모 건축물의 방화벽 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(불을 사용하는 설비의 관리기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제9조(기술검토의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')와 article('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(불을 사용하는 설비의 관리기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 보칙 <개정 2010. 7. 23.>')와 article('제31조(감독)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제9조(소방시설업의 행정처분기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제6조의2(휴업ㆍ폐업 신고 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제11조(위험물안전관리자로 선임할 수 있는 위험물취급자격자 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 감리 <개정 2010. 7. 23.>')와 article('제19조(위반사항에 대한 조치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(특정소방대상물의 수용인원 산정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제5조(등록의 결격사유)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제14조(유사한 소방시설의 설치 면제의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 감리 <개정 2010. 7. 23.>')와 article('제16조(감리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방장비 및 소방용수시설 등')와 article('제11조(소방업무의 응원)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_10')와 article('제8조(소방업무의 상호응원협정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제43조(피난설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(위험물안전관리자)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 한국소방안전원 <개정 2017. 12. 26.>')와 article('제41조(안전원의 업무)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(하자보수 대상 소방시설과 하자보수 보증기간)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 건축물의 건축')와 article('제22조(건축물의 사용승인)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 정기검사')와 article('제71조(정기검사의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 지역 및 지구의 건축물 <개정 2008. 10. 29.>')와 article('제81조(맞벽건축 및 연결복도)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 5. 28.>')와 article('제48조의3(건축물의 내진능력 공개)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제91조(피난용승강기의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제34조(피난계획의 수립ㆍ시행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제64조(방화문의 구분)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제46조(방화구획 등의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')와 article('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 정기점검')와 article('제65조(특정ㆍ준특정옥외탱크저장소의 정기점검)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 자체소방대')와 article('제18조(자체소방대를 설치하여야 하는 사업소)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제4조(소방시설업의 등록)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제11조(특정소방대상물에 설치ㆍ관리해야 하는 소방시설)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 화재안전조사')와 article('제4조(화재안전조사의 연기신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제17조(정기검사의 대상인 제조소등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(지정수량 미만인 위험물의 저장ㆍ취급)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제29조(실무교육의 실시)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙 <개정 2011. 5. 30.>')와 article('제1조(목적)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_3')와 article('제3조(종합상황실의 실장의 업무 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제58조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제19조(내용연수 설정대상 소방용품)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제61조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(옮긴 물건 등의 보관기간 및 보관기간 경과 후 처리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_5')와 article('제2조(국고보조 대상사업의 범위와 기준보조율)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제14조(소방안전관리자의 선임신고 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 정기검사')와 article('제72조(정기검사의 방법 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제33005호, 2022. 11. 29.>')와 article('부      칙 <대통령령 제33005호, 2022. 11. 29.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 소방시설등의 자체점검')와 article('제23조(소방시설등의 자체점검 결과의 조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제20조(화재 위험경보)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제46조(화재안전기준 등의 적용)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(소방용수시설 및 비상소화장치의 설치기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제35조(피난유도 안내정보의 제공)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제13조(충수ㆍ수압검사에 관한 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제87조(건축설비 설치의 원칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제13조(충수ㆍ수압검사에 관한 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 위험물의 운반 등')와 article('제20조(위험물의 운반)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제11조(화재안전등급)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제21629호, 2009. 7. 16.>')와 article('부      칙 <대통령령 제21629호, 2009. 7. 16.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(탱크 용적의 산정기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_7')와 article('제5조(완공검사를 위한 현장확인 대상 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제74조(자체소방대 편성의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제16조(소방시설을 설치하지 않을 수 있는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(관계인의 의무)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 소방시설관리업')와 article('제36조(과징금처분)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제23조(소방활동구역의 설정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제6조의2(기존의 건축물 등에 대한 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(하자보수 대상 소방시설과 하자보수 보증기간)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제24조(소방활동 종사 명령)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제91조(피난용승강기의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 지역 및 지구의 건축물 <개정 2008. 10. 29.>')와 article('제81조(맞벽건축 및 연결복도)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제3조(건축허가등의 동의 요구)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제90조(비상용 승강기의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(하자보수 대상 소방시설과 하자보수 보증기간)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제87조(건축설비 설치의 원칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제91조(피난용승강기의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제119조(면적 등의 산정방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제25273호, 2014. 3. 24.>')와 article('부      칙 <대통령령 제25273호, 2014. 3. 24.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제34조(피난계획의 수립ㆍ시행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 소방시설관리사')와 article('제44조(시험의 합격자 결정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_23')와 article('제12조의3(하도급계약심사위원회의 구성 및 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의3(이행강제금의 탄력적 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제19466호, 2006. 5. 8.>')와 article('부      칙 <대통령령 제19466호, 2006. 5. 8.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제9조의4(응시수수료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제57조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 소방시설공사 등의 하도급 통지 등 <개정 2015. 8. 4.>')와 article('제20조의2(공사대금의 지급보증 등의 방법 및 절차)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제9조(기술검토의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제6조의2(기존의 건축물 등에 대한 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제52조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제9조의4(응시수수료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 정기점검')와 article('제64조(정기점검의 횟수)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 건축물의 건축')와 article('제32조(건축허가 업무 등의 전산처리 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제15조(특정소방대상물의 증축 또는 용도변경 시의 소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 보칙')와 article('제21조(권한의 위임)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_16')와 article('제9조의2(시험 과목별 출제범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제20722호, 2008. 2. 29.> (국토해양부와 그 소속기관 직제)')와 article('부      칙 <대통령령 제20722호, 2008. 2. 29.> (국토해양부와 그 소속기관 직제)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙 <개정 2010. 7. 23.>')와 article('제35조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <법률 제18523호, 2021. 11. 30.> (화재의 예방 및 안전관리에 관한 법률)')와 article('부      칙 <법률 제18523호, 2021. 11. 30.> (화재의 예방 및 안전관리에 관한 법률)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제24조(특정소방대상물의 소방안전관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙 <개정 2011. 5. 30.>')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(탱크 용적의 산정기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(예방규정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제27조(소방안전관리대상물의 소방계획서 작성 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제33조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제13조(충수ㆍ수압검사에 관한 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_12')와 article('제10조(공사감리자 지정대상 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제57조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙 <개정 2011. 5. 30.>')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제16조(소방시설을 설치하지 않을 수 있는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 위험물의 저장 및 취급의 기준')와 article('제49조(제조소등에서의 위험물의 저장 및 취급의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제34조(피난계획의 수립ㆍ시행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 정기점검')와 article('제65조(특정ㆍ준특정옥외탱크저장소의 정기점검)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제36조(피난계획의 수립 및 시행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제40조(옥상광장 등의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제47호, 2008. 12. 18.> (소방산업의 진흥에 관한 법률 시행규칙)')와 article('부      칙 <행정안전부령 제47호, 2008. 12. 18.> (소방산업의 진흥에 관한 법률 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_23')와 article('제12조의3(하도급계약심사위원회의 구성 및 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_35')와 article('제24조(이행강제금의 부과ㆍ징수)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(불을 사용하는 설비의 관리기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제14조(소방안전관리자의 선임신고 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 5. 28.>')와 article('제52조의4(건축자재의 품질관리 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제6조의2(기존의 건축물 등에 대한 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <법률 제16416호, 2019. 4. 30.> (건축물관리법)')와 article('부      칙 <법률 제16416호, 2019. 4. 30.> (건축물관리법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제9조의4(응시수수료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 소방시설공사 등의 하도급 통지 등 <개정 2015. 8. 4.>')와 article('제20조의2(공사대금의 지급보증 등의 방법 및 절차)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 정기검사')와 article('제70조(정기검사의 시기)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 벌칙 <개정 2011. 5. 30.>')와 article('제25조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의3(이행강제금의 탄력적 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <법률 제11690호, 2013. 3. 23.> (정부조직법)')와 article('부      칙 <법률 제11690호, 2013. 3. 23.> (정부조직법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제119조(면적 등의 산정방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의3(이행강제금의 탄력적 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_7')와 article('제5조(완공검사를 위한 현장확인 대상 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제24조(소방활동 종사 명령)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제74조(자체소방대 편성의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(예방규정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제10조(주택에 설치하는 소방시설)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제4조(소방시설업의 등록)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제53조(경계벽 등의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 벌칙')와 article('제52조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(특정소방대상물의 수용인원 산정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제58조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제17조의5(소방안전교육사의 배치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제35조(관리의 권원이 분리된 특정소방대상물의 소방안전관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙 <개정 2010. 7. 23.>')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 벌칙')와 article('제29조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 지역 및 지구의 건축물 <개정 2008. 10. 29.>')와 article('제81조(맞벽건축 및 연결복도)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_7')와 article('제2조의3(소방력의 동원)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제11조(화재안전등급)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')와 article('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제56조(건축물의 내화구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 위험물의 저장 및 취급의 기준')와 article('제49조(제조소등에서의 위험물의 저장 및 취급의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제9조(기술검토의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제54조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제52조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제13655호, 1992. 5. 30.>')와 article('부      칙 <대통령령 제13655호, 1992. 5. 30.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제18조(탱크안전성능검사의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제119조(면적 등의 산정방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_35')와 article('제20조(허용오차)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(예방규정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제10조(주택에 설치하는 소방시설)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 벌칙')와 article('제52조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙 <개정 2010. 7. 23.>')와 article('제37조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 벌칙')와 article('제29조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제34조(직통계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제11조(화재안전등급)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제22조(소방대의 긴급통행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제64조(방화문의 구분)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제31100호, 2020. 10. 8.>')와 article('부      칙 <대통령령 제31100호, 2020. 10. 8.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제6장 지역 및 지구의 건축물 <개정 2008. 10. 29.>')와 article('제81조(맞벽건축 및 연결복도)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제9조의4(응시수수료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_28')와 article('제12조의8(설계ㆍ감리업자의 선정 절차 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제23489호, 2012. 1. 6.>')와 article('부      칙 <대통령령 제23489호, 2012. 1. 6.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 5. 28.>')와 article('제48조의3(건축물의 내진능력 공개)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제21조(소방자동차의 우선 통행 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_18')와 article('제9조의4(응시수수료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제39조(이송취급소의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <건설교통부령 제46호, 1996. 1. 18.>')와 article('부      칙 <건설교통부령 제46호, 1996. 1. 18.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_35')와 article('제20조(허용오차)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 건축물의 설비등')와 article('제87조(건축설비 설치의 원칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_23')와 article('제12조의3(하도급계약심사위원회의 구성 및 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의3(이행강제금의 탄력적 운영)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')와 article('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제59조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제5조(등록의 결격사유)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 방염')와 article('제30조(방염성능기준 이상의 실내장식물 등을 설치해야 하는 특정소방대상물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_10')와 article('제8조(감리업자가 아닌 자가 감리할 수 있는 보안성 등이 요구되는 소방대상물의 시공 장소)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제39조(과태료)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 벌칙 <개정 2011. 5. 30.>')와 article('제52조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제30256호, 2019. 12. 24.> (산업안전보건법 시행령)')와 article('부      칙 <대통령령 제30256호, 2019. 12. 24.> (산업안전보건법 시행령)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_10')와 article('제8조(소방업무의 상호응원협정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제42조(경보설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(위험물안전관리자)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 소방시설업')와 article('제4조(소방시설업의 등록)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 5. 28.>')와 article('제49조(건축물의 피난시설 및 용도제한 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정자치부령 제242호, 2004. 7. 7.>')와 article('부      칙 <행정자치부령 제242호, 2004. 7. 7.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제9조(성능위주설계를 해야 하는 특정소방대상물의 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제57조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제24조(특정소방대상물의 소방안전관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제24조(소방활동 종사 명령)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제57조(대규모 건축물의 방화벽 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조의4(실내건축의 재료 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제22조(소방대의 긴급통행)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제13조(소방시설기준 적용의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제24조(특정소방대상물의 소방안전관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_16')와 article('제9조의2(시험 과목별 출제범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(유해ㆍ위험물질의 종류 및 범위)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제8조(피난안전구역의 설비 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제18조(탱크안전성능검사의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제17조(정기검사의 대상인 제조소등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_13')와 article('제9조의3(화재배상책임보험의 보험금액)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 예방 및 대비')와 article('제14조(피난안전구역 설치기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 5. 28.>')와 article('제52조의4(건축자재의 품질관리 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제16284호, 1999. 4. 30.>')와 article('부      칙 <대통령령 제16284호, 1999. 4. 30.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <법률 제16416호, 2019. 4. 30.> (건축물관리법)')와 article('부      칙 <법률 제16416호, 2019. 4. 30.> (건축물관리법)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')와 article('부      칙 <행정안전부령 제2호, 2017. 7. 26.> (소방청과 그 소속기관 직제 시행규칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제41조(소화설비의 기준)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <대통령령 제19466호, 2006. 5. 8.>')와 article('부      칙 <대통령령 제19466호, 2006. 5. 8.>')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제59조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_8')와 article('제6조(하자보수 대상 소방시설과 하자보수 보증기간)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제9조(기술검토의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제7장 벌칙')와 article('제36조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제1조(목적)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 소방시설공사 등의 하도급 통지 등 <개정 2015. 8. 4.>')와 article('제20조의2(공사대금의 지급보증 등의 방법 및 절차)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙 <개정 2011. 5. 30.>')와 article('제3조의2(소방공무원의 배치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 화재안전조사')와 article('제7조(화재안전조사)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1절 건축허가등의 동의 등')와 article('제7조(건축허가등의 동의대상물의 범위 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제29조(건설현장 소방안전관리대상물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3절 방염')와 article('제21조(방염성능의 검사)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 벌칙')와 article('제50조(벌칙)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제5조(위험물의 저장 및 취급의 제한)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('부      칙 <법률 제18523호, 2021. 11. 30.> (화재의 예방 및 안전관리에 관한 법률)')와 article('부      칙 <법률 제18523호, 2021. 11. 30.> (화재의 예방 및 안전관리에 관한 법률)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제20조(화재예방강화지구의 관리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_5')와 article('제2조(국고보조 대상사업의 범위와 기준보조율)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제18조(화재예방강화지구의 지정 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 위험물시설의 안전관리')와 article('제15조(위험물안전관리자)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 건축물의 건축')와 article('제19조(공사감리)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제8장 한국소방안전원 <개정 2017. 12. 26.>')와 article('제41조(안전원의 업무)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제35조(피난계단의 설치)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 소방대상물의 소방안전관리')와 article('제29조(실무교육의 실시)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 화재안전조사')와 article('제6조(손실보상 청구자가 제출해야 하는 서류 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제2조(정의)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제57조(대규모 건축물의 방화벽 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제4조(다른 법률과의 관계)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제9장 보칙 <개정 2008. 10. 29.>')와 article('제115조의4(이행강제금의 감경)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제19조(화재의 확대가 빠른 특수가연물)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 위험물시설의 설치 및 변경')와 article('제6조(위험물시설의 설치 및 변경 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제17조(연소 우려가 있는 건축물의 구조)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제28조(소방용수시설 또는 비상소화장치의 사용금지 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제3장 제조소등의 위치ㆍ구조 및 설비의 기준')와 article('제48조(화약류에 해당하는 위험물의 특례)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2장 제조소등의 허가 및 검사의 신청 등')와 article('제18조(탱크안전성능검사의 신청 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제10장 자체소방대')와 article('제75조(화학소방차의 기준 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 소방활동 등 <개정 2011. 3. 8.>')와 article('제28조(소방용수시설 또는 비상소화장치의 사용금지 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제2절 특정소방대상물에 설치하는 소방시설의 관리 등')와 article('제18조(화재위험작업 및 임시소방시설 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제5장 건축물의 구조 및 재료 등 <개정 2014. 11. 28.>')와 article('제64조(방화문의 구분)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제1장 총칙')와 article('제3조(위험물 품명의 지정)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 화재의 예방조치 등')와 article('제17조(화재의 예방조치 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('제4장 다중이용업소 안전관리를 위한 기반조성')와 article('제15조(다중이용업소에 대한 화재위험평가 등)')을 가진 모든 문서 <<<
-
->>> Top-1과 동일한 chapter('CHAPTER_21')와 article('제10조(소방신호의 종류 및 방법)')을 가진 모든 문서 <<<
