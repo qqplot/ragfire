@@ -7,6 +7,8 @@ hub/
 model/
 vector_db/
 .gradio
+user_histories.json
+*.db
 
 # C extensions
 *.so
