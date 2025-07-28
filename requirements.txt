@@ -187,8 +187,8 @@ matplotlib-inline==0.1.7
 mdurl==0.1.2
 milvus-lite==2.4.12
 mkl-service==2.4.0
-mkl_fft @ file:///io/mkl313/mkl_fft_1730824109137/work
-mkl_random @ file:///io/mkl313/mkl_random_1730823916628/work
+mkl_fft
+mkl_random
 mmh3==4.1.0
 monotonic==1.6
 moto==5.1.5
@@ -249,7 +249,7 @@ opentelemetry-semantic-conventions==0.53b1
 opentelemetry-util-http==0.53b1
 orjson==3.10.15
 overrides==7.7.0
-packaging @ file:///croot/packaging_1734472117206/work
+packaging
 pandas==2.2.3
 parso==0.8.4
 passlib==1.7.4
