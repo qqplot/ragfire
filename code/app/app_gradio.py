@@ -46,9 +46,8 @@ def chat_interface(graph_app, history, message, state, user_id, logger=None):
 
     logger.log_chat_with_docs(user_id, message, answer, retrieved_docs)
 
-    references_html = ""
     if retrieved_docs:
-        references_html += "<h4>📄 참고 문서</h4>"
+        references_html = "<h4>📄 참고 문서</h4>"        
         for i, doc in enumerate(retrieved_docs, start=1):
             title = f"{doc.metadata.get('law_name', '')} {doc.metadata.get('chapter', '')}" or f"문서 {i}"
             snippet = highlight_text(doc.page_content.strip(), message)
@@ -58,6 +57,8 @@ def chat_interface(graph_app, history, message, state, user_id, logger=None):
                 <div style="margin-left: 15px; white-space: pre-wrap; font-size: 0.9em;">{snippet}</div>
             </details>
             """
+    else:
+        references_html = "<p>🔍 관련 문서를 찾을 수 없습니다.</p>"
 
     history.append((message, answer))
     return history, "", state, references_html
