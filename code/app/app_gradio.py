@@ -58,7 +58,7 @@ def chat_interface(graph_app, history, message, state, user_id, logger=None):
             </details>
             """
     else:
-        references_html = "<p>🔍 관련 문서를 찾을 수 없습니다.</p>"
+        references_html = "<p>🔍 문서를 참조하지 않습니다.</p>"
 
     history.append((message, answer))
     return history, "", state, references_html

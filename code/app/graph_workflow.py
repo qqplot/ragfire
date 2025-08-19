@@ -46,7 +46,7 @@ BUILDING_PROMPT = ChatPromptTemplate.from_messages([
 
 NAIVE_PROMPT = ChatPromptTemplate.from_messages([
     ("system", NAIVE_TEXT),
-    ("human", "질문: {user_input}\n\n검색 결과: {context}\n\n답변:\n")
+    ("human", "질문: {user_input}\n\n답변:\n")
 ])
 
 NAIVE_WEB_PROMPT = ChatPromptTemplate.from_messages([
@@ -143,7 +143,9 @@ def generation_node(state: AgentState, llm: ChatOllama, prompt: ChatPromptTempla
     retrieved_docs = state.get("retrieved_docs", [])
     if is_web:
         retrieved_docs, context = web_search(user_input, API_KEY)
-    
+    if is_naive:
+        retrieved_docs, context = [], ""  # naive 경우 컨텍스트는 비워둠
+
     chain = prompt | llm
     response = chain.invoke({
         "user_input": user_input,
@@ -157,7 +159,7 @@ def generation_node(state: AgentState, llm: ChatOllama, prompt: ChatPromptTempla
     return {
         **state,
         "messages": new_messages,
-        "retrieved_docs": retrieved_docs if not is_naive else [],  # naive 경우 빈 리스트로 설정
+        "retrieved_docs": retrieved_docs
     }
 
 
